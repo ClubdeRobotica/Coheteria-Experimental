@@ -13,12 +13,3 @@ El objetivo de este proyecto es iniciar a los participantes en las tecnologías 
 * **Banco de Pruebas**: Incluye una serie de sensores para testear el empuje de los motores y un Software para adquirir los datos del banco
 * **Motor y Lanzador**: El objetivo final del proyecto es el desarrollo de un lanzador de mayores dimensiones, para lo cual se necesitará investigar sobre un motor y cohete de mayores dimensiones.
 
-## Areas de Vacancia:
-### Cansat:
-	Electrónica, Programación de Microcontroladores.
-
-### Mini-Lanzador:
-	Mecánica, Modelado 3D, Simulación, Armado de Piezas
-
-### Estación de Tierra:
-	Desarrollo de Software y Firmware, Electrónica.
