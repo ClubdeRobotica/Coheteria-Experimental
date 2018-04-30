@@ -18,10 +18,9 @@ y para comunicación de entre terminales es
 
 
 ## SpaceWire
-Fue desarrollado por la ESA y poco a poco se ha ido convirtiendo en el mas popular. Fue desarrollado específicamente para aplicaciones aeroespaciales. La norma define todo, y hay varias implementaciones libres en VHDL [1](http://publications.lib.chalmers.se/records/fulltext/157904.pdf) y C++ [2](https://github.com/yuasatakayuki/SpaceWireRMAPLibrary). Para mas info sobre el protocolo acá encontré un [Manual de Usuario](https://www.star-dundee.com/sites/default/files/SpaceWire%20User%27s%20Guide.pdf) y en la [Página Oficial](http://spacewire.esa.int/content/Home/HomeIntro.php) hay un montón de info para leer.
+Fue desarrollado por la ESA y poco a poco se ha ido convirtiendo en el mas popular. Fue desarrollado específicamente para aplicaciones aeroespaciales. La norma define todo, y hay varias implementaciones libres en VHDL [ [1](http://publications.lib.chalmers.se/records/fulltext/157904.pdf) ] y C++[ [2](https://github.com/yuasatakayuki/SpaceWireRMAPLibrary) ]. Para mas info sobre el protocolo acá encontré un [Manual de Usuario](https://www.star-dundee.com/sites/default/files/SpaceWire%20User%27s%20Guide.pdf) y en la [Página Oficial](http://spacewire.esa.int/content/Home/HomeIntro.php) hay un montón de info para leer.
 
-## Otros Protocolos
-Para aplicaciones menores, suelen usarse protocolos mas simples, encontré los protocolos ANSI/TIA/EIA-422-B y TIA/EIA-485-A basados en los buses rs422 y 485, pero no encontré mucha info sobre la aplicación.
+## CAN Bus
 Otro bastante sencillo y que se puede adoptar facilmente es el protocolo CAN, el estandar define dos tipos de tramas para el envío de datos y es facil de adoptar:
 Una trama de datos CAN puede ser de uno de los dos siguientes formatos:
 
@@ -31,3 +30,7 @@ Una trama de datos CAN puede ser de uno de los dos siguientes formatos:
 El estándar define tambien varios tipos de tramas según sea el estado del dispositivo. Mas info:
 * [Wikipedia](https://es.wikipedia.org/wiki/Bus_CAN#Tipos_de_trama)
 * [Protocolo de comunicaciones CAN aplicado a sistemas satelitales y vehículos lanzadores](http://sedici.unlp.edu.ar/bitstream/handle/10915/21218/Documento_completo.pdf?sequence=1)
+* [Un proyecto para implementar CAN en C](https://github.com/linux-can/can-utils)
+
+## Otros Protocolos
+Para aplicaciones menores, suelen usarse protocolos mas simples, encontré los protocolos ANSI/TIA/EIA-422-B y TIA/EIA-485-A basados en los buses rs422 y 485, pero no encontré mucha info sobre la aplicación.
