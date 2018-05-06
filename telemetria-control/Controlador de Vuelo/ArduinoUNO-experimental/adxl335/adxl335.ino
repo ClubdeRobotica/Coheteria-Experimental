@@ -13,6 +13,7 @@ void CanalADCSelect(uint8_t canal);
 void LeerADC (uint8_t canal, uint16_t *destino);
 void adc_ini();
 void adc_lec(uint16_t *xyz);
+void LeerTresEjes(uint16_t *destino);
 
 void setup() {
   Serial.begin(9600);
