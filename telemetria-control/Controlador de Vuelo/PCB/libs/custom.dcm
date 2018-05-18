@@ -64,6 +64,11 @@ D Connector, single row, 01x07
 K connector
 $ENDCMP
 #
+$CMP CP
+D Polarised capacitor
+K cap capacitor
+$ENDCMP
+#
 $CMP D
 D Diode
 K diode
