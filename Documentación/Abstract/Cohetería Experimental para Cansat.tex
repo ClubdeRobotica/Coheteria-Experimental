@@ -1,0 +1,78 @@
+%Esto es formato del Abstract por defecto
+\documentclass[a4paper]{article} %
+\usepackage{graphicx,amssymb} %
+
+\textwidth=15cm \hoffset=-1.2cm %
+\textheight=26cm \voffset=-1.5cm %
+
+\pagestyle{empty} %
+
+\date{\today} 
+
+\def\keywords#1{\begin{center}{\bf Keywords}\\{#1}\end{center}} %
+
+
+
+% No modificar las lineas anteriores
+
+
+\begin{document}
+
+\title{\textbf{Cohetería Experimental para Cansat}}
+
+\author{et al.$^{(1)}$ \\\\
+       $^{(1)}$ Club de Rob\'{o}tica, Universidad Tecnol\'{o}gica Nacional \\Facultad Regional C\'{o}rdoba. \\\\ \textbf{C\'{o}rdoba, Argentina}.\\ 
+       }
+
+\maketitle
+
+\thispagestyle{empty}
+%se crea la linea que separa el encabezado del documento
+\begin{center}\rule{0.9\textwidth}{0.1mm} \end{center} 
+
+%Comienza el texto
+
+\begin{abstract}
+El objetivo de este proyecto es desarrollar un lanzador de pequeñas dimensiones y que sirva para el trabajo con Cansats y tambien como una plataforma para el desarrollo de cohetes de mayores dimensiones capaces de poner una carga útil de hasta 50 Kg (como es el caso de un microsatélite en una orbita LEO). El proyecto tambien incluye el desarrollo de una estación terrena que sirva para adquirir y procesar toda la telemetría generada durante el vuelo. Todo el desarrollo será libre, con el fin de facilitar el acceso de estudiantes de la región a la cohetería experimental y al desarrollo de cansat como primer acercamiento a las tecnología aeroespaciales
+\vspace*{.15cm}
+
+\keywords{\textit{Lanzador, Cohetería Experimental, Inyector Orbital, Cansat}}
+
+\vspace*{.1cm}
+
+
+\vspace*{.3cm}
+\textbf{Estructura del Proyecto} \\
+Para lograr el desarrollo completo, se dividió el desarrollo en cuatro bloques principales, cada uno de ellos será trabajado como un bloque independiente:
+\begin{itemize}
+\item Placa de telemetría y control de Vuelo
+\item Estacion de Tierra
+\item Chasis del Cohete y sistema de recuperación
+\item Motor y Tobera
+\end{itemize}
+
+\vspace*{.3cm}
+%\textbf{Telemetry and Flight Control Board} \\
+\textbf{Placa de Control de Vuelo y Telemetría} \\
+El objetivo de este bloque es desarrollar un dispositivo autónomo capaz de medir todos los parámetros generados durante el vuelo, transmitirlos a la estación de tierra y almacenarlos en una caja negra para ser analizados en el caso de que ocurra alguna falla en el sistema.
+En caso de ser necesario, este bloque tambien se encargará de corregir la trayectoria del cohete para asegurar la mision.
+
+\vspace*{.3cm}
+\textbf{Estación de Tierra} \\
+Se trata de un dispositivo capaz de controlar el lanzamiento del cohete, recibir todos los parametros del vuelo, procesarlos para su analisis y enviar comandos al cohete para realizar correcciones a la trayectoria en caso de que aparezcan desviaciones.
+
+
+\vspace*{.3cm}
+\textbf{Chasis del Cohete y Sistema de Recuperación}
+El diseño final del cohete será el producto de la evaluación de varios diseños a escala de diferentes materiales con el fin de analizar la eficiencia de los diferentes diseños. 
+En un principio se planea lograr un pequeño lanzador de Cansat, para el cual se utilizarán tubos de carton y un sistema de recuperación sensillo que consiste simplemente en un paracaidas que desplegado al separarse la ojiva del cuerpo del cohete.
+
+\vspace*{.3cm}
+\textbf{Motor del Cohete} \\
+El principal objetivo de este bloque es generar un entorno de desarrollo seguro para motores de propelente sólido, el cual consiste en un banco de pruebas para motores y un sistema de adquisición de datos que permita evaluar y comparar la eficiencia de las distintas mezclas de propelente. Completado el banco de pruebas se pretende desarrollar un pequeño motor capaz de impulsar el cohete.
+
+\end{abstract}
+
+
+
+\end{document}
