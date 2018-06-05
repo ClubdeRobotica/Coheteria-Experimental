@@ -1,0 +1,57 @@
+%Esto es formato del Abstract por defecto
+\documentclass[a4paper]{article} %
+\usepackage{graphicx,amssymb} %
+\usepackage[utf8]{inputenc}
+
+\textwidth=15cm \hoffset=-1.2cm %
+\textheight=26cm \voffset=-1.5cm %
+
+\pagestyle{empty} %
+
+\date{\today} 
+
+\def\keywords#1{\begin{center}{\bf Keywords}\\{#1}\end{center}} %
+
+
+
+% No modificar las lineas anteriores
+
+
+\begin{document}
+
+\title{\textbf{Cohetería Experimental para Cansat}}
+
+\author{et al.$^{(1)}$ \\\\
+       $^{(1)}$ Club de Rob\'{o}tica, Universidad Tecnol\'{o}gica Nacional \\Facultad Regional C\'{o}rdoba. \\\\ \textbf{C\'{o}rdoba, Argentina}.\\ 
+       }
+
+\maketitle
+
+\thispagestyle{empty}
+%se crea la linea que separa el encabezado del documento
+\begin{center}\rule{0.9\textwidth}{0.1mm} \end{center} 
+
+%Comienza el texto
+
+\begin{abstract}
+El objetivo de este proyecto es desarrollar un lanzador de pequeñas dimensiones y que sirva para el trabajo con Cansats y tambien como una plataforma para el desarrollo de cohetes de mayores dimensiones capaces de poner una carga útil de hasta 50 Kg (como es el caso de un microsatélite en una orbita LEO). El proyecto tambien incluye el desarrollo de una estación terrena que sirva para adquirir y procesar toda la telemetría generada durante el vuelo. Todo el desarrollo será libre, con el fin de facilitar el acceso de estudiantes de la región a la cohetería experimental y al desarrollo de cansat como primer acercamiento a las tecnología aeroespaciales
+\vspace*{.15cm}
+
+\keywords{\textit{Lanzador, Cohetería Experimental, Inyector Orbital, Cansat}}
+
+\vspace*{.1cm}
+\end{abstract}
+
+\section{Placa de Control de Vuelo y Telemetría}
+Se está desarrollando un pequeño controlador de vuelo de poco alcance basado en el módulo ESP8266, el cual cuenta con un microcontrolador de 32bits y una interfaz de conexión de Wifi. Dicho módulo controla un par barometros digitales BMP180 para determinar la altura del cohete y un par de acelerómetros analógicos de tres ejes
+
+\section{Estación de tierra}
+Consiste por ahora simplemente de un AP Master conectado a una PC en la cual se ejecuta un sofware que recibe los datos
+
+\section{Chasis del Cohete y sistema de Recuperación}
+
+
+\section{Motor del Cohete}
+
+
+\end{document}
