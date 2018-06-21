@@ -702,7 +702,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 4050 6350 4050
 Wire Wire Line
-	2900 3400 5700 3400
+	2900 3400 5950 3400
 Wire Wire Line
 	1950 1950 1950 2050
 Connection ~ 1950 2000
