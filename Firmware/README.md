@@ -35,12 +35,23 @@ tar -xzf ~/Downloads/https://dl.espressif.com/dl/xtensa-lx106-elf-linux64-1.22.0
 ### Grabar el ESP desde Eclipse
 Con todo configurado, se puede grabar el modulo directamente desde eclipse.Flash from Eclipse:
 
-* Clic derecho sobre el proyecto en Project Explorer
+* Clic derecho sobre el proyecto en el Project Explorer
 * Seleccionar Build Targets -> Create
 * Ponemos como nombre flash dejando el resto de las opciones sin cambios
 * Una vez hecho esto, se puede grabar con Shif+F9
 
+### Commit y Push desde Eclipse:
+Si se importo el proyecto desde una copia local del repositorio, se puede hacer commit y push del proyecto desde eclipse:
+* Clic derecho sobre el proyecto en el Project Explorer
+* Seleccionar Team -> Commit...
+* En el panel inferior aparece el cuadro de dialogo de Git Staging, asegurarse que todos los archivos que modificamos esten marcados para subirse
+* Escribir un comentario sobre los cambios que se hicieron en Commit Message
+* Presionar el boton Commit and Push, se abrira el cuadro de dialogo de loggin y se carga sube el proyecto.
+
 
 ## Estado del Proyecto
+
 Todavia no hace nada, es solo un ejemplo para poder configurar el IDE
+
+
 
