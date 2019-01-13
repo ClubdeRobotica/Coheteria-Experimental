@@ -26,18 +26,14 @@
 static const char *TAG = "main";
 
 
-static xQueueHandle gpio_evt_queue = NULL;
-
-
 static void gpio_task_example(void *arg)
 {
-    uint32_t io_num;
-
     for (;;) {
-        gpio_set_level(GPIO_LED, 1);
-        vTaskDelay(5000);
-        gpio_set_level(GPIO_LED, 0);
-        vTaskDelay(5000);
+
+        gpio_set_level(GPIO_OUTPUT_PIN_SEL, 1);
+        vTaskDelay(1000 / portTICK_RATE_MS);
+        gpio_set_level(GPIO_OUTPUT_PIN_SEL, 0);
+        vTaskDelay(1000 / portTICK_RATE_MS);
     }
 }
 
@@ -57,8 +53,6 @@ void app_main(void)
     //configure GPIO with the given settings
     gpio_config(&io_conf);
 
-    //create a queue to handle gpio event from isr
-    gpio_evt_queue = xQueueCreate(10, sizeof(uint32_t));
     //start gpio task
     xTaskCreate(gpio_task_example, "gpio_task_example", 2048, NULL, 10, NULL);
 
