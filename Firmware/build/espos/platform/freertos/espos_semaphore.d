@@ -6,7 +6,7 @@ platform/freertos/espos_semaphore.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/features.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/_intsup.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdlib.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/machine/ieeefp.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/_ansi.h \
@@ -78,7 +78,7 @@ platform/freertos/espos_semaphore.o: \
 
 /home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdlib.h:
 

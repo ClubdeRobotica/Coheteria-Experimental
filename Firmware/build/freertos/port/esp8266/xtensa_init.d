@@ -12,7 +12,7 @@ port/esp8266/xtensa_init.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/xtensa_context.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/xtensa_timer.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdlib.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/machine/ieeefp.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/_ansi.h \
@@ -58,7 +58,7 @@ port/esp8266/xtensa_init.o: \
 
 /home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdlib.h:
 

@@ -27,7 +27,7 @@ port/randombytes_esp8266.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/reent.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/stdio.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/assert.h \
- /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h
 
 /home/german/esp/ESP8266_RTOS_SDK/components/libsodium/port/randombytes_default.h:
 
@@ -83,5 +83,5 @@ port/randombytes_esp8266.o: \
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/assert.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h:
 /home/german/esp/ESP8266_RTOS_SDK/components/libsodium/port/randombytes_esp8266.c:

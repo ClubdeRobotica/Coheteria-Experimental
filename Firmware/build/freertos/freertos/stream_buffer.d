@@ -19,7 +19,7 @@ freertos/stream_buffer.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/string.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdlib.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/machine/stdlib.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/alloca.h \
@@ -95,7 +95,7 @@ freertos/stream_buffer.o: \
 
 /home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdlib.h:
 

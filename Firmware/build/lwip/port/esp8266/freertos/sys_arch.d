@@ -30,7 +30,7 @@ port/esp8266/freertos/sys_arch.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/limits.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/opt.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include/lwipopts.h \
- /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_libc.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/heap/include/esp_heap_caps.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_err.h \
@@ -133,7 +133,7 @@ port/esp8266/freertos/sys_arch.o: \
 
 /home/german/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include/lwipopts.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_libc.h:
 

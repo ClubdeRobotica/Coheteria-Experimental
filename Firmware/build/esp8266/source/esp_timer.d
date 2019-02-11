@@ -24,7 +24,7 @@ source/esp_timer.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_err.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/assert.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/heap/include/esp_heap_caps.h \
- /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/heap/port/esp8266/include/esp_heap_config.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h \
@@ -107,7 +107,7 @@ source/esp_timer.o: \
 
 /home/german/esp/ESP8266_RTOS_SDK/components/heap/include/esp_heap_caps.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/heap/port/esp8266/include/esp_heap_config.h:
 

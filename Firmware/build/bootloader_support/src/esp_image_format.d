@@ -1,6 +1,6 @@
 src/esp_image_format.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/bootloader_support/src/esp_image_format.c \
- /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/string.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/_ansi.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/newlib.h \
@@ -46,7 +46,7 @@ src/esp_image_format.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_random.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_sha.h
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/string.h:
 

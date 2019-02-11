@@ -1,6 +1,6 @@
 src/bootloader_utility.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/bootloader_support/src/bootloader_utility.c \
- /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/../include/sdkconfig.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/../include/sdkconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_config.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/spi_flash/include/esp_flash_data_types.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_utility.h \
@@ -17,7 +17,7 @@ src/bootloader_utility.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log_internal.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/bootloader_support/include/esp_flash_partitions.h
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/../include/sdkconfig.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/../include/sdkconfig.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_config.h:
 

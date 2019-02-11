@@ -1,6 +1,6 @@
 source/esp_wifi.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/source/esp_wifi.c \
- /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_libc.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdint.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/machine/_default_types.h \
@@ -86,7 +86,7 @@ source/esp_wifi.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/source/phy.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_phy_init.h
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_libc.h:
 

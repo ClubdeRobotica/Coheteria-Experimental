@@ -1,7 +1,7 @@
 port/esp8266/esp_heap_init.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/heap/port/esp8266/esp_heap_init.c \
  /home/german/esp/ESP8266_RTOS_SDK/components/heap/include/esp_heap_caps.h \
- /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdint.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/machine/_default_types.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/features.h \
@@ -28,7 +28,7 @@ port/esp8266/esp_heap_init.o: \
 
 /home/german/esp/ESP8266_RTOS_SDK/components/heap/include/esp_heap_caps.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdint.h:
 

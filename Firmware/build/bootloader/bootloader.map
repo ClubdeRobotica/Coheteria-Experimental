@@ -1,183 +1,187 @@
 Archive member included to satisfy reference by file (symbol)
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
                               (call_start_cpu)
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
-                              /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o) (bootloader_init)
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
-                              /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o) (bootloader_utility_load_partition_table)
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
-                              /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o) (bootloader_common_ota_select_valid)
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
-                              /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o) (esp_partition_table_basic_verify)
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
-                              /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o) (esp_image_load)
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
-                              /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o) (bootloader_mmap)
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
-                              /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o) (flashchip)
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
-                              /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o) (spi_flash_get_id_raw)
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o)
-                              /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o) (esp_log_early_timestamp)
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
-                              /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o) (ets_vprintf)
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
-                              /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o) (crc32_le)
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                              /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o) (bootloader_init)
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                              /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o) (bootloader_utility_load_partition_table)
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+                              /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o) (bootloader_common_ota_select_valid)
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+                              /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o) (esp_partition_table_basic_verify)
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                              /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o) (esp_image_load)
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                              /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o) (bootloader_mmap)
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                              /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o) (flashchip)
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                              /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o) (spi_flash_get_id_raw)
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+                              /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o) (esp_log_early_timestamp)
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+                              /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o) (ets_vprintf)
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
+                              /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o) (crc32_le)
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libcore.a(phy.o)
-                              /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o) (phy_reg_default)
+                              /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o) (phy_reg_default)
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libcore.a(uart.o)
-                              /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o) (uart_div_modify)
+                              /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o) (uart_div_modify)
 
 Allocating common symbols
 Common symbol       size              file
 
 esp_image_spi_freq_t
-                    0x4               /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
+                    0x4               /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
 
 Discarded input sections
 
- .text          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
- .data          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
- .bss           0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
- .xt.lit        0x0000000000000000       0x18 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
- .xt.prop       0x0000000000000000       0xe4 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
- COMMON         0x0000000000000000        0x4 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
- .text          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .data          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .bss           0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .xt.lit        0x0000000000000000       0x28 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .xt.prop       0x0000000000000000      0x27c /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .text          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .data          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .bss           0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .xt.lit        0x0000000000000000       0x30 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .xt.prop       0x0000000000000000      0x504 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .text          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
+ .data          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
+ .bss           0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
+ .xt.lit        0x0000000000000000       0x18 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
+ .xt.prop       0x0000000000000000       0xe4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
+ COMMON         0x0000000000000000        0x4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
+ .text          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ .data          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ .bss           0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ .xt.lit        0x0000000000000000       0x28 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ .xt.prop       0x0000000000000000      0x258 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ .text          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .data          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .bss           0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .xt.lit        0x0000000000000000       0x30 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .xt.prop       0x0000000000000000      0x504 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
  .literal.bootloader_common_check_long_hold_gpio
-                0x0000000000000000       0x58 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .text          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .data          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .bss           0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+                0x0000000000000000       0x58 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .text          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .data          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .bss           0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
  .text.bootloader_common_check_long_hold_gpio
-                0x0000000000000000      0x24a /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .xt.lit        0x0000000000000000       0x18 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .xt.prop       0x0000000000000000      0x420 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .text          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .data          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .bss           0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .xt.lit        0x0000000000000000        0x8 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .xt.prop       0x0000000000000000       0xfc /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+                0x0000000000000000      0x22c /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .xt.lit        0x0000000000000000       0x18 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .xt.prop       0x0000000000000000      0x420 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .text          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .data          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .bss           0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .xt.lit        0x0000000000000000        0x8 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .xt.prop       0x0000000000000000       0xfc /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
  .literal.esp_image_verify_bootloader
-                0x0000000000000000        0x8 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .text          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .data          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .bss           0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000000000000        0x8 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .text          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .data          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .bss           0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
  .text.esp_image_verify_bootloader
-                0x0000000000000000       0x41 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .xt.lit        0x0000000000000000       0x40 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .xt.prop       0x0000000000000000      0x480 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000000000000       0x41 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .xt.lit        0x0000000000000000       0x40 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .xt.prop       0x0000000000000000      0x474 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
  .literal.bootloader_flash_write
-                0x0000000000000000       0x28 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000000000000       0x28 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
  .literal.bootloader_flash_erase_sector
-                0x0000000000000000        0x4 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .text          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .data          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .bss           0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000000000000        0x4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .text          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .data          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .bss           0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
  .text.bootloader_flash_write
-                0x0000000000000000       0x9d /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000000000000       0x9d /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
  .text.bootloader_flash_erase_sector
-                0x0000000000000000       0x15 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .xt.lit        0x0000000000000000       0x30 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .xt.prop       0x0000000000000000      0x204 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000000000000       0x15 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .xt.lit        0x0000000000000000       0x30 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .xt.prop       0x0000000000000000      0x204 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
  .literal.spi_flash_program
-                0x0000000000000000       0x20 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000000000000       0x20 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .literal.__spi_flash_write
-                0x0000000000000000        0x8 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000000000000        0x8 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .literal.__spi_flash_read
-                0x0000000000000000       0x10 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000000000000       0x10 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .literal.spi_flash_write_status
-                0x0000000000000000        0xc /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000000000000        0xc /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .literal.spi_flash_check_wr_protect
-                0x0000000000000000       0x4c /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000000000000       0x4c /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .literal.spi_flash_erase_sector
-                0x0000000000000000       0x18 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000000000000       0x18 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .literal.spi_flash_read
-                0x0000000000000000       0x24 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000000000000       0x24 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .literal.spi_flash_write
-                0x0000000000000000       0x3c /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000000000000       0x3c /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .literal.spi_flash_erase_range
-                0x0000000000000000       0x10 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
- .text          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
- .data          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
- .bss           0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000000000000       0x10 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+ .literal.spi_flash_cache2phys
+                0x0000000000000000       0x14 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+ .text          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+ .data          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+ .bss           0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .text.spi_flash_program
-                0x0000000000000000       0xd3 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000000000000       0xcb /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .text.__spi_flash_write
-                0x0000000000000000       0x23 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000000000000       0x23 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .text.__spi_flash_read
-                0x0000000000000000       0x35 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000000000000       0x31 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .text.spi_flash_write_status
-                0x0000000000000000       0x2a /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000000000000       0x2a /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .text.spi_flash_check_wr_protect
-                0x0000000000000000      0x161 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000000000000      0x161 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .text.spi_flash_erase_sector
-                0x0000000000000000       0x5a /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000000000000       0x56 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .text.spi_flash_read
-                0x0000000000000000      0x10e /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000000000000      0x110 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .text.spi_flash_write
-                0x0000000000000000      0x188 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000000000000      0x170 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .text.spi_flash_erase_range
-                0x0000000000000000       0x6f /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
- .xt.lit        0x0000000000000000       0xc0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
- .xt.prop       0x0000000000000000      0xb4c /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000000000000       0x6d /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+ .text.spi_flash_cache2phys
+                0x0000000000000000       0x48 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+ .xt.lit        0x0000000000000000       0xc8 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+ .xt.prop       0x0000000000000000      0xbac /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .literal.spi_flash_write_status_raw
-                0x0000000000000000       0x1c /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x0000000000000000       0x1c /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
  .literal.spi_flash_erase_sector_raw
-                0x0000000000000000       0x14 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x0000000000000000       0x14 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
  .literal.spi_flash_write_raw
-                0x0000000000000000        0xc /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x0000000000000000        0xc /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
  .literal.spi_flash_read_raw
-                0x0000000000000000        0xc /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
- .text          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
- .data          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
- .bss           0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x0000000000000000        0xc /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+ .text          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+ .data          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+ .bss           0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
  .text.spi_flash_write_status_raw
-                0x0000000000000000       0x5e /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x0000000000000000       0x5c /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
  .text.spi_flash_erase_sector_raw
-                0x0000000000000000       0x54 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x0000000000000000       0x54 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
  .text.spi_flash_write_raw
-                0x0000000000000000       0x43 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x0000000000000000       0x43 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
  .text.spi_flash_read_raw
-                0x0000000000000000       0x43 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
- .xt.lit        0x0000000000000000       0x58 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
- .xt.prop       0x0000000000000000      0x360 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
- .text          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o)
- .data          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o)
- .bss           0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o)
- .xt.lit        0x0000000000000000        0x8 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o)
- .xt.prop       0x0000000000000000       0xb4 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o)
- .text          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
- .data          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
- .bss           0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
- .xt.lit        0x0000000000000000       0x20 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
- .xt.prop       0x0000000000000000       0xd8 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+                0x0000000000000000       0x43 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+ .xt.lit        0x0000000000000000       0x58 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+ .xt.prop       0x0000000000000000      0x360 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+ .text          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+ .data          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+ .bss           0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+ .xt.lit        0x0000000000000000        0x8 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+ .xt.prop       0x0000000000000000       0xb4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+ .text          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+ .data          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+ .bss           0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+ .xt.lit        0x0000000000000000       0x20 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+ .xt.prop       0x0000000000000000       0xcc /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
  .literal.crc16_le
-                0x0000000000000000        0x4 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
+                0x0000000000000000        0x4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
  .literal.esp_crc8
-                0x0000000000000000        0x4 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
- .text          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
- .data          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
- .bss           0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
+                0x0000000000000000        0x4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
+ .text          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
+ .data          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
+ .bss           0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
  .text.crc16_le
-                0x0000000000000000       0x36 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
+                0x0000000000000000       0x39 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
  .text.esp_crc8
-                0x0000000000000000       0x22 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
+                0x0000000000000000       0x21 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
  .rodata.crc8_le_table
-                0x0000000000000000      0x100 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
+                0x0000000000000000      0x100 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
  .rodata.crc16_le_table
-                0x0000000000000000      0x200 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
- .xt.lit        0x0000000000000000       0x18 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
- .xt.prop       0x0000000000000000       0xfc /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
+                0x0000000000000000      0x200 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
+ .xt.lit        0x0000000000000000       0x18 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
+ .xt.prop       0x0000000000000000       0xfc /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
  .literal.phy_reg_default
                 0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libcore.a(phy.o)
  .text          0x0000000000000000        0x0 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libcore.a(phy.o)
@@ -205,26 +209,26 @@ Memory Configuration
 
 Name             Origin             Length             Attributes
 dport0_seg       0x000000003ff00000 0x0000000000000010
-dram_seg         0x000000003ffe8000 0x0000000000018000
+dram_seg         0x000000003ffe8000 0x0000000000017c00
 iram_seg         0x0000000040100000 0x0000000000008000
 *default*        0x0000000000000000 0xffffffffffffffff
 
 Linker script and memory map
 
 START GROUP
-LOAD /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a
+LOAD /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a
 LOAD /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libcore.a
-LOAD /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a
-LOAD /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a
-LOAD /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a
-LOAD /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a
-LOAD /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a
+LOAD /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a
+LOAD /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a
+LOAD /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a
+LOAD /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a
+LOAD /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a
 LOAD /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a
-LOAD /home/german/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/4.8.5/../../../../xtensa-lx106-elf/lib/libstdc++.a
-LOAD /home/german/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/4.8.5/libgcov.a
+LOAD /home/german/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/../../../../xtensa-lx106-elf/lib/libstdc++.a
+LOAD /home/german/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/libgcov.a
 END GROUP
 
-.text           0x0000000040100000     0x1c36
+.text           0x0000000040100000     0x1c12
                 0x0000000040100000                _stext = .
                 0x0000000040100000                _text_start = ABSOLUTE (.)
                 0x0000000040100000                . = ALIGN (0x10)
@@ -233,450 +237,463 @@ END GROUP
  *(.init)
  *(.literal .text .literal.* .text.* .stub .gnu.warning .gnu.linkonce.literal.* .gnu.linkonce.t.*.literal .gnu.linkonce.t.*)
  .literal.selected_boot_partition
-                0x0000000040100000        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040100000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
                                           0x4 (size before relaxing)
  .literal.select_image
-                0x0000000040100000        0xc /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040100000        0xc /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x1c (size before relaxing)
  .literal.call_start_cpu
-                0x000000004010000c        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x000000004010000c        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
                                           0xc (size before relaxing)
  .literal.print_flash_info
-                0x000000004010000c       0x48 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                0x000000004010000c       0x48 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
                                          0x54 (size before relaxing)
  .literal.uart_console_configure
-                0x0000000040100054        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                0x0000000040100054        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
                                           0x4 (size before relaxing)
  .literal.update_flash_config
-                0x0000000040100054        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
-                                          0x4 (size before relaxing)
+                0x0000000040100054        0x4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                                          0x8 (size before relaxing)
  .literal.bootloader_main
-                0x0000000040100054       0x10 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                0x0000000040100058       0x10 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
                                          0x34 (size before relaxing)
  .literal.bootloader_init
-                0x0000000040100064        0x8 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                0x0000000040100068        0x8 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
                                          0x10 (size before relaxing)
  .literal.log_invalid_app_partition
-                0x000000004010006c       0x14 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x0000000040100070       0x14 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
                                          0x20 (size before relaxing)
  .literal.try_load_partition
-                0x0000000040100080        0x4 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x0000000040100084        0x4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
                                          0x10 (size before relaxing)
  .literal.bootloader_utility_load_partition_table
-                0x0000000040100084       0x48 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x0000000040100088       0x48 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
                                          0x70 (size before relaxing)
  .literal.bootloader_utility_get_selected_boot_partition
-                0x00000000401000cc       0x1c /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x00000000401000d0       0x1c /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
                                          0x5c (size before relaxing)
  .literal.bootloader_utility_load_boot_image
-                0x00000000401000e8        0xc /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x00000000401000ec        0xc /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
                                          0x40 (size before relaxing)
  .literal.bootloader_utility_load_image
-                0x00000000401000f4       0x14 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x00000000401000f8       0x14 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
                                          0x1c (size before relaxing)
  .literal.bootloader_common_ota_select_crc
-                0x0000000040100108        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+                0x000000004010010c        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
                                           0x4 (size before relaxing)
  .literal.bootloader_common_ota_select_valid
-                0x0000000040100108        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+                0x000000004010010c        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
                                           0x4 (size before relaxing)
  .literal.esp_partition_table_basic_verify
-                0x0000000040100108       0x1c /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+                0x000000004010010c       0x1c /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
                                          0x2c (size before relaxing)
  .literal.should_map
-                0x0000000040100124        0x4 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040100128        0x4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                           0x8 (size before relaxing)
  .literal.should_load
-                0x0000000040100128        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x000000004010012c        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                           0x4 (size before relaxing)
  .literal.verify_image_header
-                0x0000000040100128       0x14 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x000000004010012c       0x14 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x20 (size before relaxing)
  .literal.process_segment_data
-                0x000000004010013c        0x8 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040100140        0x8 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x14 (size before relaxing)
  .literal.verify_checksum
-                0x0000000040100144        0x8 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040100148        0x8 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x1c (size before relaxing)
  .literal.process_segment
-                0x000000004010014c       0x18 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040100150       0x18 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x40 (size before relaxing)
  .literal.esp_image_load
-                0x0000000040100164       0x14 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040100168       0x14 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x44 (size before relaxing)
  .literal.bootloader_flash_read_no_decrypt
-                0x0000000040100178        0x4 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x000000004010017c        0x4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
  .literal.bootloader_mmap
-                0x000000004010017c       0x14 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000040100180       0x10 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
                                          0x28 (size before relaxing)
  .literal.bootloader_munmap
-                0x0000000040100190        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000040100190        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
                                           0x8 (size before relaxing)
  .literal.bootloader_flash_read
-                0x0000000040100190        0xc /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000040100190        0xc /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
                                          0x20 (size before relaxing)
  .literal.spi_user_cmd
-                0x000000004010019c        0x4 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x000000004010019c        0x4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                           0xc (size before relaxing)
  .literal.special_flash_read_status
-                0x00000000401001a0        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401001a0        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                           0x4 (size before relaxing)
  .literal.flash_gd25q32c_read_status
-                0x00000000401001a0        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401001a0        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                           0x4 (size before relaxing)
  .literal.special_flash_write_status
-                0x00000000401001a0        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401001a0        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                           0x8 (size before relaxing)
  .literal.spi_flash_enable_qio_bit6
-                0x00000000401001a0        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401001a0        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                           0x4 (size before relaxing)
  .literal.flash_gd25q32c_write_status
-                0x00000000401001a0        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401001a0        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                           0x4 (size before relaxing)
  .literal.flash_gd25q32c_enable_QIO_mode
-                0x00000000401001a0        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401001a0        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                           0xc (size before relaxing)
  .literal.en25q16x_read_sfdp
-                0x00000000401001a0        0x4 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401001a0        0x4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                           0x8 (size before relaxing)
  .literal.spi_flash_get_id
-                0x00000000401001a4        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401001a4        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                           0xc (size before relaxing)
  .literal.spi_flash_read_status
-                0x00000000401001a4        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401001a4        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                           0xc (size before relaxing)
  .literal.spi_flash_issi_enable_QIO_mode
-                0x00000000401001a4        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401001a4        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                           0xc (size before relaxing)
  .literal.special_flash_set_mode
-                0x00000000401001a4        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401001a4        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                           0x8 (size before relaxing)
  .literal.en25q16x_write_volatile_status
-                0x00000000401001a4        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401001a4        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                          0x14 (size before relaxing)
  .literal.user_spi_flash_dio_to_qio_pre_init
-                0x00000000401001a4       0x10 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401001a4       0x10 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                          0x34 (size before relaxing)
  .literal.esp_spi_flash_init
-                0x00000000401001b4       0x20 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401001b4       0x20 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                          0x28 (size before relaxing)
  .literal.Cache_Read_Disable_2
-                0x00000000401001d4        0xc /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x00000000401001d4        0xc /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
                                          0x10 (size before relaxing)
  .literal.Cache_Read_Enable_2
-                0x00000000401001e0        0x4 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x00000000401001e0        0x4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
                                           0xc (size before relaxing)
  .literal.spi_flash_get_id_raw
-                0x00000000401001e4       0x10 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x00000000401001e4       0x10 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
                                          0x1c (size before relaxing)
  .literal.spi_flash_read_status_raw
-                0x00000000401001f4        0x4 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x00000000401001f4        0x4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
                                           0xc (size before relaxing)
  .literal.spi_flash_enable_qmode_raw
-                0x00000000401001f8        0x4 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x00000000401001f8        0x4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
                                          0x10 (size before relaxing)
  .literal.spi_user_cmd_raw
-                0x00000000401001fc       0x64 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x00000000401001fc       0x64 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
                                          0x8c (size before relaxing)
  .literal.spi_flash_switch_to_qio_raw
-                0x0000000040100260        0x8 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x0000000040100260        0x8 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
                                           0xc (size before relaxing)
  .literal.uart_putc
-                0x0000000040100268        0xc /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+                0x0000000040100268        0xc /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
  .literal.ets_putc
-                0x0000000040100274        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+                0x0000000040100274        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
                                           0x8 (size before relaxing)
  .literal.ets_vprintf
-                0x0000000040100274        0x8 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+                0x0000000040100274        0x8 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
  .literal.ets_printf
-                0x000000004010027c        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+                0x000000004010027c        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
                                           0x4 (size before relaxing)
  .literal.crc32_le
-                0x000000004010027c        0x4 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
+                0x000000004010027c        0x4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
  .iram1.literal
-                0x0000000040100280       0x24 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o)
+                0x0000000040100280       0x24 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
                                          0x38 (size before relaxing)
  .text.selected_boot_partition
-                0x00000000401002a4        0xf /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x00000000401002a4        0xf /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x13 (size before relaxing)
  *fill*         0x00000000401002b3        0x1 
  .text.select_image
-                0x00000000401002b4       0x68 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x00000000401002b4       0x68 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x70 (size before relaxing)
  .text.call_start_cpu
-                0x000000004010031c       0x26 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x000000004010031c       0x26 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x2e (size before relaxing)
                 0x000000004010031c                call_start_cpu
  *fill*         0x0000000040100342        0x2 
  .text.print_flash_info
-                0x0000000040100344       0xce /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
-                                         0xd2 (size before relaxing)
- *fill*         0x0000000040100412        0x2 
+                0x0000000040100344       0xc6 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                                         0xca (size before relaxing)
+ *fill*         0x000000004010040a        0x2 
  .text.uart_console_configure
-                0x0000000040100414       0x17 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- *fill*         0x000000004010042b        0x1 
+                0x000000004010040c       0x17 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ *fill*         0x0000000040100423        0x1 
  .text.update_flash_config
-                0x000000004010042c       0x1d /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- *fill*         0x0000000040100449        0x3 
+                0x0000000040100424       0x21 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ *fill*         0x0000000040100445        0x3 
  .text.bootloader_main
-                0x000000004010044c       0x63 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
-                                         0x77 (size before relaxing)
- *fill*         0x00000000401004af        0x1 
+                0x0000000040100448       0x61 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                                         0x79 (size before relaxing)
+ *fill*         0x00000000401004a9        0x3 
  .text.bootloader_init
-                0x00000000401004b0       0x2e /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
-                0x00000000401004b0                bootloader_init
- *fill*         0x00000000401004de        0x2 
+                0x00000000401004ac       0x25 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                                         0x29 (size before relaxing)
+                0x00000000401004ac                bootloader_init
+ *fill*         0x00000000401004d1        0x3 
  .text.log_invalid_app_partition
-                0x00000000401004e0       0x50 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x00000000401004d4       0x4b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                                         0x53 (size before relaxing)
+ *fill*         0x000000004010051f        0x1 
  .text.try_load_partition
-                0x0000000040100530       0x3d /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x0000000040100520       0x3d /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
                                          0x41 (size before relaxing)
- *fill*         0x000000004010056d        0x3 
+ *fill*         0x000000004010055d        0x3 
  .text.bootloader_utility_load_partition_table
-                0x0000000040100570      0x16c /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
-                                        0x180 (size before relaxing)
-                0x0000000040100570                bootloader_utility_load_partition_table
+                0x0000000040100560      0x16d /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                                        0x181 (size before relaxing)
+                0x0000000040100560                bootloader_utility_load_partition_table
+ *fill*         0x00000000401006cd        0x3 
  .text.bootloader_utility_get_selected_boot_partition
-                0x00000000401006dc      0x147 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
-                                        0x157 (size before relaxing)
-                0x00000000401006dc                bootloader_utility_get_selected_boot_partition
- *fill*         0x0000000040100823        0x1 
+                0x00000000401006d0      0x146 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                                        0x15e (size before relaxing)
+                0x00000000401006d0                bootloader_utility_get_selected_boot_partition
+ *fill*         0x0000000040100816        0x2 
  .text.bootloader_utility_load_boot_image
-                0x0000000040100824       0xd5 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
-                                         0xf9 (size before relaxing)
-                0x0000000040100824                bootloader_utility_load_boot_image
- *fill*         0x00000000401008f9        0x3 
+                0x0000000040100818       0xd6 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                                         0xfa (size before relaxing)
+                0x0000000040100818                bootloader_utility_load_boot_image
+ *fill*         0x00000000401008ee        0x2 
  .text.bootloader_utility_load_image
-                0x00000000401008fc       0x69 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
-                0x00000000401008fc                bootloader_utility_load_image
- *fill*         0x0000000040100965        0x3 
+                0x00000000401008f0       0x69 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x00000000401008f0                bootloader_utility_load_image
+ *fill*         0x0000000040100959        0x3 
  .text.bootloader_common_ota_select_crc
-                0x0000000040100968       0x18 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
-                0x0000000040100968                bootloader_common_ota_select_crc
+                0x000000004010095c       0x18 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+                0x000000004010095c                bootloader_common_ota_select_crc
  .text.bootloader_common_ota_select_valid
-                0x0000000040100980       0x2c /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
-                0x0000000040100980                bootloader_common_ota_select_valid
+                0x0000000040100974       0x2c /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+                0x0000000040100974                bootloader_common_ota_select_valid
  .text.esp_partition_table_basic_verify
-                0x00000000401009ac       0xeb /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
-                                         0xef (size before relaxing)
-                0x00000000401009ac                esp_partition_table_basic_verify
- *fill*         0x0000000040100a97        0x1 
+                0x00000000401009a0       0xe7 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+                                         0xeb (size before relaxing)
+                0x00000000401009a0                esp_partition_table_basic_verify
+ *fill*         0x0000000040100a87        0x1 
  .text.should_map
-                0x0000000040100a98       0x15 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- *fill*         0x0000000040100aad        0x3 
+                0x0000000040100a88       0x15 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ *fill*         0x0000000040100a9d        0x3 
  .text.should_load
-                0x0000000040100ab0       0x19 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040100aa0       0x19 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x1d (size before relaxing)
- *fill*         0x0000000040100ac9        0x3 
+ *fill*         0x0000000040100ab9        0x3 
  .text.verify_image_header
-                0x0000000040100acc       0x7d /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040100abc       0x7d /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x85 (size before relaxing)
- *fill*         0x0000000040100b49        0x3 
+ *fill*         0x0000000040100b39        0x3 
  .text.process_segment_data
-                0x0000000040100b4c       0x87 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040100b3c       0x87 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x8f (size before relaxing)
- *fill*         0x0000000040100bd3        0x1 
+ *fill*         0x0000000040100bc3        0x1 
  .text.verify_checksum
-                0x0000000040100bd4       0x94 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
-                                         0x9c (size before relaxing)
+                0x0000000040100bc4       0x92 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                                         0x9a (size before relaxing)
+ *fill*         0x0000000040100c56        0x2 
  .text.process_segment
-                0x0000000040100c68      0x115 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
-                                        0x125 (size before relaxing)
- *fill*         0x0000000040100d7d        0x3 
+                0x0000000040100c58      0x11a /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                                        0x12a (size before relaxing)
+ *fill*         0x0000000040100d72        0x2 
  .text.esp_image_load
-                0x0000000040100d80      0x198 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
-                                        0x1a8 (size before relaxing)
-                0x0000000040100d80                esp_image_load
+                0x0000000040100d74      0x193 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                                        0x1ab (size before relaxing)
+                0x0000000040100d74                esp_image_load
+ *fill*         0x0000000040100f07        0x1 
  .text.bootloader_flash_read_no_decrypt
-                0x0000000040100f18       0x15 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- *fill*         0x0000000040100f2d        0x3 
+                0x0000000040100f08       0x15 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ *fill*         0x0000000040100f1d        0x3 
  .text.bootloader_mmap
-                0x0000000040100f30       0x63 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000040100f20       0x63 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
                                          0x67 (size before relaxing)
-                0x0000000040100f30                bootloader_mmap
- *fill*         0x0000000040100f93        0x1 
+                0x0000000040100f20                bootloader_mmap
+ *fill*         0x0000000040100f83        0x1 
  .text.bootloader_munmap
-                0x0000000040100f94       0x23 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
-                0x0000000040100f94                bootloader_munmap
- *fill*         0x0000000040100fb7        0x1 
+                0x0000000040100f84       0x23 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000040100f84                bootloader_munmap
+ *fill*         0x0000000040100fa7        0x1 
  .text.bootloader_flash_read
-                0x0000000040100fb8       0x68 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
-                0x0000000040100fb8                bootloader_flash_read
+                0x0000000040100fa8       0x62 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                                         0x65 (size before relaxing)
+                0x0000000040100fa8                bootloader_flash_read
+ *fill*         0x000000004010100a        0x2 
  .text.spi_user_cmd
-                0x0000000040101020       0x4f /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
-                0x0000000040101020                spi_user_cmd
- *fill*         0x000000004010106f        0x1 
+                0x000000004010100c       0x4d /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x000000004010100c                spi_user_cmd
+ *fill*         0x0000000040101059        0x3 
  .text.special_flash_read_status
-                0x0000000040101070       0x39 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x000000004010105c       0x39 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                          0x3d (size before relaxing)
-                0x0000000040101070                special_flash_read_status
- *fill*         0x00000000401010a9        0x3 
+                0x000000004010105c                special_flash_read_status
+ *fill*         0x0000000040101095        0x3 
  .text.flash_gd25q32c_read_status
-                0x00000000401010ac       0x33 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
- *fill*         0x00000000401010df        0x1 
+                0x0000000040101098       0x33 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+ *fill*         0x00000000401010cb        0x1 
  .text.special_flash_write_status
-                0x00000000401010e0       0x5c /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
-                                         0x60 (size before relaxing)
-                0x00000000401010e0                special_flash_write_status
+                0x00000000401010cc       0x59 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                                         0x61 (size before relaxing)
+                0x00000000401010cc                special_flash_write_status
+ *fill*         0x0000000040101125        0x3 
  .text.spi_flash_enable_qio_bit6
-                0x000000004010113c       0x17 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000040101128       0x17 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                          0x1b (size before relaxing)
- *fill*         0x0000000040101153        0x1 
+ *fill*         0x000000004010113f        0x1 
  .text.flash_gd25q32c_write_status
-                0x0000000040101154       0x30 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000040101140       0x30 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .text.flash_gd25q32c_enable_QIO_mode
-                0x0000000040101184       0x3e /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000040101170       0x3e /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                          0x46 (size before relaxing)
- *fill*         0x00000000401011c2        0x2 
+ *fill*         0x00000000401011ae        0x2 
  .text.en25q16x_read_sfdp
-                0x00000000401011c4       0x43 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
-                0x00000000401011c4                en25q16x_read_sfdp
- *fill*         0x0000000040101207        0x1 
+                0x00000000401011b0       0x43 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401011b0                en25q16x_read_sfdp
+ *fill*         0x00000000401011f3        0x1 
  .text.spi_flash_get_id
-                0x0000000040101208       0x26 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
-                0x0000000040101208                spi_flash_get_id
- *fill*         0x000000004010122e        0x2 
+                0x00000000401011f4       0x26 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401011f4                spi_flash_get_id
+ *fill*         0x000000004010121a        0x2 
  .text.spi_flash_read_status
-                0x0000000040101230       0x28 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
-                0x0000000040101230                spi_flash_read_status
+                0x000000004010121c       0x28 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x000000004010121c                spi_flash_read_status
  .text.spi_flash_issi_enable_QIO_mode
-                0x0000000040101258       0x43 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000040101244       0x43 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                          0x4b (size before relaxing)
- *fill*         0x000000004010129b        0x1 
+ *fill*         0x0000000040101287        0x1 
  .text.special_flash_set_mode
-                0x000000004010129c       0x41 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
-                                         0x45 (size before relaxing)
-                0x000000004010129c                special_flash_set_mode
- *fill*         0x00000000401012dd        0x3 
+                0x0000000040101288       0x40 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                                         0x44 (size before relaxing)
+                0x0000000040101288                special_flash_set_mode
  .text.en25q16x_write_volatile_status
-                0x00000000401012e0       0x4f /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401012c8       0x4f /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                          0x5b (size before relaxing)
-                0x00000000401012e0                en25q16x_write_volatile_status
- *fill*         0x000000004010132f        0x1 
+                0x00000000401012c8                en25q16x_write_volatile_status
+ *fill*         0x0000000040101317        0x1 
  .text.user_spi_flash_dio_to_qio_pre_init
-                0x0000000040101330       0xd1 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
-                                         0xd9 (size before relaxing)
-                0x0000000040101330                user_spi_flash_dio_to_qio_pre_init
- *fill*         0x0000000040101401        0x3 
+                0x0000000040101318       0xd1 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                                         0xdd (size before relaxing)
+                0x0000000040101318                user_spi_flash_dio_to_qio_pre_init
+ *fill*         0x00000000401013e9        0x3 
  .text.esp_spi_flash_init
-                0x0000000040101404       0xc1 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401013ec       0xc1 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                          0xc5 (size before relaxing)
-                0x0000000040101404                esp_spi_flash_init
- *fill*         0x00000000401014c5        0x3 
+                0x00000000401013ec                esp_spi_flash_init
+ *fill*         0x00000000401014ad        0x3 
  .text.Cache_Read_Disable_2
-                0x00000000401014c8       0x35 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
-                0x00000000401014c8                Cache_Read_Disable_2
- *fill*         0x00000000401014fd        0x3 
+                0x00000000401014b0       0x34 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x00000000401014b0                Cache_Read_Disable_2
  .text.Cache_Read_Enable_2
-                0x0000000040101500       0x28 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
-                0x0000000040101500                Cache_Read_Enable_New
-                0x0000000040101500                Cache_Read_Enable_2
+                0x00000000401014e4       0x28 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x00000000401014e4                Cache_Read_Enable_New
+                0x00000000401014e4                Cache_Read_Enable_2
  .text.spi_flash_get_id_raw
-                0x0000000040101528       0x57 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
-                0x0000000040101528                spi_flash_get_id_raw
- *fill*         0x000000004010157f        0x1 
+                0x000000004010150c       0x57 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x000000004010150c                spi_flash_get_id_raw
+ *fill*         0x0000000040101563        0x1 
  .text.spi_flash_read_status_raw
-                0x0000000040101580       0x2f /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x0000000040101564       0x2f /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
                                          0x33 (size before relaxing)
-                0x0000000040101580                spi_flash_read_status_raw
- *fill*         0x00000000401015af        0x1 
+                0x0000000040101564                spi_flash_read_status_raw
+ *fill*         0x0000000040101593        0x1 
  .text.spi_flash_enable_qmode_raw
-                0x00000000401015b0       0x33 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x0000000040101594       0x33 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
                                          0x37 (size before relaxing)
-                0x00000000401015b0                spi_flash_enable_qmode_raw
- *fill*         0x00000000401015e3        0x1 
+                0x0000000040101594                spi_flash_enable_qmode_raw
+ *fill*         0x00000000401015c7        0x1 
  .text.spi_user_cmd_raw
-                0x00000000401015e4      0x3dc /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
-                0x00000000401015e4                spi_user_cmd_raw
+                0x00000000401015c8      0x3d7 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x00000000401015c8                spi_user_cmd_raw
+ *fill*         0x000000004010199f        0x1 
  .text.spi_flash_switch_to_qio_raw
-                0x00000000401019c0       0x25 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
-                0x00000000401019c0                spi_flash_switch_to_qio_raw
- *fill*         0x00000000401019e5        0x3 
+                0x00000000401019a0       0x25 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x00000000401019a0                spi_flash_switch_to_qio_raw
+ *fill*         0x00000000401019c5        0x3 
  .text.uart_putc
-                0x00000000401019e8       0x21 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
- *fill*         0x0000000040101a09        0x3 
+                0x00000000401019c8       0x21 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+ *fill*         0x00000000401019e9        0x3 
  .text.ets_putc
-                0x0000000040101a0c       0x27 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
-                0x0000000040101a0c                ets_putc
- *fill*         0x0000000040101a33        0x1 
+                0x00000000401019ec       0x27 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+                0x00000000401019ec                ets_putc
+ *fill*         0x0000000040101a13        0x1 
  .text.ets_vprintf
-                0x0000000040101a34       0x23 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
-                0x0000000040101a34                ets_vprintf
- *fill*         0x0000000040101a57        0x1 
+                0x0000000040101a14       0x1f /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+                0x0000000040101a14                ets_vprintf
+ *fill*         0x0000000040101a33        0x1 
  .text.ets_printf
-                0x0000000040101a58       0x27 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+                0x0000000040101a34       0x27 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
                                          0x2b (size before relaxing)
-                0x0000000040101a58                ets_printf
- *fill*         0x0000000040101a7f        0x1 
+                0x0000000040101a34                ets_printf
+ *fill*         0x0000000040101a5b        0x1 
  .text.crc32_le
-                0x0000000040101a80       0x2f /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
-                0x0000000040101a80                crc32_le
- *fill*         0x0000000040101aaf        0x1 
+                0x0000000040101a5c       0x2f /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
+                0x0000000040101a5c                crc32_le
+ *fill*         0x0000000040101a8b        0x1 
  .text.phy_reg_default
-                0x0000000040101ab0       0x36 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libcore.a(phy.o)
-                0x0000000040101ac0                phy_reg_default
- *fill*         0x0000000040101ae6        0x2 
+                0x0000000040101a8c       0x36 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libcore.a(phy.o)
+                0x0000000040101a9c                phy_reg_default
+ *fill*         0x0000000040101ac2        0x2 
  .text.uart_div_modify
-                0x0000000040101ae8       0x50 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libcore.a(uart.o)
-                0x0000000040101af8                uart_div_modify
- *fill*         0x0000000040101b38        0x0 
- *fill*         0x0000000040101b38        0x0 
- *fill*         0x0000000040101b38        0x0 
- *fill*         0x0000000040101b38        0x0 
- *fill*         0x0000000040101b38        0x0 
- *fill*         0x0000000040101b38        0x0 
- *fill*         0x0000000040101b38        0x0 
+                0x0000000040101ac4       0x50 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libcore.a(uart.o)
+                0x0000000040101ad4                uart_div_modify
+ *fill*         0x0000000040101b14        0x0 
+ *fill*         0x0000000040101b14        0x0 
+ *fill*         0x0000000040101b14        0x0 
+ *fill*         0x0000000040101b14        0x0 
+ *fill*         0x0000000040101b14        0x0 
+ *fill*         0x0000000040101b14        0x0 
+ *fill*         0x0000000040101b14        0x0 
  .text.index_to_partition
-                0x0000000040101b38       0x4b /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- *fill*         0x0000000040101b83        0x0 
- *fill*         0x0000000040101b83        0x0 
- *fill*         0x0000000040101b83        0x0 
- *fill*         0x0000000040101b83        0x0 
- *fill*         0x0000000040101b83        0x0 
- *fill*         0x0000000040101b83        0x1 
+                0x0000000040101b14       0x4b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ *fill*         0x0000000040101b5f        0x0 
+ *fill*         0x0000000040101b5f        0x0 
+ *fill*         0x0000000040101b5f        0x0 
+ *fill*         0x0000000040101b5f        0x0 
+ *fill*         0x0000000040101b5f        0x0 
+ *fill*         0x0000000040101b5f        0x0 
+ *fill*         0x0000000040101b5f        0x0 
+ *fill*         0x0000000040101b5f        0x1 
  .text.verify_segment_header
-                0x0000000040101b84        0x4 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
- *fill*         0x0000000040101b88        0x0 
+                0x0000000040101b60        0x4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
+ *fill*         0x0000000040101b64        0x0 
  *(.iram1 .iram1.*)
- .iram1         0x0000000040101b88       0xae /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o)
+ .iram1         0x0000000040101b64       0xae /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
                                          0xb8 (size before relaxing)
-                0x0000000040101b88                esp_log_early_timestamp
-                0x0000000040101ba4                esp_early_log_write
+                0x0000000040101b64                esp_log_early_timestamp
+                0x0000000040101b80                esp_early_log_write
  *(.fini.literal)
  *(.fini)
  *(.gnu.version)
-                0x0000000040101c36                _text_end = ABSOLUTE (.)
-                0x0000000040101c36                _etext = .
+                0x0000000040101c12                _text_end = ABSOLUTE (.)
+                0x0000000040101c12                _etext = .
 
 .bss            0x000000003ffe8000      0x408
                 0x000000003ffe8000                . = ALIGN (0x8)
@@ -692,11 +709,11 @@ END GROUP
  *(.dynbss)
  *(.bss)
  *(.bss.*)
- .bss.pbuf$3155
-                0x000000003ffe8000      0x400 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .bss.mapped    0x000000003ffe8400        0x1 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .bss.pbuf$3385
+                0x000000003ffe8000      0x400 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .bss.mapped    0x000000003ffe8400        0x1 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
  .bss.FlashIsOnGoing
-                0x000000003ffe8401        0x1 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x000000003ffe8401        0x1 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                 0x000000003ffe8401                FlashIsOnGoing
  *(.gnu.linkonce.b.*)
  *(COMMON)
@@ -709,7 +726,7 @@ END GROUP
  *(.data)
  *(.data.*)
  .data.flashchip
-                0x000000003ffe8408       0x18 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x000000003ffe8408       0x18 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                 0x000000003ffe8408                flashchip
  *(.gnu.linkonce.d.*)
  *(.data1)
@@ -722,77 +739,79 @@ END GROUP
  *(.jcr)
                 0x000000003ffe8420                _data_end = ABSOLUTE (.)
 
-.rodata         0x000000003ffe8420      0xdc4
+.rodata         0x000000003ffe8420      0xddc
                 0x000000003ffe8420                _rodata_start = ABSOLUTE (.)
  *(.rodata)
  *(.rodata.*)
  .rodata.str1.4
-                0x000000003ffe8420       0x24 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x000000003ffe8420       0x21 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
+ *fill*         0x000000003ffe8441        0x3 
  .rodata.str1.4
-                0x000000003ffe8444       0xe2 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
-                                         0xf2 (size before relaxing)
- *fill*         0x000000003ffe8526        0x2 
+                0x000000003ffe8444       0xfa /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                                        0x106 (size before relaxing)
+ *fill*         0x000000003ffe853e        0x2 
  .rodata.print_flash_info
-                0x000000003ffe8528       0x28 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                0x000000003ffe8540       0x28 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
  .rodata.str1.4
-                0x000000003ffe8550      0x38a /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x000000003ffe8568      0x38a /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
                                         0x392 (size before relaxing)
- *fill*         0x000000003ffe88da        0x2 
+ *fill*         0x000000003ffe88f2        0x2 
  .rodata.str1.4
-                0x000000003ffe88dc       0xb4 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+                0x000000003ffe88f4       0xb4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
  .rodata.str1.4
-                0x000000003ffe8990      0x26b /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x000000003ffe89a8      0x26b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                         0x26f (size before relaxing)
- *fill*         0x000000003ffe8bfb        0x1 
+ *fill*         0x000000003ffe8c13        0x1 
  .rodata.str1.4
-                0x000000003ffe8bfc      0x17b /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- *fill*         0x000000003ffe8d77        0x1 
+                0x000000003ffe8c14      0x17b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ *fill*         0x000000003ffe8d8f        0x1 
  .rodata.str1.4
-                0x000000003ffe8d78       0x2c /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x000000003ffe8d90       0x29 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+ *fill*         0x000000003ffe8db9        0x3 
  .rodata.str1.4
-                0x000000003ffe8da4       0x20 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o)
+                0x000000003ffe8dbc       0x20 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
                                          0x22 (size before relaxing)
  .rodata.s_log_prefix
-                0x000000003ffe8dc4        0x6 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o)
- *fill*         0x000000003ffe8dca        0x2 
+                0x000000003ffe8ddc        0x6 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+ *fill*         0x000000003ffe8de2        0x2 
  .rodata.s_log_color
-                0x000000003ffe8dcc       0x18 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o)
+                0x000000003ffe8de4       0x18 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
  .rodata.crc32_le_table
-                0x000000003ffe8de4      0x400 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
+                0x000000003ffe8dfc      0x400 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
  *(.gnu.linkonce.r.*)
  *(.rodata1)
-                0x000000003ffe91e4                __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
+                0x000000003ffe91fc                __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
  *(.xt_except_table)
  *(.gcc_except_table)
  *(.gnu.linkonce.e.*)
  *(.gnu.version_r)
  *(.eh_frame)
-                0x000000003ffe91e4                . = ((. + 0x3) & 0xfffffffffffffffc)
-                0x000000003ffe91e4                __init_array_start = ABSOLUTE (.)
+                0x000000003ffe91fc                . = ((. + 0x3) & 0xfffffffffffffffc)
+                0x000000003ffe91fc                __init_array_start = ABSOLUTE (.)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *(.ctors)
-                0x000000003ffe91e4                __init_array_end = ABSOLUTE (.)
+                0x000000003ffe91fc                __init_array_end = ABSOLUTE (.)
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *(.dtors)
-                0x000000003ffe91e4                __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
+                0x000000003ffe91fc                __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
  *(.xt_except_desc)
  *(.gnu.linkonce.h.*)
-                0x000000003ffe91e4                __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
+                0x000000003ffe91fc                __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
  *(.xt_except_desc_end)
  *(.dynamic)
  *(.gnu.version_d)
-                0x000000003ffe91e4                _rodata_end = ABSOLUTE (.)
-                0x000000003ffe91e4                _lit4_start = ABSOLUTE (.)
+                0x000000003ffe91fc                _rodata_end = ABSOLUTE (.)
+                0x000000003ffe91fc                _lit4_start = ABSOLUTE (.)
  *(*.lit4)
  *(.lit4.*)
  *(.gnu.linkonce.lit4.*)
-                0x000000003ffe91e4                _lit4_end = ABSOLUTE (.)
-                0x000000003ffe91e4                . = ALIGN (0x4)
-                0x000000003ffe91e4                _heap_start = ABSOLUTE (.)
+                0x000000003ffe91fc                _lit4_end = ABSOLUTE (.)
+                0x000000003ffe91fc                . = ALIGN (0x4)
+                0x000000003ffe91fc                _heap_start = ABSOLUTE (.)
                 0x00000000400040c0                PROVIDE (SPI_sector_erase, 0x400040c0)
                 0x0000000040004174                PROVIDE (SPI_page_program, 0x40004174)
                 0x00000000400042ac                PROVIDE (SPI_read_data, 0x400042ac)
@@ -848,178 +867,180 @@ END GROUP
                 0x0000000040001f00                PROVIDE (ets_io_vprintf, 0x40001f00)
                 [!provide]                        PROVIDE (ets_memcpy, 0x400018b4)
                 0x0000000040004b1c                PROVIDE (SPIRead, 0x40004b1c)
+                0x0000000040004a4c                PROVIDE (SPIWrite, 0x40004a4c)
+                0x0000000040004a00                PROVIDE (SPIEraseSector, 0x40004a00)
                 [!provide]                        PROVIDE (gpio_input_get, 0x40004cf0)
                 0x000000004000dd38                PROVIDE (xthal_get_ccount, 0x4000dd38)
                 [!provide]                        PROVIDE (uart_div_modify, 0x400039d8)
                 [!provide]                        PROVIDE (ets_io_vprintf, 0x40001f00)
-OUTPUT(/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader.elf elf32-xtensa-le)
+OUTPUT(/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader.elf elf32-xtensa-le)
 
-.debug_frame    0x0000000000000000      0xaa0
- .debug_frame   0x0000000000000000       0x74 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
- .debug_frame   0x0000000000000074       0xb0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .debug_frame   0x0000000000000124      0x100 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .debug_frame   0x0000000000000224       0x78 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .debug_frame   0x000000000000029c       0x38 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .debug_frame   0x00000000000002d4      0x13c /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .debug_frame   0x0000000000000410       0xd8 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .debug_frame   0x00000000000004e8      0x334 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
- .debug_frame   0x000000000000081c      0x16c /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
- .debug_frame   0x0000000000000988       0x58 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o)
- .debug_frame   0x00000000000009e0       0x80 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
- .debug_frame   0x0000000000000a60       0x40 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
+.debug_frame    0x0000000000000000      0xaa8
+ .debug_frame   0x0000000000000000       0x74 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
+ .debug_frame   0x0000000000000074       0xb4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ .debug_frame   0x0000000000000128       0xfc /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .debug_frame   0x0000000000000224       0x74 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .debug_frame   0x0000000000000298       0x38 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .debug_frame   0x00000000000002d0      0x13c /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .debug_frame   0x000000000000040c       0xd8 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .debug_frame   0x00000000000004e4      0x340 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+ .debug_frame   0x0000000000000824      0x16c /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+ .debug_frame   0x0000000000000990       0x58 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+ .debug_frame   0x00000000000009e8       0x80 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+ .debug_frame   0x0000000000000a68       0x40 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
 
-.debug_info     0x0000000000000000     0x524b
- .debug_info    0x0000000000000000      0x4fc /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
- .debug_info    0x00000000000004fc      0x515 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .debug_info    0x0000000000000a11      0xd3c /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .debug_info    0x000000000000174d      0x325 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .debug_info    0x0000000000001a72      0x3d1 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .debug_info    0x0000000000001e43      0xce5 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .debug_info    0x0000000000002b28      0x575 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .debug_info    0x000000000000309d     0x1327 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
- .debug_info    0x00000000000043c4      0x7a1 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
- .debug_info    0x0000000000004b65      0x2c7 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o)
- .debug_info    0x0000000000004e2c      0x239 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
- .debug_info    0x0000000000005065      0x1e6 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
+.debug_info     0x0000000000000000     0x5172
+ .debug_info    0x0000000000000000      0x4b5 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
+ .debug_info    0x00000000000004b5      0x4fd /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ .debug_info    0x00000000000009b2      0xd2a /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .debug_info    0x00000000000016dc      0x341 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .debug_info    0x0000000000001a1d      0x3da /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .debug_info    0x0000000000001df7      0xcf6 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .debug_info    0x0000000000002aed      0x506 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .debug_info    0x0000000000002ff3     0x133d /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+ .debug_info    0x0000000000004330      0x75a /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+ .debug_info    0x0000000000004a8a      0x2c0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+ .debug_info    0x0000000000004d4a      0x21f /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+ .debug_info    0x0000000000004f69      0x209 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
 
-.debug_abbrev   0x0000000000000000     0x1601
- .debug_abbrev  0x0000000000000000      0x1dc /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
- .debug_abbrev  0x00000000000001dc      0x1d3 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .debug_abbrev  0x00000000000003af      0x279 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .debug_abbrev  0x0000000000000628      0x1b4 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .debug_abbrev  0x00000000000007dc      0x199 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .debug_abbrev  0x0000000000000975      0x20b /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .debug_abbrev  0x0000000000000b80      0x1d2 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .debug_abbrev  0x0000000000000d52      0x331 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
- .debug_abbrev  0x0000000000001083      0x1ca /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
- .debug_abbrev  0x000000000000124d      0x198 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o)
- .debug_abbrev  0x00000000000013e5      0x16d /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
- .debug_abbrev  0x0000000000001552       0xaf /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
+.debug_abbrev   0x0000000000000000     0x140f
+ .debug_abbrev  0x0000000000000000      0x18e /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
+ .debug_abbrev  0x000000000000018e      0x1c1 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ .debug_abbrev  0x000000000000034f      0x23c /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .debug_abbrev  0x000000000000058b      0x1aa /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .debug_abbrev  0x0000000000000735      0x17d /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .debug_abbrev  0x00000000000008b2      0x1e6 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .debug_abbrev  0x0000000000000a98      0x173 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .debug_abbrev  0x0000000000000c0b      0x2fd /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+ .debug_abbrev  0x0000000000000f08      0x185 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+ .debug_abbrev  0x000000000000108d      0x17a /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+ .debug_abbrev  0x0000000000001207      0x159 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+ .debug_abbrev  0x0000000000001360       0xaf /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
 
-.debug_loc      0x0000000000000000     0x30f5
- .debug_loc     0x0000000000000000       0x76 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
- .debug_loc     0x0000000000000076      0x101 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .debug_loc     0x0000000000000177      0x58e /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .debug_loc     0x0000000000000705      0x3a1 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .debug_loc     0x0000000000000aa6      0x107 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .debug_loc     0x0000000000000bad      0xa64 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .debug_loc     0x0000000000001611      0x367 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .debug_loc     0x0000000000001978      0xf41 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
- .debug_loc     0x00000000000028b9      0x587 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
- .debug_loc     0x0000000000002e40       0xce /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o)
- .debug_loc     0x0000000000002f0e       0x89 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
- .debug_loc     0x0000000000002f97      0x15e /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
+.debug_loc      0x0000000000000000     0x3122
+ .debug_loc     0x0000000000000000       0x76 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
+ .debug_loc     0x0000000000000076       0xf6 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ .debug_loc     0x000000000000016c      0x5c4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .debug_loc     0x0000000000000730      0x2e6 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .debug_loc     0x0000000000000a16      0x108 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .debug_loc     0x0000000000000b1e      0x991 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .debug_loc     0x00000000000014af      0x33b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .debug_loc     0x00000000000017ea     0x10af /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+ .debug_loc     0x0000000000002899      0x5a0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+ .debug_loc     0x0000000000002e39       0xce /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+ .debug_loc     0x0000000000002f07       0x9b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+ .debug_loc     0x0000000000002fa2      0x180 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
 
-.debug_aranges  0x0000000000000000      0x390
+.debug_aranges  0x0000000000000000      0x398
  .debug_aranges
-                0x0000000000000000       0x30 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000000000000       0x30 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
  .debug_aranges
-                0x0000000000000030       0x40 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                0x0000000000000030       0x40 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
  .debug_aranges
-                0x0000000000000070       0x50 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x0000000000000070       0x50 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
  .debug_aranges
-                0x00000000000000c0       0x30 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+                0x00000000000000c0       0x30 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
  .debug_aranges
-                0x00000000000000f0       0x20 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+                0x00000000000000f0       0x20 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
  .debug_aranges
-                0x0000000000000110       0x60 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000000000110       0x60 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
  .debug_aranges
-                0x0000000000000170       0x48 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000000000170       0x48 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
  .debug_aranges
-                0x00000000000001b8       0xd8 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000000001b8       0xe0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .debug_aranges
-                0x0000000000000290       0x70 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x0000000000000298       0x70 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
  .debug_aranges
-                0x0000000000000300       0x28 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o)
+                0x0000000000000308       0x28 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
  .debug_aranges
-                0x0000000000000328       0x38 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+                0x0000000000000330       0x38 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
  .debug_aranges
-                0x0000000000000360       0x30 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
+                0x0000000000000368       0x30 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
 
-.debug_ranges   0x0000000000000000      0x3f8
- .debug_ranges  0x0000000000000000       0x20 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
- .debug_ranges  0x0000000000000020       0x30 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .debug_ranges  0x0000000000000050       0x58 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .debug_ranges  0x00000000000000a8       0x20 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .debug_ranges  0x00000000000000c8       0x40 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .debug_ranges  0x0000000000000108       0x80 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .debug_ranges  0x0000000000000188       0x38 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .debug_ranges  0x00000000000001c0      0x178 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
- .debug_ranges  0x0000000000000338       0x60 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
- .debug_ranges  0x0000000000000398       0x18 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o)
- .debug_ranges  0x00000000000003b0       0x28 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
- .debug_ranges  0x00000000000003d8       0x20 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
+.debug_ranges   0x0000000000000000      0x3f0
+ .debug_ranges  0x0000000000000000       0x20 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
+ .debug_ranges  0x0000000000000020       0x30 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ .debug_ranges  0x0000000000000050       0x40 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .debug_ranges  0x0000000000000090       0x20 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .debug_ranges  0x00000000000000b0       0x40 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .debug_ranges  0x00000000000000f0       0x80 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .debug_ranges  0x0000000000000170       0x38 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .debug_ranges  0x00000000000001a8      0x188 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+ .debug_ranges  0x0000000000000330       0x60 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+ .debug_ranges  0x0000000000000390       0x18 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+ .debug_ranges  0x00000000000003a8       0x28 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+ .debug_ranges  0x00000000000003d0       0x20 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
 
-.debug_line     0x0000000000000000     0x3796
- .debug_line    0x0000000000000000      0x339 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
- .debug_line    0x0000000000000339      0x47c /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .debug_line    0x00000000000007b5      0x778 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .debug_line    0x0000000000000f2d      0x30c /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .debug_line    0x0000000000001239      0x2da /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .debug_line    0x0000000000001513      0x71a /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .debug_line    0x0000000000001c2d      0x347 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .debug_line    0x0000000000001f74      0xbfe /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
- .debug_line    0x0000000000002b72      0x615 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
- .debug_line    0x0000000000003187      0x27c /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o)
- .debug_line    0x0000000000003403      0x207 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
- .debug_line    0x000000000000360a      0x18c /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
+.debug_line     0x0000000000000000     0x3b32
+ .debug_line    0x0000000000000000      0x390 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
+ .debug_line    0x0000000000000390      0x46a /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ .debug_line    0x00000000000007fa      0x7c3 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .debug_line    0x0000000000000fbd      0x35d /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .debug_line    0x000000000000131a      0x331 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .debug_line    0x000000000000164b      0x773 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .debug_line    0x0000000000001dbe      0x39e /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .debug_line    0x000000000000215c      0xcb4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+ .debug_line    0x0000000000002e10      0x63c /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+ .debug_line    0x000000000000344c      0x2d3 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+ .debug_line    0x000000000000371f      0x252 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+ .debug_line    0x0000000000003971      0x1c1 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
 
-.debug_str      0x0000000000000000     0x17cc
- .debug_str     0x0000000000000000      0x47b /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
-                                        0x4ec (size before relaxing)
- .debug_str     0x000000000000047b      0x30e /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
-                                        0x598 (size before relaxing)
- .debug_str     0x0000000000000789      0x256 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
-                                        0x6e5 (size before relaxing)
- .debug_str     0x00000000000009df      0x168 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
-                                        0x389 (size before relaxing)
- .debug_str     0x0000000000000b47       0xf3 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
-                                        0x3b0 (size before relaxing)
- .debug_str     0x0000000000000c3a      0x1b7 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
-                                        0x77a (size before relaxing)
- .debug_str     0x0000000000000df1      0x171 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
-                                        0x3f3 (size before relaxing)
- .debug_str     0x0000000000000f62      0x4f7 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
-                                        0x8be (size before relaxing)
- .debug_str     0x0000000000001459      0x129 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
-                                        0x4c4 (size before relaxing)
- .debug_str     0x0000000000001582      0x107 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o)
-                                        0x2c5 (size before relaxing)
- .debug_str     0x0000000000001689       0xc9 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
-                                        0x228 (size before relaxing)
- .debug_str     0x0000000000001752       0x7a /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
-                                        0x17c (size before relaxing)
+.debug_str      0x0000000000000000     0x17c3
+ .debug_str     0x0000000000000000      0x474 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
+                                        0x4fd (size before relaxing)
+ .debug_str     0x0000000000000474      0x31a /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                                        0x5b5 (size before relaxing)
+ .debug_str     0x000000000000078e      0x24b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                                        0x6f6 (size before relaxing)
+ .debug_str     0x00000000000009d9      0x168 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+                                        0x3a0 (size before relaxing)
+ .debug_str     0x0000000000000b41       0xf3 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+                                        0x3d7 (size before relaxing)
+ .debug_str     0x0000000000000c34      0x1cd /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                                        0x796 (size before relaxing)
+ .debug_str     0x0000000000000e01      0x10b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                                        0x3aa (size before relaxing)
+ .debug_str     0x0000000000000f0c      0x534 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                                        0x929 (size before relaxing)
+ .debug_str     0x0000000000001440      0x129 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                                        0x4f0 (size before relaxing)
+ .debug_str     0x0000000000001569      0x117 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+                                        0x2d2 (size before relaxing)
+ .debug_str     0x0000000000001680       0xc9 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+                                        0x235 (size before relaxing)
+ .debug_str     0x0000000000001749       0x7a /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
+                                        0x19e (size before relaxing)
 
 .comment        0x0000000000000000       0x74
- .comment       0x0000000000000000       0x3a /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
+ .comment       0x0000000000000000       0x3a /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x3b (size before relaxing)
- .comment       0x000000000000003a       0x3b /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .comment       0x000000000000003a       0x3b /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .comment       0x000000000000003a       0x3b /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .comment       0x000000000000003a       0x3b /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .comment       0x000000000000003a       0x3b /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .comment       0x000000000000003a       0x3b /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .comment       0x000000000000003a       0x3b /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
- .comment       0x000000000000003a       0x3b /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
- .comment       0x000000000000003a       0x3b /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o)
- .comment       0x000000000000003a       0x3b /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
- .comment       0x000000000000003a       0x3b /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
+ .comment       0x000000000000003a       0x3b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ .comment       0x000000000000003a       0x3b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .comment       0x000000000000003a       0x3b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .comment       0x000000000000003a       0x3b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .comment       0x000000000000003a       0x3b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .comment       0x000000000000003a       0x3b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .comment       0x000000000000003a       0x3b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+ .comment       0x000000000000003a       0x3b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+ .comment       0x000000000000003a       0x3b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+ .comment       0x000000000000003a       0x3b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+ .comment       0x000000000000003a       0x3b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
  .comment       0x000000000000003a       0x3a /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libcore.a(phy.o)
                                          0x3b (size before relaxing)
  .comment       0x0000000000000074       0x3b /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libcore.a(uart.o)
 
 .xtensa.info    0x0000000000000000       0x38
- .xtensa.info   0x0000000000000000       0x38 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/main/libmain.a(bootloader_start.o)
- .xtensa.info   0x0000000000000038        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .xtensa.info   0x0000000000000038        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .xtensa.info   0x0000000000000038        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .xtensa.info   0x0000000000000038        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .xtensa.info   0x0000000000000038        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .xtensa.info   0x0000000000000038        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .xtensa.info   0x0000000000000038        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
- .xtensa.info   0x0000000000000038        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
- .xtensa.info   0x0000000000000038        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/log/liblog.a(log.o)
- .xtensa.info   0x0000000000000038        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
- .xtensa.info   0x0000000000000038        0x0 /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/util/libutil.a(crc.o)
+ .xtensa.info   0x0000000000000000       0x38 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
  .xtensa.info   0x0000000000000038        0x0 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libcore.a(phy.o)
  .xtensa.info   0x0000000000000038        0x0 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libcore.a(uart.o)

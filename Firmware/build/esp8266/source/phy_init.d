@@ -31,7 +31,7 @@ source/phy_init.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/assert.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_phy_init.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_system.h \
- /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log_internal.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/nvs_flash/include/nvs.h \
@@ -102,7 +102,7 @@ source/phy_init.o: \
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_system.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h:
 

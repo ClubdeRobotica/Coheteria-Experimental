@@ -1,6 +1,6 @@
 src/bootloader_utility.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/bootloader_support/src/bootloader_utility.c \
- /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/param.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/config.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/machine/ieeefp.h \
@@ -44,7 +44,7 @@ src/bootloader_utility.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log_internal.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/bootloader_support/include/esp_flash_partitions.h
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/param.h:
 

@@ -22,7 +22,7 @@ src/nvs_api.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/nvs_flash/src/nvs_platform.hpp \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/projdefs.h \
@@ -97,7 +97,7 @@ src/nvs_api.o: \
 
 /home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h:
 

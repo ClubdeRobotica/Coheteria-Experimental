@@ -19,7 +19,7 @@ paho/MQTTClient-C/src/FreeRTOS/MQTTFreeRTOS.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/netdb.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/opt.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include/lwipopts.h \
- /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_libc.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdint.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/_intsup.h \
@@ -81,7 +81,16 @@ paho/MQTTClient-C/src/FreeRTOS/MQTTFreeRTOS.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/semphr.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/list.h
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/list.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/ssl/mbedtls/port/openssl/include/openssl/ssl.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/ssl/mbedtls/port/openssl/include/internal/ssl_x509.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/ssl/mbedtls/port/openssl/include/internal/ssl_types.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/ssl/mbedtls/port/openssl/include/internal/ssl_code.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/ssl/mbedtls/port/openssl/include/internal/ssl3.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/ssl/mbedtls/port/openssl/include/internal/tls1.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/ssl/mbedtls/port/openssl/include/internal/x509_vfy.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/ssl/mbedtls/port/openssl/include/internal/ssl_stack.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/ssl/mbedtls/port/openssl/include/internal/ssl_pkey.h
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/string.h:
 
@@ -121,7 +130,7 @@ paho/MQTTClient-C/src/FreeRTOS/MQTTFreeRTOS.o: \
 
 /home/german/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include/lwipopts.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_libc.h:
 
@@ -246,4 +255,22 @@ paho/MQTTClient-C/src/FreeRTOS/MQTTFreeRTOS.o: \
 /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/list.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/ssl/mbedtls/port/openssl/include/openssl/ssl.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/ssl/mbedtls/port/openssl/include/internal/ssl_x509.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/ssl/mbedtls/port/openssl/include/internal/ssl_types.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/ssl/mbedtls/port/openssl/include/internal/ssl_code.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/ssl/mbedtls/port/openssl/include/internal/ssl3.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/ssl/mbedtls/port/openssl/include/internal/tls1.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/ssl/mbedtls/port/openssl/include/internal/x509_vfy.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/ssl/mbedtls/port/openssl/include/internal/ssl_stack.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/ssl/mbedtls/port/openssl/include/internal/ssl_pkey.h:
 /home/german/esp/ESP8266_RTOS_SDK/components/mqtt/paho/MQTTClient-C/src/FreeRTOS/MQTTFreeRTOS.c:

@@ -1,6 +1,6 @@
 src/esp_image_format.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/bootloader_support/src/esp_image_format.c \
- /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/../include/sdkconfig.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/../include/sdkconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/bootloader_support/include/esp_image_format.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_err.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/bootloader_support/include/esp_flash_partitions.h \
@@ -16,7 +16,7 @@ src/esp_image_format.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_random.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_sha.h
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/bootloader/../include/sdkconfig.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/../include/sdkconfig.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/bootloader_support/include/esp_image_format.h:
 

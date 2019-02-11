@@ -34,7 +34,7 @@ src/partition.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/spi_flash/include/esp_partition.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/spi_flash/include/esp_spi_flash.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h \
- /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log_internal.h \
@@ -108,7 +108,7 @@ src/partition.o: \
 
 /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h:
 

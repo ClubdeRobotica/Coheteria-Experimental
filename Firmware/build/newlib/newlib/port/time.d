@@ -26,7 +26,7 @@ newlib/port/time.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/cdefs.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/stdio.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/assert.h \
- /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_timer.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
@@ -111,7 +111,7 @@ newlib/port/time.o: \
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/assert.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_timer.h:
 

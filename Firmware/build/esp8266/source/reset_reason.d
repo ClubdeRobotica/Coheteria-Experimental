@@ -1,6 +1,6 @@
 source/reset_reason.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/source/reset_reason.c \
- /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/string.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/_ansi.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/newlib.h \
@@ -37,7 +37,7 @@ source/reset_reason.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/heap/include/esp_heap_caps.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/heap/port/esp8266/include/esp_heap_config.h
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/string.h:
 

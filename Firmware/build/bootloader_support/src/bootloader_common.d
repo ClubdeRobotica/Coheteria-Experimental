@@ -1,6 +1,6 @@
 src/bootloader_common.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/bootloader_support/src/bootloader_common.c \
- /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdint.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/machine/_default_types.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/features.h \
@@ -36,7 +36,7 @@ src/bootloader_common.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/spi_flash/include/esp_flash_data_types.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/bootloader_support/include/bootloader_common.h
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdint.h:
 

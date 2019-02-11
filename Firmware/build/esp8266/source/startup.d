@@ -17,7 +17,7 @@ source/startup.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/lock.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/cdefs.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/string.h \
- /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/nvs_flash/include/nvs_flash.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/nvs_flash/include/nvs.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_err.h \
@@ -98,7 +98,7 @@ source/startup.o: \
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/string.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/nvs_flash/include/nvs_flash.h:
 

@@ -20,7 +20,7 @@ source/ets_printf.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/machine/types.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/sched.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/stdio.h \
- /home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_attr.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/uart_register.h \
@@ -66,7 +66,7 @@ source/ets_printf.o: \
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/stdio.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/examples/peripherals/gpio/build/include/sdkconfig.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_attr.h:
 
