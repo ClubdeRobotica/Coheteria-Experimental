@@ -115,15 +115,10 @@ tcpip_adapter_lwip.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_timer.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/lwip/include/lwip/apps/dhcpserver/dhcpserver_options.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/net/sockio.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_socket.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_aio.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_module.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/net/if_packet.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/net/if_socket.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log_internal.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_osi.h
+ /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_osi.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/internal/esp_wifi_internal.h
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdlib.h:
 
@@ -355,21 +350,11 @@ tcpip_adapter_lwip.o: \
 
 /home/german/esp/ESP8266_RTOS_SDK/components/lwip/include/lwip/apps/dhcpserver/dhcpserver_options.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/net/sockio.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_socket.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_aio.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_module.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/net/if_packet.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/net/if_socket.h:
-
 /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log_internal.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_osi.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/internal/esp_wifi_internal.h:
 /home/german/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/.//tcpip_adapter_lwip.c:

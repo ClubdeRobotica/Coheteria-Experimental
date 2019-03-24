@@ -58,7 +58,8 @@ port/esp8266/port.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/xtensa_rtos.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_libc.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/rom_functions.h
+ /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/rom_functions.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdint.h:
 
@@ -177,4 +178,6 @@ port/esp8266/port.o: \
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_libc.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/rom_functions.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h:
 /home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/port.c:

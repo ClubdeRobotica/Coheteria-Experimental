@@ -57,7 +57,8 @@ newlib/port/time.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/heap/include/esp_heap_caps.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/heap/port/esp8266/include/esp_heap_config.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/list.h
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/list.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdint.h:
 
@@ -174,4 +175,6 @@ newlib/port/time.o: \
 /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/list.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h:
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/port/time.c:

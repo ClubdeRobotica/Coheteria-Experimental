@@ -57,7 +57,8 @@ source/esp_timer.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/list.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/timers.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_timer.h:
 
@@ -174,4 +175,6 @@ source/esp_timer.o: \
 /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/timers.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h:
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/source/esp_timer.c:

@@ -5,17 +5,17 @@
  *      Author: german
  */
 
+#include "CdR_gpio.h"
+
 #ifndef MAIN_HAL_H_
 #define MAIN_HAL_H_
 
-#define GPIO_LED    		 16
-#define GPIO_OUTPUT_PIN_SEL  GPIO_Pin_16
-
 #define EXAMPLE_ESP_WIFI_MODE_AP   	false //TRUE:AP FALSE:STA
-#define EXAMPLE_ESP_WIFI_SSID      	"Fibertel WiFi292"
-#define EXAMPLE_ESP_WIFI_PASS      	"d1ga_33_ah0ra"
+#define EXAMPLE_ESP_WIFI_SSID      	"Fibertel WiFi292 2.4GHz"
+#define EXAMPLE_ESP_WIFI_PASS      	"0043192350"
 #define EXAMPLE_MAX_STA_CONN 		1
 
-
+#define GPIO_LED    		 BOARD_LED
+#define GPIO_OUTPUT_PIN_SEL  MASK_LED
 
 #endif /* MAIN_HAL_H_ */

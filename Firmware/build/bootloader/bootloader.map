@@ -158,8 +158,8 @@ Discarded input sections
  .text          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
  .data          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
  .bss           0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
- .xt.lit        0x0000000000000000        0x8 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
- .xt.prop       0x0000000000000000       0xb4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+ .xt.lit        0x0000000000000000       0x10 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+ .xt.prop       0x0000000000000000       0xcc /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
  .text          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
  .data          0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
  .bss           0x0000000000000000        0x0 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
@@ -397,9 +397,11 @@ END GROUP
                                           0x4 (size before relaxing)
  .literal.crc32_le
                 0x000000004010027c        0x4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
- .iram1.literal
-                0x0000000040100280       0x24 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
-                                         0x38 (size before relaxing)
+ .iram1.0.literal
+                0x0000000040100280        0xc /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+ .iram1.1.literal
+                0x000000004010028c       0x18 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+                                         0x30 (size before relaxing)
  .text.selected_boot_partition
                 0x00000000401002a4        0xf /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x13 (size before relaxing)
@@ -685,9 +687,10 @@ END GROUP
  *fill*         0x0000000040101b64        0x0 
  *fill*         0x0000000040101b64        0x0 
  *(.iram1 .iram1.*)
- .iram1         0x0000000040101b64       0xae /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
-                                         0xb8 (size before relaxing)
+ .iram1.0       0x0000000040101b64       0x1c /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
                 0x0000000040101b64                esp_log_early_timestamp
+ .iram1.1       0x0000000040101b80       0x92 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+                                         0x9d (size before relaxing)
                 0x0000000040101b80                esp_early_log_write
  *(.fini.literal)
  *(.fini)
@@ -709,7 +712,7 @@ END GROUP
  *(.dynbss)
  *(.bss)
  *(.bss.*)
- .bss.pbuf$3385
+ .bss.pbuf$3370
                 0x000000003ffe8000      0x400 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
  .bss.mapped    0x000000003ffe8400        0x1 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
  .bss.FlashIsOnGoing
@@ -971,7 +974,7 @@ OUTPUT(/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloa
  .debug_ranges  0x00000000000003a8       0x28 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
  .debug_ranges  0x00000000000003d0       0x20 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
 
-.debug_line     0x0000000000000000     0x3b32
+.debug_line     0x0000000000000000     0x3b3c
  .debug_line    0x0000000000000000      0x390 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
  .debug_line    0x0000000000000390      0x46a /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
  .debug_line    0x00000000000007fa      0x7c3 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
@@ -981,9 +984,9 @@ OUTPUT(/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloa
  .debug_line    0x0000000000001dbe      0x39e /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
  .debug_line    0x000000000000215c      0xcb4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .debug_line    0x0000000000002e10      0x63c /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
- .debug_line    0x000000000000344c      0x2d3 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
- .debug_line    0x000000000000371f      0x252 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
- .debug_line    0x0000000000003971      0x1c1 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
+ .debug_line    0x000000000000344c      0x2dd /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+ .debug_line    0x0000000000003729      0x252 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+ .debug_line    0x000000000000397b      0x1c1 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
 
 .debug_str      0x0000000000000000     0x17c3
  .debug_str     0x0000000000000000      0x474 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
