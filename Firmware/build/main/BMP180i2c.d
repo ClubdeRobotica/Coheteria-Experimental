@@ -1,5 +1,5 @@
-user_main.o: \
- /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/user_main.c \
+BMP180i2c.o: \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/BMP180i2c.c \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdio.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/_ansi.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/newlib.h \
@@ -53,51 +53,20 @@ user_main.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_err.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/assert.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/heap/port/esp8266/include/esp_heap_config.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/list.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/event_groups.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/timers.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_types.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_interface.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_event.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/ip_addr.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/opt.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include/lwipopts.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_libc.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_system.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/time.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include/udp_sync.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/debug.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/arch.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include/arch/cc.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/inttypes.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/limits.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/def.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/ip4_addr.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/ip6_addr.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/def.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/include/tcpip_adapter.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_types.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/lwip/include/lwip/apps/dhcpserver/dhcpserver.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_event_loop.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/nvs_flash/include/nvs_flash.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/nvs_flash/include/nvs.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/BMP180i2c.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log_internal.h \
- /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/hal.h \
- /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/CdR_gpio.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_system.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/i2c.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/gpio.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/pin_mux_register.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/gpio_register.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/uart.h \
- /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/BMP180i2c.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/i2c.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/CdR_gpio.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/gpio.h
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdio.h:
@@ -206,79 +175,23 @@ user_main.o: \
 
 /home/german/esp/ESP8266_RTOS_SDK/components/heap/port/esp8266/include/esp_heap_config.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h:
-
 /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/list.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/event_groups.h:
+/home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/timers.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_types.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_interface.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_event.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/ip_addr.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/opt.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include/lwipopts.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_libc.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_system.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/sys/time.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include/udp_sync.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/debug.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/arch.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include/arch/cc.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/inttypes.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/limits.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/def.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/ip4_addr.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/ip6_addr.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/def.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/include/tcpip_adapter.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_types.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/lwip/include/lwip/apps/dhcpserver/dhcpserver.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_event_loop.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/nvs_flash/include/nvs_flash.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/nvs_flash/include/nvs.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/BMP180i2c.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log_internal.h:
 
-/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/hal.h:
+/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_system.h:
 
-/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/CdR_gpio.h:
+/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/i2c.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/gpio.h:
 
@@ -288,13 +201,7 @@ user_main.o: \
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/gpio_register.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/uart.h:
-
-/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/BMP180i2c.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/i2c.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/CdR_gpio.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/gpio.h:
-/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/./user_main.c:
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/./BMP180i2c.c:
