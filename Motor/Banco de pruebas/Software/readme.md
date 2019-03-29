@@ -22,9 +22,9 @@ Desde la cmd deber realizar los comandos:
 ``` markdown
 cd 
 ```
-Hasta hubicarse en la carpeta `cd:\Python27\Scripts>` y ahi escribir los siguientes comandos:
+Hasta ubicarse en la carpeta `cd:\Python27\Scripts>` y ahi escribir los siguientes comandos:
 ``` markdown
-pip install matplotlip 
+pip install matplotlib 
 ```
 ``` markdown
 pip install numpy
@@ -44,7 +44,7 @@ sudo apt-get install pip
 ```
 Luegode eso debe hacer instalar las bibliotecas numpy y matplotlib por medio de los comandos pip al igual que en windows:
 ``` markdown
-pip install matplotlip 
+pip install matplotlib 
 ```
 ``` markdown
 pip install numpy
