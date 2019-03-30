@@ -5,3 +5,6 @@ Software para telemetria y control del cohete
 ## Requisitos
 * [python 2.x.x o python 3.x.x](https://www.python.org/downloads/).
 * Tener Socket lib instalado en python.
+## Archivos
+* ET.py : Programa general de la Estación Terrena.
+* data.txt : Base de datos simple. 
