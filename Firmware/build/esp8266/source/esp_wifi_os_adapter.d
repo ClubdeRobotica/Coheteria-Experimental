@@ -30,7 +30,7 @@ source/esp_wifi_os_adapter.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/heap/port/esp8266/include/esp_heap_config.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_system.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_attr.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_osi.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdlib.h \
@@ -63,9 +63,7 @@ source/esp_wifi_os_adapter.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/timers.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/nvs_flash/include/nvs.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/port/include/esp_newlib.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/reent.h
+ /home/german/esp/ESP8266_RTOS_SDK/components/nvs_flash/include/nvs.h
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/string.h:
 
@@ -127,7 +125,7 @@ source/esp_wifi_os_adapter.o: \
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_attr.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h:
+/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_osi.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h:
 
@@ -194,8 +192,4 @@ source/esp_wifi_os_adapter.o: \
 /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/nvs_flash/include/nvs.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/port/include/esp_newlib.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/reent.h:
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/source/esp_wifi_os_adapter.c:

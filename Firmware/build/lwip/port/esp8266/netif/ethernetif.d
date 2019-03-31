@@ -93,7 +93,6 @@ port/esp8266/netif/ethernetif.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/include/tcpip_adapter.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_types.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/lwip/include/lwip/apps/dhcpserver/dhcpserver.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_aio.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/semphr.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h \
@@ -289,8 +288,6 @@ port/esp8266/netif/ethernetif.o: \
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_types.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/lwip/include/lwip/apps/dhcpserver/dhcpserver.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_aio.h:
 

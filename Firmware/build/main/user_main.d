@@ -82,7 +82,6 @@ user_main.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/include/tcpip_adapter.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_types.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/lwip/include/lwip/apps/dhcpserver/dhcpserver.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_event_loop.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/nvs_flash/include/nvs_flash.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/nvs_flash/include/nvs.h \
@@ -98,7 +97,8 @@ user_main.o: \
  /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/BMP180i2c.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/i2c.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/gpio.h
+ /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/gpio.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/wifi.h
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdio.h:
 
@@ -264,8 +264,6 @@ user_main.o: \
 
 /home/german/esp/ESP8266_RTOS_SDK/components/lwip/include/lwip/apps/dhcpserver/dhcpserver.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h:
-
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_event_loop.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/nvs_flash/include/nvs_flash.h:
@@ -297,4 +295,6 @@ user_main.o: \
 /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/gpio.h:
+
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/wifi.h:
 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/./user_main.c:

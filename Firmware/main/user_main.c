@@ -28,6 +28,8 @@
 #include "CdR_gpio.h"
 #include "BMP180i2c.h"
 
+#include "wifi.h"
+
 #define BUF_SIZE (128)
 static const int START_BIT = BIT0;
 /* FreeRTOS event group to signal when we are connected*/
@@ -53,16 +55,6 @@ static esp_err_t event_handler(void* ctx, system_event_t* event)
     return ESP_OK;
 }
 
-static void InitializeWIFI(void)
-{
-    tcpip_adapter_init();
-    wifi_event_group = xEventGroupCreate();
-    ESP_ERROR_CHECK(esp_event_loop_init(event_handler, NULL));
-    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
-    ESP_ERROR_CHECK(esp_wifi_init(&cfg));
-    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
-    ESP_ERROR_CHECK(esp_wifi_start());
-}
 
 void InitializeUART0(void){
     // Configure parameters of an UART driver,
@@ -160,9 +152,9 @@ void app_main()
 {
 	ESP_ERROR_CHECK(nvs_flash_init());
 	InitializeUART0();
-	InitializeWIFI();
-
-	xTaskCreate(&i2c_task_example, "i2c_task_example", 2048, NULL, 10, NULL);
+	//InitializeWIFI();
+	Wifi_start();
+	//xTaskCreate(&i2c_task_example, "i2c_task_example", 2048, NULL, 10, NULL);
     xTaskCreate(&UartTask, "uart_echo_task", 2048, NULL, 10, NULL);
     xTaskCreate(&StayAliveTask, "gpio_task_example", 2048, NULL, 10, NULL);
 }
