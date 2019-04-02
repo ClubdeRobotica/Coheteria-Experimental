@@ -128,7 +128,7 @@ static void tcp_client_task(void *pvParameters)
         	adc++;
         	bmp++;
         	sprintf(Buffer, payload, adc, bmp);
-            err = send(sock, Buffer, strlen(payload), 0);
+            err = send(sock, Buffer, strlen(Buffer), 0);
             if (err < 0) {
                 ESP_LOGE(TAG, "Error occured during sending: errno %d", errno);
                 break;
