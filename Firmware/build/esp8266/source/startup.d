@@ -57,12 +57,38 @@ source/startup.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/bootloader_support/include/esp_flash_partitions.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/spi_flash/include/esp_flash_data_types.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_phy_init.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_osi.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/heap/include/esp_heap_caps_init.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_task_wdt.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/internal/esp_wifi_internal.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/internal/esp_system_internal.h
+ /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/internal/esp_system_internal.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdlib.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/machine/stdlib.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/alloca.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/projdefs.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/portable.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/deprecated_definitions.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/portmacro.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_attr.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/xtruntime.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/config/core.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/hal.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/config/core-matmap.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/config/tie.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/config/specreg.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/corebits.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/xtensa_rtos.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/config/system.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/simcall.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/xtensa_context.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/xtensa_timer.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/mpu_wrappers.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/list.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/port/include/esp_newlib.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/reent.h
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdint.h:
 
@@ -178,10 +204,6 @@ source/startup.o: \
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_phy_init.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_osi.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h:
-
 /home/german/esp/ESP8266_RTOS_SDK/components/heap/include/esp_heap_caps_init.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_task_wdt.h:
@@ -189,4 +211,60 @@ source/startup.o: \
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/internal/esp_wifi_internal.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/internal/esp_system_internal.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdlib.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/machine/stdlib.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/alloca.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/projdefs.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/portable.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/deprecated_definitions.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/portmacro.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_attr.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/xtruntime.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/config/core.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/hal.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/config/core-matmap.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/config/tie.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/config/specreg.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/corebits.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/xtensa_rtos.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/config/system.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/simcall.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/xtensa_context.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/xtensa_timer.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/mpu_wrappers.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/list.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/port/include/esp_newlib.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/reent.h:
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/source/startup.c:

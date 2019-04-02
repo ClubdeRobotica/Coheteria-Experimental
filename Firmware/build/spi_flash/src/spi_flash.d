@@ -32,8 +32,6 @@ src/spi_flash.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/spi_flash/include/priv/esp_spi_flash_raw.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/rom_functions.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_attr.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_osi.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_system.h \
  /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/include/sdkconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h \
@@ -107,10 +105,6 @@ src/spi_flash.o: \
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/rom_functions.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_attr.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_osi.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_system.h:
 

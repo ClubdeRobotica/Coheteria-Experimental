@@ -77,12 +77,14 @@ source/event_loop.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/include/tcpip_adapter.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_types.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/lwip/include/lwip/apps/dhcpserver/dhcpserver.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_event.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_event_loop.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_osi.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log_internal.h
+ /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log_internal.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/list.h \
+ /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdlib.h:
 
@@ -238,15 +240,19 @@ source/event_loop.o: \
 
 /home/german/esp/ESP8266_RTOS_SDK/components/lwip/include/lwip/apps/dhcpserver/dhcpserver.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h:
-
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_event.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_event_loop.h:
 
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_osi.h:
-
 /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/log/include/esp_log_internal.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/list.h:
+
+/home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h:
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/source/event_loop.c:

@@ -1,0 +1,17 @@
+//Trama json, cada trama tiene una marca de Tiempo absoluto (medida en ticks del so del cohete y un array con todos los sensores,
+// cada elemento de ese array es un bloque con nombre del sensor y valor.
+//Ejemplo 1: un acelerometro de tres ejes mas un sensor de presion y temperatura
+{
+    "Tiempo":12221,
+    "Sensores":[
+        {"name":"x_1", "value":128},
+        {"name":"y_1", "value":128},
+        {"name":"z_1", "value":128},
+        {"name":"alt_1", "value":128},
+        {"name":"temp_1", "value":128}
+    ]
+}
+    
+
+
+    

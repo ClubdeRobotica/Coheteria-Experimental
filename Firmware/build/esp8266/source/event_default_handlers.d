@@ -77,7 +77,6 @@ source/event_default_handlers.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/include/tcpip_adapter.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_types.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/lwip/include/lwip/apps/dhcpserver/dhcpserver.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_event.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_event_loop.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h \
@@ -240,8 +239,6 @@ source/event_default_handlers.o: \
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_types.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/lwip/include/lwip/apps/dhcpserver/dhcpserver.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_event.h:
 

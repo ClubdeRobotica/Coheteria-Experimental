@@ -742,7 +742,7 @@ END GROUP
  *(.jcr)
                 0x000000003ffe8420                _data_end = ABSOLUTE (.)
 
-.rodata         0x000000003ffe8420      0xddc
+.rodata         0x000000003ffe8420      0xde0
                 0x000000003ffe8420                _rodata_start = ABSOLUTE (.)
  *(.rodata)
  *(.rodata.*)
@@ -750,71 +750,71 @@ END GROUP
                 0x000000003ffe8420       0x21 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/main/libmain.a(bootloader_start.o)
  *fill*         0x000000003ffe8441        0x3 
  .rodata.str1.4
-                0x000000003ffe8444       0xfa /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
-                                        0x106 (size before relaxing)
- *fill*         0x000000003ffe853e        0x2 
+                0x000000003ffe8444       0xfe /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                                        0x10a (size before relaxing)
+ *fill*         0x000000003ffe8542        0x2 
  .rodata.print_flash_info
-                0x000000003ffe8540       0x28 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                0x000000003ffe8544       0x28 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
  .rodata.str1.4
-                0x000000003ffe8568      0x38a /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x000000003ffe856c      0x38a /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
                                         0x392 (size before relaxing)
- *fill*         0x000000003ffe88f2        0x2 
+ *fill*         0x000000003ffe88f6        0x2 
  .rodata.str1.4
-                0x000000003ffe88f4       0xb4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+                0x000000003ffe88f8       0xb4 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
  .rodata.str1.4
-                0x000000003ffe89a8      0x26b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x000000003ffe89ac      0x26b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                         0x26f (size before relaxing)
- *fill*         0x000000003ffe8c13        0x1 
+ *fill*         0x000000003ffe8c17        0x1 
  .rodata.str1.4
-                0x000000003ffe8c14      0x17b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- *fill*         0x000000003ffe8d8f        0x1 
+                0x000000003ffe8c18      0x17b /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ *fill*         0x000000003ffe8d93        0x1 
  .rodata.str1.4
-                0x000000003ffe8d90       0x29 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
- *fill*         0x000000003ffe8db9        0x3 
+                0x000000003ffe8d94       0x29 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+ *fill*         0x000000003ffe8dbd        0x3 
  .rodata.str1.4
-                0x000000003ffe8dbc       0x20 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+                0x000000003ffe8dc0       0x20 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
                                          0x22 (size before relaxing)
  .rodata.s_log_prefix
-                0x000000003ffe8ddc        0x6 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
- *fill*         0x000000003ffe8de2        0x2 
+                0x000000003ffe8de0        0x6 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+ *fill*         0x000000003ffe8de6        0x2 
  .rodata.s_log_color
-                0x000000003ffe8de4       0x18 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
+                0x000000003ffe8de8       0x18 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/log/liblog.a(log.o)
  .rodata.crc32_le_table
-                0x000000003ffe8dfc      0x400 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
+                0x000000003ffe8e00      0x400 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/build/bootloader/util/libutil.a(crc.o)
  *(.gnu.linkonce.r.*)
  *(.rodata1)
-                0x000000003ffe91fc                __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
+                0x000000003ffe9200                __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
  *(.xt_except_table)
  *(.gcc_except_table)
  *(.gnu.linkonce.e.*)
  *(.gnu.version_r)
  *(.eh_frame)
-                0x000000003ffe91fc                . = ((. + 0x3) & 0xfffffffffffffffc)
-                0x000000003ffe91fc                __init_array_start = ABSOLUTE (.)
+                0x000000003ffe9200                . = ((. + 0x3) & 0xfffffffffffffffc)
+                0x000000003ffe9200                __init_array_start = ABSOLUTE (.)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *(.ctors)
-                0x000000003ffe91fc                __init_array_end = ABSOLUTE (.)
+                0x000000003ffe9200                __init_array_end = ABSOLUTE (.)
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *(.dtors)
-                0x000000003ffe91fc                __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
+                0x000000003ffe9200                __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
  *(.xt_except_desc)
  *(.gnu.linkonce.h.*)
-                0x000000003ffe91fc                __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
+                0x000000003ffe9200                __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
  *(.xt_except_desc_end)
  *(.dynamic)
  *(.gnu.version_d)
-                0x000000003ffe91fc                _rodata_end = ABSOLUTE (.)
-                0x000000003ffe91fc                _lit4_start = ABSOLUTE (.)
+                0x000000003ffe9200                _rodata_end = ABSOLUTE (.)
+                0x000000003ffe9200                _lit4_start = ABSOLUTE (.)
  *(*.lit4)
  *(.lit4.*)
  *(.gnu.linkonce.lit4.*)
-                0x000000003ffe91fc                _lit4_end = ABSOLUTE (.)
-                0x000000003ffe91fc                . = ALIGN (0x4)
-                0x000000003ffe91fc                _heap_start = ABSOLUTE (.)
+                0x000000003ffe9200                _lit4_end = ABSOLUTE (.)
+                0x000000003ffe9200                . = ALIGN (0x4)
+                0x000000003ffe9200                _heap_start = ABSOLUTE (.)
                 0x00000000400040c0                PROVIDE (SPI_sector_erase, 0x400040c0)
                 0x0000000040004174                PROVIDE (SPI_page_program, 0x40004174)
                 0x00000000400042ac                PROVIDE (SPI_read_data, 0x400042ac)
