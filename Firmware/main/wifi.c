@@ -99,8 +99,8 @@ static void tcp_client_task(void *pvParameters)
     char addr_str[128];
     int addr_family;
     int ip_protocol;
-    char *payload = "ADC: %d, BMP: %d";
-    int adc = 100, bmp = 0;
+    char *payload = "{TIME: %d, BMP: %d}";
+    int Time = 100, bmp = 0;
     char Buffer[128];
 
     while (1) {
@@ -125,9 +125,9 @@ static void tcp_client_task(void *pvParameters)
         ESP_LOGI(TAG, "Conectado");
 
         while (1) {
-        	adc++;
+        	Time = xTaskGetTickCount();
         	bmp++;
-        	sprintf(Buffer, payload, adc, bmp);
+        	sprintf(Buffer, payload, Time, bmp);
             err = send(sock, Buffer, strlen(Buffer), 0);
             if (err < 0) {
                 ESP_LOGE(TAG, "Error occured during sending: errno %d", errno);
@@ -147,7 +147,7 @@ static void tcp_client_task(void *pvParameters)
             }
 */
             //Esperamos a que llegue una notificacion y enviamos el dato
-            vTaskDelay(2000 / portTICK_PERIOD_MS);
+            vTaskDelay(100 / portTICK_PERIOD_MS);
 
         }
 

@@ -15,7 +15,7 @@ while True:
     recibido = cli.recv(1024)
 
     #Si se reciben datos nos muestra la IP y el mensaje recibido
-    print "Recibo conexion de la IP: " + str(addr[0]) + " Puerto: " + str(addr[1])
+    #print "Recibo conexion de la IP: " + str(addr[0]) + " Puerto: " + str(addr[1])
     print recibido
     if recibido == "end":
         break

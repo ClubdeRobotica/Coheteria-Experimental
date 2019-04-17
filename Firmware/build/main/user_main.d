@@ -98,6 +98,7 @@ user_main.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/i2c.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/gpio.h \
+ /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/bmp180.h \
  /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/wifi.h
 
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/stdio.h:
@@ -295,6 +296,8 @@ user_main.o: \
 /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/gpio.h:
+
+/home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/bmp180.h:
 
 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/wifi.h:
 /home/german/Documentos/CdR/Coheteria-Experimental/Firmware/main/./user_main.c:
