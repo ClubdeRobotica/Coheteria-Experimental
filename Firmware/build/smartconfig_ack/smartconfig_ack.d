@@ -89,7 +89,6 @@ smartconfig_ack.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_types.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_event.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_smartconfig.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/smartconfig_ack/include/smartconfig_ack.h
 
@@ -270,8 +269,6 @@ smartconfig_ack.o: \
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_types.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_event.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_smartconfig.h:
 

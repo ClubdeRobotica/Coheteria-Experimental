@@ -1,0 +1,15 @@
+
+{
+    "Tiempo":12221,
+    "Sensores":[
+        {"name":"x_1", "value":128},
+        {"name":"y_1", "value":128},
+        {"name":"z_1", "value":128},
+        {"name":"alt_1", "value":128},
+        {"name":"temp_1", "value":128}
+    ]
+}
+    
+
+
+    

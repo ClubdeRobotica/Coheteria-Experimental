@@ -78,7 +78,6 @@ apps/dhcpserver/dhcpserver.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/include/tcpip_adapter.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_types.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/lwip/include/lwip/apps/dhcpserver/dhcpserver.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/inet.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/err.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/pbuf.h \
@@ -260,8 +259,6 @@ apps/dhcpserver/dhcpserver.o: \
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_types.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/lwip/include/lwip/apps/dhcpserver/dhcpserver.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include/lwip/inet.h:
 

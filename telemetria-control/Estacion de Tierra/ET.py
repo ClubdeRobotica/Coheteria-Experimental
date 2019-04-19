@@ -25,6 +25,7 @@ while True:
         cli.close()
         cli, addr = ser.accept()
         print "Recibo conexion de la IP: " + str(addr[0]) + " Puerto: " + str(addr[1])
+        
 cli.close()
 ser.close()
 print("Conexiones cerradas")

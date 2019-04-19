@@ -30,8 +30,6 @@ source/task_wdt.o: \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_err.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/assert.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/heap/port/esp8266/include/esp_heap_config.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_osi.h \
- /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_task_wdt.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/portmacro.h \
  /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_attr.h \
@@ -111,10 +109,6 @@ source/task_wdt.o: \
 /home/german/esp/ESP8266_RTOS_SDK/components/newlib/newlib/include/assert.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/heap/port/esp8266/include/esp_heap_config.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_osi.h:
-
-/home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_wifi_os_adapter.h:
 
 /home/german/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_task_wdt.h:
 

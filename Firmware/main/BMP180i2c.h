@@ -1,67 +1,105 @@
-/*
- * bmp180.h
- *
- *  Created on: 23.08.2015
- *      Author: fbargste
- */
+/***************************************************************************
+  This is a library for the BMP085 pressure sensor
 
-#ifndef BMP180I2C_H_
-#define BMP180I2C_H_
+  Designed specifically to work with the Adafruit BMP085 or BMP180 Breakout
+  ----> http://www.adafruit.com/products/391
+  ----> http://www.adafruit.com/products/1603
 
-#include "stdint.h"
-#include "stdbool.h"
+  These displays use I2C to communicate, 2 pins are required to interface.
 
-#include "esp_log.h"
-#include "esp_system.h"
-#include "esp_err.h"
+  Adafruit invests time and resources providing this open source code,
+  please support Adafruit andopen-source hardware by purchasing products
+  from Adafruit!
+
+  Written by Kevin Townsend for Adafruit Industries.
+  BSD license, all text above must be included in any redistribution
+ ***************************************************************************/
+#ifndef __BMP085_H__
+#define __BMP085_H__
+
+#include <stdio.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include <string.h>
+
+#include "freertos/FreeRTOS.h"
+#include "freertos/queue.h"
+#include "freertos/task.h"
+#include "freertos/event_groups.h"
+
 #include "driver/i2c.h"
 #include "CdR_gpio.h"
+#include "hal.h"
+#include "bmp180.h"
+/*=========================================================================
+    -----------------------------------------------------------------------*/
+#define BMP180_ADDR		            (0x77)
+#define I2C_SCL_IO     				BOARD_D7        /*!< gpio number for I2C master clock */
+#define I2C_SDA_IO 	  				BOARD_D6 		/*!< gpio number for I2C master data  */
+#define BMP180_RX_QUEUE_SIZE      	10
+#define BMP180_TASK_PRIORITY     	9
 
-#define I2C_EXAMPLE_MASTER_SCL_IO           BOARD_D7         /*!< gpio number for I2C master clock */
-#define I2C_EXAMPLE_MASTER_SDA_IO           BOARD_D6         /*!< gpio number for I2C master data  */
-#define I2C_EXAMPLE_MASTER_NUM              I2C_NUM_0        /*!< I2C port number for master dev */
-#define I2C_EXAMPLE_MASTER_TX_BUF_DISABLE   0                /*!< I2C master do not need buffer */
-#define I2C_EXAMPLE_MASTER_RX_BUF_DISABLE   0                /*!< I2C master do not need buffer */
+#define BMP180_VERSION_REG        	0xD0
+#define BMP180_CONTROL_REG        	0xF4
+#define BMP180_RESET_REG          	0xE0
+#define BMP180_OUT_MSB_REG        	0xF6
+#define BMP180_OUT_LSB_REG        	0xF7
+#define BMP180_OUT_XLSB_REG       	0xF8
 
-#define MPU6050_SENSOR_ADDR                 0x68             /*!< slave address for MPU6050 sensor */
-#define MPU6050_CMD_START                   0x41             /*!< Command to set measure mode */
-#define MPU6050_WHO_AM_I                    0x75             /*!< Command to read WHO_AM_I reg */
-#define WRITE_BIT                           I2C_MASTER_WRITE /*!< I2C master write */
-#define READ_BIT                            I2C_MASTER_READ  /*!< I2C master read */
-#define ACK_CHECK_EN                        0x1              /*!< I2C master will check ack from slave*/
-#define ACK_CHECK_DIS                       0x0              /*!< I2C master will not check ack from slave */
-#define ACK_VAL                             0x0              /*!< I2C ack value */
-#define NACK_VAL                            0x1              /*!< I2C nack value */
-#define LAST_NACK_VAL                       0x2              /*!< I2C last_nack value */
+#define BMP180_CALIBRATION_REG    	0xAA
+#define BMP180_MEASURE_TEMP       	0x2E
+#define BMP180_MEASURE_PRESS      	0x34
 
-/**
- * Define the mpu6050 register address:
- */
-#define SMPLRT_DIV      0x19
-#define CONFIG          0x1A
-#define GYRO_CONFIG     0x1B
-#define ACCEL_CONFIG    0x1C
-#define ACCEL_XOUT_H    0x3B
-#define ACCEL_XOUT_L    0x3C
-#define ACCEL_YOUT_H    0x3D
-#define ACCEL_YOUT_L    0x3E
-#define ACCEL_ZOUT_H    0x3F
-#define ACCEL_ZOUT_L    0x40
-#define TEMP_OUT_H      0x41
-#define TEMP_OUT_L      0x42
-#define GYRO_XOUT_H     0x43
-#define GYRO_XOUT_L     0x44
-#define GYRO_YOUT_H     0x45
-#define GYRO_YOUT_L     0x46
-#define GYRO_ZOUT_H     0x47
-#define GYRO_ZOUT_L     0x48
-#define PWR_MGMT_1      0x6B
-#define WHO_AM_I        0x75  /*!< Command to read WHO_AM_I reg */
+#define BMP180_CHIP_ID            	0x55
+
+#define BMP180_RESET_VALUE 		  	0xB6
 
 
-esp_err_t i2c_example_master_init();
-esp_err_t i2c_example_master_mpu6050_write(i2c_port_t i2c_num, uint8_t reg_address, uint8_t *data, size_t data_len);
-esp_err_t i2c_example_master_mpu6050_read(i2c_port_t i2c_num, uint8_t reg_address, uint8_t *data, size_t data_len);
-esp_err_t i2c_example_master_mpu6050_init(i2c_port_t i2c_num);
+#define BMP180_TEMPERATURE 			(1<<0)
+#define BMP180_PRESSURE 			(1<<1)
 
-#endif /* BMP180I2C_H_ */
+// Calibration constants
+typedef struct
+{
+    int16_t  AC1;
+    int16_t  AC2;
+    int16_t  AC3;
+    uint16_t AC4;
+    uint16_t AC5;
+    uint16_t AC6;
+    int16_t  B1;
+    int16_t  B2;
+    int16_t  MB;
+    int16_t  MC;
+    int16_t  MD;
+} bmp180_constants_t;
+
+
+// temperature in °C
+typedef float bmp180_temp_t;
+// pressure in mPa (To get hPa divide by 100)
+typedef uint32_t bmp180_press_t;
+// BMP180_Event_Result
+typedef struct
+{
+    uint8_t cmd;
+    bmp180_temp_t  temperature;
+    bmp180_press_t pressure;
+} bmp180_result_t;
+
+
+void i2c_master_init();
+s8 BMP180_I2C_bus_write(u8 dev_addr, u8 reg_addr, u8 *reg_data, u8 cnt);
+s8 BMP180_I2C_bus_read(u8 dev_addr, u8 reg_addr, u8 *reg_data, u8 cnt);
+
+
+// Returns true if the bmp180 is detected.
+bool bmp180_is_available(u8 dev_addr);
+// Reads all the internal constants, returning true on success.
+bool bmp180_fillInternalConstants(u8 dev_addr, bmp180_constants_t *c);
+// Reads an optional temperature and pressure. The over sampling
+// setting, oss, may be 0 to 3. Returns true on success.
+bool bmp180_measure(u8 dev_addr, bmp180_constants_t *c, int32_t *temperature,
+uint32_t *pressure, uint8_t oss);
+
+#endif
