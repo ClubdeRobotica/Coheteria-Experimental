@@ -7,6 +7,7 @@ flag=False
 class lan:
     def init(self):
         self.ser = socket.socket(socket.AF_INET, socket.SOCK_STREAM)           #instanciamos un objeto para trabajar con el socket
+        self.ser.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         self.archivo = open("data.txt", "w")
     def launch(self):
         PUERTO=8050                                                      #Aceptamos conexiones entrantes con el metodo listen. Por parámetro las conexiones simutáneas.
@@ -22,7 +23,14 @@ class lan:
         text.insert("end",salida )
         while True:
             try:
-                recibido = self.client.recv(1024)                                 #Recibimos el mensaje, con el metodo recv recibimos datos. Por parametro la cantidad de bytes para recibir
+                recibido = self.client.recv(1024)#Recibimos el mensaje, con el metodo recv recibimos datos. Por parametro la cantidad de bytes para recibir
+                try:
+	                l_pressure.configure(text=recibido["Presion"])
+	                h_pressure.configure(text=recibido["Presion"])
+	                l_temperature.configure(text=recibido["Temperatura"])
+	                h_temperature.configure(text=recibido["Temperatura"])
+                except:
+                	pass                                
                 text.insert("end",str(recibido)+"\n" )                                            #Si se reciben datos nos muestra la IP y el mensaje recibido
                 text.see("end")
                 self.archivo.write(str(recibido)+"\n")                         #Cerramos la instancia del socket cliente y servidor
@@ -37,6 +45,7 @@ class lan:
     def end(self):
         try:
             self.client.close()
+            self.ser.shutdown(socket.SHUT_RDWR)	
             self.ser.close()
             self.archivo.close()
             text.insert("end","Conexiones cerradas\n")
@@ -134,5 +143,3 @@ button.grid(column=0,row=0)
 
 
 window.mainloop()
-
-
