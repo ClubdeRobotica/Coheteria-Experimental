@@ -104,7 +104,7 @@ void loop() {
       Presion=bmp180.getPressure();
       digitalWrite(LED_BUILTIN, LOW);//Led off
       
-      sprintf(buffer, "{\"T\":%d,\"P0\":%.2f,\"T0\":%.2f}", Tiempo, Presion, Temperatura);
+      sprintf(buffer, "{\"T\":%d,\"P0\":%.2f"/*,\"T0\":%.2f}"*/, Tiempo, Presion/*, /*Temperatura*/);
       ESP.wdtFeed();
       //sprintf(buffer, "{\"Tiempo\":%d,", Tiempo);
       //client.print(buffer);
