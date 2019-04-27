@@ -10,14 +10,15 @@
 BMP180I2C bmp180(I2C_ADDRESS);
 
 #ifndef STASSID
-#define STASSID "Fibertel WiFi292 2.4GHz"
-#define STAPSK  "0043192350"
+#define STASSID "WiFi-Arnet-kxde"
+#define STAPSK  "dkfkchxbm4"
+#define IP_PC     "192.168.1.3"
 #endif
 
 const char* ssid     = STASSID;
 const char* password = STAPSK;
 
-const char* host = "192.168.0.245";
+const char* host = IP_PC;//"192.168.0.245";
 const uint16_t port = 8050;
 
 void setup() {
@@ -69,8 +70,8 @@ void setup() {
 }
 
 void loop() {
-  unsigned int Tiempo = 0, Temperatura = 0, Presion = 0; 
-  char buffer[20];
+  unsigned int Tiempo = 0; float Temperatura = 0, Presion = 0; 
+  char buffer[32];
   Serial.print("connecting to ");
   Serial.print(host);
   Serial.print(':');
@@ -102,12 +103,15 @@ void loop() {
       } while (!bmp180.hasValue());//*/
       Presion=bmp180.getPressure();
       digitalWrite(LED_BUILTIN, LOW);//Led off
-      sprintf(buffer, "{\"Tiempo\": \"%d\",", Tiempo);
+      
+      sprintf(buffer, "{\"T\":%d,\"P0\":%.2f,\"T0\":%.2f}", Tiempo, Presion, Temperatura);
+      ESP.wdtFeed();
+      //sprintf(buffer, "{\"Tiempo\":%d,", Tiempo);
+      //client.print(buffer);
+      //sprintf(buffer, "\"Presion\":%.2f, ", Presion);
       client.print(buffer);
-      sprintf(buffer, "\"Presion\" : \"%d\", ", Presion);
-      client.print(buffer);
-      sprintf(buffer, "\"Temperatura\": \"%d\"}", Temperatura);
-      client.print(buffer);
+      //sprintf(buffer, "\"Temperatura\":%f}", Temperatura);*/
+      //client.print(buffer);
       delay(200);
       Tiempo+=200;
     }
