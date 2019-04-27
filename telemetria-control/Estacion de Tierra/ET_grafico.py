@@ -25,10 +25,10 @@ class lan:
             try:
                 recibido = self.client.recv(1024)#Recibimos el mensaje, con el metodo recv recibimos datos. Por parametro la cantidad de bytes para recibir
                 try:
-	                l_pressure.configure(text=recibido["Presion"])
-	                h_pressure.configure(text=recibido["Presion"])
-	                l_temperature.configure(text=recibido["Temperatura"])
-	                h_temperature.configure(text=recibido["Temperatura"])
+	                l_pressure.configure(text=recibido["P"])
+	                h_pressure.configure(text=recibido["P"])
+	                l_temperature.configure(text=recibido["T"])
+	                h_temperature.configure(text=recibido["T"])
                 except:
                 	pass                                
                 text.insert("end",str(recibido)+"\n" )                                            #Si se reciben datos nos muestra la IP y el mensaje recibido
