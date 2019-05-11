@@ -2,7 +2,7 @@
 from Tkinter import *
 import socket
 import threading
-
+import ast
 flag=False
 class lan:
     def init(self):
@@ -10,6 +10,7 @@ class lan:
         self.ser.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         self.archivo = open("data.txt", "w")
     def launch(self):
+        
         PUERTO=8050                                                      #Aceptamos conexiones entrantes con el metodo listen. Por parámetro las conexiones simutáneas.
         self.ser.bind(("",PUERTO))                                             #Puerto y servidor que debe escuchar
         self.ser.listen(1)   
@@ -22,15 +23,12 @@ class lan:
         salida= "Recibo conexion de la IP: " + str(addr[0]) + " Puerto: " + str(addr[1])+"\n"
         text.insert("end",salida )
         while True:
+
+ 
             try:
                 recibido = self.client.recv(1024)#Recibimos el mensaje, con el metodo recv recibimos datos. Por parametro la cantidad de bytes para recibir
-                try:
-	                l_pressure.configure(text=recibido["P"])
-	                h_pressure.configure(text=recibido["P"])
-	                l_temperature.configure(text=recibido["T"])
-	                h_temperature.configure(text=recibido["T"])
-                except:
-                	pass                                
+                
+
                 text.insert("end",str(recibido)+"\n" )                                            #Si se reciben datos nos muestra la IP y el mensaje recibido
                 text.see("end")
                 self.archivo.write(str(recibido)+"\n")                         #Cerramos la instancia del socket cliente y servidor
@@ -42,6 +40,7 @@ class lan:
                 salida= "Recibo conexion de la IP: " + str(addr[0]) + " Puerto: " + str(addr[1])+"\n"
                 text.insert("end",salida )
                 text.see("end")
+ 
     def end(self):
         try:
             self.client.close()
