@@ -10,6 +10,7 @@
  
 ## PCB Sensor Presion
  ![](https://github.com/ClubdeRobotica/Coheteria-Experimental/blob/master/telemetria-control/Controlador%20de%20Vuelo/PCB/AdaptadorD1/BatBmp.png)
+ 
  Un PCB del mismo tamano que el otro algo similar a la imagen, el espacio da justo para poner un sensor BMP180 (1) y el conector para la bateria (2). Lo ideal es que tenga las cuatro tiras de pines a los costados, pero se puede aliminar alguno en caso de que falte espacio.
  Lo unico a tener en cuenta es que ademas de la alimentacion, los pines SDA y SCL tiene que ir conectados con los pines D2 y D1 del Wemos.
  D2 -- SDA
