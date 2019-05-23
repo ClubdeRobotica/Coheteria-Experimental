@@ -11,8 +11,8 @@
 #define MAIN_HAL_H_
 
 #define EXAMPLE_ESP_WIFI_MODE_AP   	false //TRUE:AP FALSE:STA
-#define EXAMPLE_ESP_WIFI_SSID      	"Fibertel WiFi292 2.4GHz"
-#define EXAMPLE_ESP_WIFI_PASS      	"0043192350"
+#define EXAMPLE_ESP_WIFI_SSID      	"WiFi-Arnet-kxde"
+#define EXAMPLE_ESP_WIFI_PASS      	"dkfkchxbm4"
 #define EXAMPLE_MAX_STA_CONN 		1
 
 #define GPIO_LED    		 BOARD_LED

@@ -23,10 +23,10 @@
 
 #include "wifi.h"
 
-#define EXAMPLE_WIFI_SSID "Fibertel WiFi292 2.4GHz"
-#define EXAMPLE_WIFI_PASS "0043192350"
+#define EXAMPLE_WIFI_SSID "WiFi-Arnet-kxde"
+#define EXAMPLE_WIFI_PASS "dkfkchxbm4"
 
-#define HOST_IP_ADDR "192.168.0.245"
+#define HOST_IP_ADDR "192.168.1.3"
 
 #define PORT 8050
 #define CONFIG_EXAMPLE_IPV4
