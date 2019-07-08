@@ -30,13 +30,15 @@ ESP8266WebServer server(80);
 
 HX711 scale;
 float gramos = 0, lectura = 0, tiempo = 0;
-bool ClientOnline;
+int   BufferIdx = 0;
+char Buffer[10240];
+char DataBuffer[10000];
 
-void handleRoot() {
-  char Buffer[128];
-  sprintf(Buffer, "<meta http-equiv=\"refresh\" content=\"0.1\";><h1>{\"T\":%.1f,\"grs\":%.2f}</h1>", tiempo, gramos);
+void handleRoot() {  
+  sprintf(Buffer, "<meta http-equiv=\"refresh\" content=\"0.1\";><h1>%s</h1>", DataBuffer);   
+  memset(DataBuffer, 0, 1200);
+  BufferIdx=0;
   server.send(200, "text/html", Buffer);
-  ClientOnline = true;
 }
 
 
@@ -95,17 +97,20 @@ void setup() {
 
 void loop() {
   tiempo = millis();
-  Serial.print((tiempo / 1000), 1);
-  Serial.print("\t ms\t");  
   lectura = -scale.get_units(3);
-  Serial.print("\t| ");
   gramos = lectura*PATRON/CALIBRAR;
-  Serial.print(gramos, 1);
-  Serial.print(" gramos\n");  
-   
-
+  //Serial.print((tiempo / 1000), 1);
+  //Serial.print("\t ms\t");  
+  //Serial.print("\t| ");
+  //Serial.print(gramos, 1);
+  //Serial.print(" gramos\n");  
+  if(BufferIdx == 0)
+    Serial.print("\n");
+  sprintf(&DataBuffer[BufferIdx], "{\"T\":%.3f,\"grs\":%.2f}", tiempo/1000, gramos); 
+  BufferIdx = strlen(DataBuffer);    
   scale.power_down();             // put the ADC in sleep mode
-  delay(10);
-  server.handleClient();
+  //delay(10);
+  Serial.print(DataBuffer);
   scale.power_up();
+  server.handleClient();
 }
