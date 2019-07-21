@@ -19,7 +19,7 @@ Lo que se espera en este proyecto es generar una vinculacion en las distintas á
 
 ## Estructura del repo:
 A continuacion se explica el contenido de las distintas carpetas.
-* **Documentacion:**Contiene la documentacion generada en el proyecto.
+* **Documentacion:** Contiene la documentacion generada en el proyecto.
 * **Firmware:** Contiene el firmware del la electronica de medicion del vector.
 * **Fotos:** Contiene algunas fotos interesantes.
 * **Modelo:** Contiene modelos de vectores hechos con OpenRocket.
