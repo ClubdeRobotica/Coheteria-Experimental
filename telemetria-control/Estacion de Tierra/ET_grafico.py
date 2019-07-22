@@ -21,7 +21,8 @@ class lan:
         cli, addr = self.ser.accept()                                         #Instanciamos un objeto cli (socket cliente) para recibir dato
         self.client=cli
         salida= "Recibo conexion de la IP: " + str(addr[0]) + " Puerto: " + str(addr[1])+"\n"
-        text.insert("end",salida )
+        text.insert("end",salida)
+        
         while True:
 
  
