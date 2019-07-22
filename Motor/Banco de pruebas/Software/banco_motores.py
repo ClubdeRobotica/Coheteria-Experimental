@@ -1,23 +1,17 @@
 from coheteria import *
 from com import *
 import json
-sec=0
-minut=0
-secc=[]
-s=[]
 std=0
 stde=1
-ms=0
+
 def graficar():
-    global sec
     global std
     global stde
-    while stde==1 :
+    s=[]
+    secc=[]
+    while stde==1:
         if std==1:
-            
             inter=str(banco_hard.datos())
-            print inter
-            print type(inter)
             inter=json.loads(inter)
             s.append(inter['T'])
             secc.append(inter['grm'])
@@ -26,11 +20,11 @@ def graficar():
             canvas.draw()
             banco_hard.respond()
 def cronometro():
-    global sec
-    global minut
     global std
     global stde
-    global ms
+    ms=0
+    sec=0
+    minut=0
     while stde==1 :
         if std==1:
             sleep(0.01)
