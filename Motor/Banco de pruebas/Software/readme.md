@@ -49,3 +49,4 @@ pip install matplotlib
 ``` markdown
 pip install numpy
 ```
+nose
