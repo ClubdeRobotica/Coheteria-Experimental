@@ -27,11 +27,10 @@ class lan:
  
             try:
                 recibido = self.client.recv(1024)#Recibimos el mensaje, con el metodo recv recibimos datos. Por parametro la cantidad de bytes para recibir
-                
-
                 text.insert("end",str(recibido)+"\n" )                                            #Si se reciben datos nos muestra la IP y el mensaje recibido
                 text.see("end")
-                self.archivo.write(str(recibido)+"\n")                         #Cerramos la instancia del socket cliente y servidor
+                self.archivo.write(str(recibido)+"\n")
+                self.client.send("ok")                        
             except:
                 text.insert("end","conexion perdida\n" ) 
                 self.client.close()
