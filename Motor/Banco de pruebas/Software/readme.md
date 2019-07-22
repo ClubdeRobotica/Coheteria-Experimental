@@ -49,6 +49,3 @@ pip install matplotlib
 ``` markdown
 pip install numpy
 ```
-Prueba branch
-asd
-
