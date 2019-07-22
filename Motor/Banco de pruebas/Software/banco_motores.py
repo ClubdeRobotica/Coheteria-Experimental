@@ -1,5 +1,6 @@
 from coheteria import *
-
+from com import *
+import json
 sec=0
 minut=0
 secc=[]
@@ -13,13 +14,17 @@ def graficar():
     global stde
     while stde==1 :
         if std==1:
-            sleep(1)
-            sen=sin(2*pi*(0.1)*sec)
-            s.append(sen)
-            secc.append(sec)
+            
+            inter=str(banco_hard.datos())
+            print inter
+            print type(inter)
+            inter=json.loads(inter)
+            s.append(inter['T'])
+            secc.append(inter['grm'])
             a.cla()
             a.plot(secc,s)
             canvas.draw()
+            banco_hard.respond()
 def cronometro():
     global sec
     global minut
@@ -61,6 +66,9 @@ def _quit():
 def on_key_event(event):
     print('you pressed %s' % event.key)
     key_press_handler(event, canvas, toolbar)
+#---------------------comunicacion-------------
+banco_hard=com_lan("localhost",8000)
+
 
 #--------------------Inicializacion-------------
 root =Tk()
