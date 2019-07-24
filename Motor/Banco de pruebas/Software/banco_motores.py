@@ -20,7 +20,7 @@ def graficar():
                 s.append(inter['T'])
                 secc.append(inter['grs'])
                 a.cla()
-                a.plot(secc,s)
+                a.plot(s,ssecc)
                 canvas.draw()
                 print "exito"
             except:
