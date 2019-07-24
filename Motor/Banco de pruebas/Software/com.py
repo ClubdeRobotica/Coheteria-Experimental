@@ -5,7 +5,7 @@ import socket
 class com_lan:
 	def __init__(self,Host,PORT):
 
-		self.obj = socket.socket()
+		self.obj = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		self.obj.connect((Host,PORT))
 
 	def datos(self):
