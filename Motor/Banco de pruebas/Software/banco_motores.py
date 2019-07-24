@@ -1,8 +1,11 @@
 from coheteria import *
 from com import *
 import json
+import socket
+import sys
 std=0
 stde=1
+objetoSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 def graficar():
     global std
@@ -11,14 +14,17 @@ def graficar():
     secc=[]
     while stde==1:
         if std==1:
-            inter=str(banco_hard.datos())
+            # TODO: Aca creo que esta queriendo leer el segundo dato y el modulo todavia no se lo envio
+            inter=str(objetoSocket.recv(32)) 
+            #str(banco_hard.datos())
+            print >>sys.stderr, 'recibido: %s' % inter
             inter=json.loads(inter)
             s.append(inter['T'])
-            secc.append(inter['grm'])
+            secc.append(inter['grs'])
             a.cla()
             a.plot(secc,s)
             canvas.draw()
-            banco_hard.respond()
+            #banco_hard.respond()
 def cronometro():
     global std
     global stde
@@ -42,12 +48,14 @@ def cronometro():
 
 def start():
     global std
+    objetoSocket.connect(datos_servidor)
     inis.config(state="disabled")
     stopb.config(state="normal")
     std=1
 
 def stop():
     global std
+    objetoSocket.close()
     stde=0
     std=0
     inis.config(state="normal")
@@ -61,8 +69,11 @@ def on_key_event(event):
     print('you pressed %s' % event.key)
     key_press_handler(event, canvas, toolbar)
 #---------------------comunicacion-------------
-banco_hard=com_lan("localhost",8000)
 
+#banco_hard=com_lan("192.168.4.1",8000)
+# Agrego Socket
+datos_servidor = ('192.168.4.1', 8000)
+print >>sys.stderr, 'conectando a %s puerto %s' % datos_servidor
 
 #--------------------Inicializacion-------------
 root =Tk()
