@@ -18,7 +18,9 @@ def graficar():
             try:
                 inter=json.loads(inter)
                 s.append(inter['T'])
-                secc.append(inter['grs'])
+                #print(inter['grs']/1000)
+                #print((inter['grs']/1000)*9.81)
+                secc.append((inter['grs']*9.81)/1000)
                 a.cla()
                 a.plot(s,secc)
                 canvas.draw()
@@ -68,7 +70,7 @@ def on_key_event(event):
     print('you pressed %s' % event.key)
     key_press_handler(event, canvas, toolbar)
 
-banco_hard=com_lan("localhost",8000)
+banco_hard=com_lan("192.168.4.1",8000)
 
 
 
