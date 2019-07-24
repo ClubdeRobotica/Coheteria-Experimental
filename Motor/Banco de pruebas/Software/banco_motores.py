@@ -16,14 +16,15 @@ def graficar():
         if std==1:
             # TODO: Aca creo que esta queriendo leer el segundo dato y el modulo todavia no se lo envio
             inter=str(objetoSocket.recv(32)) 
+            if inter:              
+              print >>sys.stderr, 'recibido: %s' % inter
             #str(banco_hard.datos())
-            print >>sys.stderr, 'recibido: %s' % inter
-            inter=json.loads(inter)
-            s.append(inter['T'])
-            secc.append(inter['grs'])
-            a.cla()
-            a.plot(secc,s)
-            canvas.draw()
+              inter=json.loads(inter)
+              s.append(inter['T'])
+              secc.append(inter['grs'])
+              a.cla()
+              a.plot(secc,s)
+              canvas.draw()
             #banco_hard.respond()
 def cronometro():
     global std
