@@ -5,7 +5,8 @@ import socket
 import sys
 std=0
 stde=1
-
+port_addres=0
+ip_addres=""
 def graficar():
     global std
     global stde
@@ -51,9 +52,16 @@ def cronometro():
 
 def start():
     global std
-    inis.config(state="disabled")
-    stopb.config(state="normal")
-    std=1
+    global ip_addres
+    global port_addres
+    global banco_hard
+    if port_addres=="" or port_addres==0:
+        messagebox.showinfo(message="No se cofiguro ninguna ip o puerto dirigase a las configuraciones", title="Conexion")
+    else: 
+        banco_hard=com_lan(ip_addres,port_addres)
+        inis.config(state="disabled")
+        stopb.config(state="normal")
+        std=1
 def stop():
     global std
     stde=0
@@ -65,16 +73,35 @@ def _quit():
     stde=0
     root.quit()     
     root.destroy()  
-
+def config():
+    global ip_addres
+    global port_addres
+    def accept():
+        global ip_addres
+        global port_addres
+        ip_addres=ent1.get()
+        port_addres=int(ent2.get())
+        configwind.destroy()
+    configwind=Tk()
+    configwind.title("configuraciones")
+    label=Label(configwind,text="IP").pack()
+    ent1=Entry(configwind)
+    ent1.pack()
+    label=Label(configwind,text="PORT").pack()
+    ent2=Entry(configwind)
+    ent2.pack()
+    butt=Button(configwind,text="Configurar",command=accept)
+    butt.pack()
 def on_key_event(event):
     print('you pressed %s' % event.key)
     key_press_handler(event, canvas, toolbar)
 
-banco_hard=com_lan("192.168.4.1",8000)
+
 
 
 
 #--------------------Inicializacion-------------
+
 root =Tk()
 root.title("Banco de Motores")
 root.configure(bg="#484848")
@@ -85,7 +112,7 @@ filemenu.add_command(label="Nuevo")
 filemenu.add_command(label="Guardar")
 menubar.add_cascade(label="Archivo", menu=filemenu)
 filemenu = Menu(menubar, tearoff=0)
-filemenu.add_command(label="Configuracion")
+filemenu.add_command(label="Configuracion",command= config)
 menubar.add_cascade(label="Opciones", menu=filemenu)
 filemenu = Menu(menubar, tearoff=0)
 filemenu.add_command(label="Informacion")
