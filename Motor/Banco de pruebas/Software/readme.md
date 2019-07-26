@@ -5,10 +5,10 @@
 El software esta desarollado en python , por el momento hay que hacerle varias modificaciones como evitar el uso de variabes globales y agregarle mas funciones.
 
 ### Contenido de archivos:
-* El archivo **banco_motores.py** contiene todo el programa en si con la parte gráfica.
-* El archivo **coheteria.py** Contiene todas las bibliotecas empleadas en **banco_motores.py**.
-* El archivo **Server.py** Contiene un servidor para probar el software.
-* El archivo **com.py** Tiene una clase con todo lo de comunicacion por medio de servidor resuelto.
+* El archivo **banco_motores.py**: Contiene todo el programa en si con la parte gráfica.
+* El archivo **coheteria.py**: Contiene todas las bibliotecas empleadas en **banco_motores.py**.
+* El archivo **Server.py**: Contiene un servidor para probar el software.
+* El archivo **com.py**: Tiene una clase con todo lo de comunicacion por medio de servidor resuelto.
 
 ### Funciones a agregar:
 
