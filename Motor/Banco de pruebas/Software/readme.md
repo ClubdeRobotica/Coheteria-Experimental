@@ -6,7 +6,9 @@ El software esta desarollado en python , por el momento hay que hacerle varias m
 
 ### Contenido de archivos:
 * El archivo **banco_motores.py** contiene todo el programa en si con la parte gráfica.
-* El archivo **coheteria.py** Contiene todas las bibliotecas empleadas en **banco_motores.py**
+* El archivo **coheteria.py** Contiene todas las bibliotecas empleadas en **banco_motores.py**.
+* El archivo **Server.py** Contiene un servidor para probar el software.
+* El archivo **com.py** Tiene una clase con todo lo de comunicacion por medio de servidor resuelto.
 
 ### Funciones a agregar:
 
