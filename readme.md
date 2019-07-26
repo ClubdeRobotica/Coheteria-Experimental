@@ -26,4 +26,5 @@ A continuacion se explica el contenido de las distintas carpetas.
 * **Motor:** Contiene todo lo relacionado a la construccion del banco de ensayo para los motores del vector.
 * **Reuniones:** Contiene los temas tratados en la reuniones.
 * **Telemetria-Control:** Contiene todo lo relacionado con la estacion terrena.
-
+## ¿Por donde comenzar?
+Recomendamos comenzar leyendo la informacion de la [wiki](https://github.com/ClubdeRobotica/Coheteria-Experimental/wiki) !
