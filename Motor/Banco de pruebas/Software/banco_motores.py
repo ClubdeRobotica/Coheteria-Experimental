@@ -3,6 +3,7 @@ from com import *
 import json
 import socket
 import sys
+import xlsxwriter
 std=0
 stde=1
 port_addres=0
@@ -24,7 +25,7 @@ def graficar():
                 a.plot(s,secc)
                 canvas.draw()
             except:
-                print inter
+                print(inter)
             banco_hard.respond()
 def cronometro():
     global std
