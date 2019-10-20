@@ -1,32 +1,6 @@
 # Sistema de telemetría y control de vuelo
-El sistema de telemetría y control de vuelo estará compuesto por dos subsistemas: la electrónica de control y de sensado presente en el cohete y la estación en tierra. Ambos deberán mantener una comunicación ininterrumpida durante la misión, que permita el envío en tiempo real de los datos recabados por el cohete.
-
-#### Integrantes
-* Matías Afur
-* Gaspar Santamarina
-* Matías Bucca
-* Santiago Rojas
 
 
-
-## Especificaciones
-
-### Cohete
-La electrónica de a bordo estará desarrollada sobre un NodeMCU, encargado de recibir los datos multiplexados de los sensores, almacenarlos y enviarlos a la estación en tierra a través de una red WiFi.
-
-#### Sensores
-Para estimar la altura se usarán en conjunto:
-
-* 2 Módulos acelerómetros
-* 2 Barómetros
-
-Además, en una etapa posterior, se añadirá:
-
-* GPS
-* Imagen
-
-#### Logeo
-* Módulo SD
 
 #### Comunicación
 Procolo propio sobre TCP/IP.
