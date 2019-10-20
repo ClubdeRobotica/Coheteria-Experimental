@@ -15,3 +15,6 @@
  Lo unico a tener en cuenta es que ademas de la alimentacion, los pines SDA y SCL tiene que ir conectados con los pines D2 y D1 del Wemos.
  D2 -- SDA
  D1 -- SCL
+ 
+## MainBoard_A
+ Es una placa con los headers pra conectar el WemosD1-Mini, un modulo BMP180 y un zocalo para una bateria de 3V6 tipo 2032
