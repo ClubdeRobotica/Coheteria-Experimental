@@ -58,7 +58,7 @@ Una vez clonado el repositorio, solo hay que modificar el Makefile en el eclipse
 EXTRA_COMPONENT_DIRS := /home/user/myprojects/esp/esp-idf-lib/components
 
 
-# Descripcion del firmware y objetivos:
+# Descripcion del firmware y estado:
 El firmware se esta separado por modulos, uno para cada grupo de sensores, uno para el servidor tcp, un sistema de archivos y un modulo central que sera el encargado de la inicializacion del firmware y la sincronizacion de los modulos.
 ### Modulo Acelerometros:
 Encargado de medir la aceleracion en los tres ejes espaciales durante todo el vuelo. Tiene que ser capaz de detectar tanto el despegue como el aterrizaje y generar eventos cuando se terminen de medir los tres ejes.
@@ -67,6 +67,15 @@ Mide presion y temperatura todo el tiempo, en el estado inicial se tiene que cal
 ### Modulo Sistema de Archivos:
 En el inicio genera un archivo .json donde se van a guardar todos los datos del vuelo en formato json. Recive los valores enteros de los sensores y los organiza en un bloque json que es agregado al final del archivo.
 Tiene que ser capaz de crear y borrar el archivo donde se almacenaran los datos. Asi como tambien de enviarlo al servidor web cuando sea requerido.
+Los archivos wifi.c y wifi.h son copia del ejemplo simple del SDK, por contesta a comandos GET y POST. Se deberia modificar para adaptarlo a los requerimientos:
+| Metodo | URI | Accion |
+| ------ | --- | ------ |
+| GET | / | Devuelve una pagina con el estado actual del cohete y algunas instrucciones de como conectarse |
+| GET | /comandos | Devuelve una lista de los comandos que se pueden enviar |
+| GET | /sensonres | Devuelve el estado actual de todos los sensores |
+| GET | /alldata | Envia el archivo con todos los datos que fueron recolectados durante el ulimo vuelo |
+| POST | /default | Permite enviar datos de calibracion a la unidad |
+| POST | /start | Indica al cohete que tiene que comenzar una medicion, elimina el archivo de datos en caso de existir y queda esperando el despegue | 
 ### Modulo servidor tcp
 Monta una api web con los metodos GET y POST, cuando recibe un comando GET devuelve el archivo json generado durante el vuelo, con post se pueden configurar algunos parametros a definir.
 ### Tarea Principal:
