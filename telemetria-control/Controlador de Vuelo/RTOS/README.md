@@ -66,17 +66,19 @@ Encargado de medir la aceleracion en los tres ejes espaciales durante todo el vu
 Mide presion y temperatura todo el tiempo, en el estado inicial se tiene que calibrar a cero.
 ### Modulo Sistema de Archivos:
 En el inicio genera un archivo .json donde se van a guardar todos los datos del vuelo en formato json. Recive los valores enteros de los sensores y los organiza en un bloque json que es agregado al final del archivo.
+
+### Modulo servidor tcp
+Monta una api web con los metodos GET y POST, cuando recibe un comando GET devuelve el archivo json generado durante el vuelo, con post se pueden configurar algunos parametros a definir.
 Tiene que ser capaz de crear y borrar el archivo donde se almacenaran los datos. Asi como tambien de enviarlo al servidor web cuando sea requerido.
 Los archivos wifi.c y wifi.h son copia del ejemplo simple del SDK, por contesta a comandos GET y POST. Se deberia modificar para adaptarlo a los requerimientos:
-| Metodo | URI | Accion |
-| ------ | --- | ------ |
+
+| Metodo| URI| Accion|
+| ----- | ---- | ---- |
 | GET | / | Devuelve una pagina con el estado actual del cohete y algunas instrucciones de como conectarse |
 | GET | /comandos | Devuelve una lista de los comandos que se pueden enviar |
 | GET | /sensonres | Devuelve el estado actual de todos los sensores |
 | GET | /alldata | Envia el archivo con todos los datos que fueron recolectados durante el ulimo vuelo |
 | POST | /default | Permite enviar datos de calibracion a la unidad |
 | POST | /start | Indica al cohete que tiene que comenzar una medicion, elimina el archivo de datos en caso de existir y queda esperando el despegue | 
-### Modulo servidor tcp
-Monta una api web con los metodos GET y POST, cuando recibe un comando GET devuelve el archivo json generado durante el vuelo, con post se pueden configurar algunos parametros a definir.
 ### Tarea Principal:
 Encargada de la sincronizacion, en el inicio configura todos los modulos y queda esperando a que los acelerometros detecten el despegue, desde ese momento comienza a tomar lecturas de los sensores cada 10 ms, estos valores son promediados y almacenados en el sistema de archivos cada 50 o 100 ms (definir).
