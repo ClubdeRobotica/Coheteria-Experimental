@@ -10,13 +10,15 @@
 
 
 #define BMP_I2C_PORT						0
-#define BUZZER_PIN							2
+#define BUZZER_PIN							0	//TODO Cambiar este pin en la Rev2
 #define SDA_GPIO 							4
 #define SCL_GPIO 							5
 
 #define STASSID 							"WiFi-Arnet-kxde"
 #define STAPSK  							"dkfkchxbm4"
 #define IP_PC     							"192.168.1.3"
+
+#define PATH_DATA							"/spiffs/Data.txt"
 
 #define BUZZER_CLOCK						10
 #define BUZZER_TIME_INIT					10

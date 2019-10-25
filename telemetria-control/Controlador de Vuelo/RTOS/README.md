@@ -51,6 +51,13 @@ Si se importo el proyecto desde una copia local del repositorio, se puede hacer 
 * Escribir un comentario sobre los cambios que se hicieron en Commit Message
 * Presionar el boton Commit and Push, se abrira el cuadro de dialogo de loggin y se carga sube el proyecto.
 
+### Ver el puerto serial del esp:
+```
+  export IDF_PATH=~/esp/ESP8266_RTOS_SDK
+  alias get_lx106='export PATH="$PATH:$HOME/esp/xtensa-lx106-elf/bin"'
+  make monitor
+```
+
 ## ESP-IDF Components library
 El segundo SDK, contiene los drivers para la mayoria de los modulos comerciales mas utilizados, se puede descargar de:
 https://github.com/UncleRus/esp-idf-lib
@@ -60,7 +67,8 @@ EXTRA_COMPONENT_DIRS := /home/user/myprojects/esp/esp-idf-lib/components
 
 # Descripcion del firmware y estado:
 El firmware se esta separado por modulos, uno para cada grupo de sensores, uno para el servidor tcp, un sistema de archivos y un modulo central que sera el encargado de la inicializacion del firmware y la sincronizacion de los modulos.
-
+### Modulo Acelerometros
+Encargado de medir la aceleracion en los tres ejes espaciales durante todo el vuelo. Tiene que ser capaz de detectar tanto el despegue como el aterrizaje y generar eventos cuando se terminen de medir los tres ejes.
 ### Modulo Barometro
 Mide presion y temperatura todo el tiempo, en el estado inicial se tiene que calibrar a la altura cero.
 Los archivos bmp180.c y bmp180.h son los drivers que estan en el sdk, ya tienen todo lo necesario, en archivo main.c esta la tarea relativa a estos archivos. En el estado actual hace un promedio de las primeras 5 mediciones  y configura estos datos como altura a nivel del suelo. Deberia modificarse para incluir una funcion de calibracion remota por medio del web server.
@@ -70,6 +78,10 @@ Los archivos bmp180.c y bmp180.h son los drivers que estan en el sdk, ya tienen 
 | EnableBarometer() | No iniciado | Configura el modulo para poder empezar a tomar mediciones |
 | DisableBarometer() | No iniciado | Permite desactivar el modulo |
 | SetCeroMeters() | No inicado | Toma los valores de las ultimas mediciones y los utiliza de referencia para Altitud 0m|
+
+
+### Modulo Sistema de Archivos
+En el inicio genera un archivo .json donde se van a guardar todos los datos del vuelo en formato json. Recive los valores enteros de los sensores y los organiza en un bloque json que es agregado al final del archivo.
 
 ### Modulo servidor tcp
 Monta una api web con los metodos GET y POST, cuando recibe un comando GET devuelve el archivo json generado durante el vuelo, con post se pueden configurar algunos parametros a definir.
@@ -85,12 +97,5 @@ Los archivos wifi.c y wifi.h son copia del ejemplo simple del SDK, por contesta 
 | GET | /alldata | Envia el archivo con todos los datos que fueron recolectados durante el ulimo vuelo |
 | POST | /default | Permite enviar datos de calibracion a la unidad |
 | POST | /start | Indica al cohete que tiene que comenzar una medicion, elimina el archivo de datos en caso de existir y queda esperando el despegue | 
-
-### Modulo Acelerometros
-Encargado de medir la aceleracion en los tres ejes espaciales durante todo el vuelo. Tiene que ser capaz de detectar tanto el despegue como el aterrizaje y generar eventos cuando se terminen de medir los tres ejes.
-
-### Modulo Sistema de Archivos
-En el inicio genera un archivo .json donde se van a guardar todos los datos del vuelo en formato json. Recive los valores enteros de los sensores y los organiza en un bloque json que es agregado al final del archivo.
-
 ### Tarea Principal
 Encargada de la sincronizacion, en el inicio configura todos los modulos y queda esperando a que los acelerometros detecten el despegue, desde ese momento comienza a tomar lecturas de los sensores cada 10 ms, estos valores son promediados y almacenados en el sistema de archivos cada 50 o 100 ms (definir).

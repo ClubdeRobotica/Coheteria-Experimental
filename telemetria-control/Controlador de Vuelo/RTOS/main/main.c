@@ -7,6 +7,9 @@
 #include <string.h>
 #include "wifi.h"
 #include "driver/gpio.h"
+#include "filesystem.h"
+
+static char DataBuffer[64];
 
 enum SystemStatus{
 	sys_init,
@@ -72,7 +75,7 @@ void bmp180(void *pvParameters)
 				PressureZero = SumPressure / NUM_OF_MESSURES;
 				SumTemp = 0;
 				SumPressure = 0;
-				printf("T0: %.2f C; P0: %d MPa\n", TempZero, PressureZero);
+				sprintf(DataBuffer, "T0: %.2f C; P0: %d MPa\n", TempZero, PressureZero);
 				bmp180status = bmpStSending;
 			}
 			break;
@@ -82,8 +85,6 @@ void bmp180(void *pvParameters)
 			res = bmp180_measure(&dev, &temp, &pressure, BMP180_MODE_STANDARD);
 			if (res != ESP_OK)
 				printf("Could not measure: %d\n", res);
-			else
-				printf(".");
 			SumTemp += temp;
 			SumPressure += pressure;
 			bmpMessuresCount++;
@@ -100,7 +101,7 @@ void bmp180(void *pvParameters)
 			bmpMessuresCount=0;
 			SumTemp = 0;
 			SumPressure = 0;
-			printf("Temperature: %.2f C; Pressure: %d MPa\n", TempAverage, PressAverage);
+			sprintf(DataBuffer, "Temperature: %.2f C; Pressure: %d MPa\n", TempAverage, PressAverage);
 			bmp180status = bmpStReady;
 			break;
 
@@ -146,6 +147,8 @@ void buzzer_task(void)
 				}
 		        vTaskDelay(50 / portTICK_RATE_MS);
     		}
+    		filesystem_main();
+    		LoadData(PATH_DATA);
     		break;
     	case sys_ready:
     		if(BuzzerBip < BUZZER_TIME_READY){
@@ -153,8 +156,10 @@ void buzzer_task(void)
     		}
     		else
     			gpio_set_level(BUZZER_PIN, 0);
-    		if(BuzzerBip > BUZZER_PERIOD_READY)
+    		if(BuzzerBip > BUZZER_PERIOD_READY){
+    			SaveData (DataBuffer, PATH_DATA, EF_Append);
     			BuzzerBip = 0;
+    		}
     		break;
     	case sys_calibration:
     		break;
