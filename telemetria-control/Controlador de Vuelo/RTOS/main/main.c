@@ -8,112 +8,14 @@
 #include "wifi.h"
 #include "driver/gpio.h"
 #include "filesystem.h"
+#include "altimetro.h"
 
 static char DataBuffer[64];
+TaskHandle_t BayoTaskHandler = NULL;
+QueueHandle_t BayoQueue = NULL;			//!< Cola para recibir datos desde las tareas secundarias
+uint8_t SystemStatus = sys_init;
 
-enum SystemStatus{
-	sys_init,
-	sys_calibration,
-	sys_alert,
-	sys_ready
-};
-
-static uint8_t SystemStatus = sys_init;
-///////////////////////////////////////////////
-// Barometros.c
-// Todo esto se tendria que pasar a un nuevo documento para que quede mas ordenado
-
-
-enum BarometerStatus{
-	bmpStInit,
-	bmpStReady,
-	bmpStSending,
-};
-
-#define NUM_OF_MESSURES		4				//Numero de mediciones
-#define MESSURES_INTERVAL   20				//Tiempo entre mediciones
-/*
- * @brief: Una vez configurado toma una medicion de temperatura y presion cada 10 ms y los envia al main_task
- * Tiene tres estados principales:
- * 	* StatusInit:	 El estado inicial, inicializa el modulo y queda a la espera de un comando de inicio de las mediciones o un comando de calibracion
- * 	* StatusReady:   En tiempo de ejecucion, toma una medicion cada 10 ms.
- * 	* StatusSending: En tiempo de ejecucion, cuando se han tomado 5 o 10 mediciones, se promedian
- */
-void bmp180(void *pvParameters)
-{
-    bmp180_dev_t dev;
-    float temp, TempZero, SumTemp, TempAverage;
-    uint32_t pressure, PressureZero, SumPressure, PressAverage;
-    esp_err_t res = 0;
-    portTickType xCurrentTick;
-    uint8_t bmp180status = bmpStInit,
-    		bmpMessuresCount = 0;
-    memset(&dev, 0, sizeof(bmp180_dev_t)); // Zero descriptor
-
-    ESP_ERROR_CHECK(bmp180_init_desc(&dev, 0, SDA_GPIO, SCL_GPIO));
-    ESP_ERROR_CHECK(bmp180_init(&dev));
-    xCurrentTick = xTaskGetTickCount();
-	SumTemp = 0;
-	SumPressure = 0;
-    while (1)
-    {
-        vTaskDelayUntil( &xCurrentTick, (MESSURES_INTERVAL / portTICK_RATE_MS));  // Antes de comenzar una medicion espero a que se cumplan los 10ms
-        xCurrentTick = xTaskGetTickCount();
-		switch(bmp180status){
-		case bmpStInit:// TODO reemplazar por una funcion de calbibracion
-			SystemStatus = sys_init;
-			res = bmp180_measure(&dev, &temp, &pressure, BMP180_MODE_STANDARD);
-			if (res != ESP_OK)
-				printf("Could not measure: %d\n", res);
-			else
-				printf(".");
-			SumTemp += temp;
-			SumPressure += pressure;
-			bmpMessuresCount++;
-			if(bmpMessuresCount == NUM_OF_MESSURES){
-				TempZero = SumTemp / NUM_OF_MESSURES;
-				PressureZero = SumPressure / NUM_OF_MESSURES;
-				SumTemp = 0;
-				SumPressure = 0;
-				sprintf(DataBuffer, "T0: %.2f C; P0: %d MPa\n", TempZero, PressureZero);
-				bmp180status = bmpStSending;
-			}
-			break;
-
-		case bmpStReady:
-			SystemStatus = sys_ready;
-			res = bmp180_measure(&dev, &temp, &pressure, BMP180_MODE_STANDARD);
-			if (res != ESP_OK)
-				printf("Could not measure: %d\n", res);
-			SumTemp += temp;
-			SumPressure += pressure;
-			bmpMessuresCount++;
-			if(bmpMessuresCount == NUM_OF_MESSURES){
-				TempAverage = SumTemp / NUM_OF_MESSURES;
-				PressAverage = SumPressure / NUM_OF_MESSURES;
-				SumTemp = 0;
-				SumPressure = 0;
-				bmp180status = bmpStSending;
-			}
-			break;
-
-		case bmpStSending:
-			bmpMessuresCount=0;
-			SumTemp = 0;
-			SumPressure = 0;
-			sprintf(DataBuffer, "Temperature: %.2f C; Pressure: %d MPa\n", TempAverage, PressAverage);
-			bmp180status = bmpStReady;
-			break;
-
-		default:
-			break;
-		}
-        // TODO: Enviar datos al main
-    }
-}
-
-
-void buzzer_task(void)
+void buzzer_task( void * pvParameters )
 {
     gpio_config_t io_conf;
     //disable interrupt
@@ -129,8 +31,8 @@ void buzzer_task(void)
     //configure GPIO with the given settings
     gpio_config(&io_conf);
 	gpio_set_level(BUZZER_PIN, 0);
-
     uint8_t BuzzerBip = 0, bips=0, times = 0;
+    printf("\n____________Iniciando Buzzer_Task_______________\n");
     while (1) {
     	switch (SystemStatus){
     	case sys_init:
@@ -145,10 +47,8 @@ void buzzer_task(void)
 					times+=10;
 					bips++;
 				}
-		        vTaskDelay(50 / portTICK_RATE_MS);
+		        vTaskDelay(50);
     		}
-    		filesystem_main();
-    		LoadData(PATH_DATA);
     		break;
     	case sys_ready:
     		if(BuzzerBip < BUZZER_TIME_READY){
@@ -157,9 +57,10 @@ void buzzer_task(void)
     		else
     			gpio_set_level(BUZZER_PIN, 0);
     		if(BuzzerBip > BUZZER_PERIOD_READY){
-    			SaveData (DataBuffer, PATH_DATA, EF_Append);
     			BuzzerBip = 0;
+    			printf(".");
     		}
+
     		break;
     	case sys_calibration:
     		break;
@@ -173,13 +74,57 @@ void buzzer_task(void)
     }
 }
 
+/*
+ * Esta es la notificacion principal del sistema, se encarga de sincronizar las tareas
+ * pide datos a las otras tareas por medio de los eventbits, lee por los valores desde un Queue
+ */
+void BayoTask( void * pvParameters )
+{
+	const TickType_t xBlockTime = 100;					//!< El tiempo maximo que se puede esperar por un sensor
+	QueueData_t SensorData;
+	BmpData_t *ReceivedBmpData;
+	printf("\n____________Iniciando BayoTask_______________\n");
+	while(1){
+		switch (SystemStatus){
+		case sys_init:
+			printf("BayoTask: sys_init\n");
+		    InicializarAltimetro(BayoTaskHandler, BayoQueue);
+			// Primero espero a que se hayan inicializado todos los sensores
+			// Tomo la presion y temperatura iniciales, lo mismo con los acelerometros
+			// Genero un archivo nuevo y guardo todos los valores
+			if(xQueueReceive(BayoQueue, &SensorData, portMAX_DELAY)==pdFAIL){
+				printf("Error al recibir BayoQueue");
+			}
+			if(SensorData.SensorId == Barometer_0){
+				ReceivedBmpData = SensorData.SensorData;
+				printf("Iniciales: Temperature: %.2f C; Pressure: %d MPa\n", ReceivedBmpData->temperature, ReceivedBmpData->pressure);
+				//sprintf(DataBuffer, "Iniciales: Temperature: %.2f C; Pressure: %d MPa\n", ReceivedBmpData->temperature, ReceivedBmpData->pressure);
+				SystemStatus = sys_ready;
+			}
+			break;
+
+		case sys_ready:
+			xQueueReceive(BayoQueue, &SensorData, xBlockTime);
+			if(SensorData.SensorId == Barometer_0){
+				ReceivedBmpData = SensorData.SensorData;
+				printf("Temperature: %.2f C; Pressure: %d MPa\n", ReceivedBmpData->temperature, ReceivedBmpData->pressure);
+				//sprintf(DataBuffer, "Temperature: %.2f C; Pressure: %d MPa\n", ReceivedBmpData->temperature, ReceivedBmpData->pressure);
+			}
+			break;
+		default:
+			break;
+		}
+	}
+}
+
 void app_main()
 {
     static httpd_handle_t server = NULL;
-    ESP_ERROR_CHECK(i2cdev_init());
     initialise_wifi(&server);
-    SystemStatus = 0;
-    xTaskCreatePinnedToCore(bmp180, "bmp180_test", configMINIMAL_STACK_SIZE * 15, NULL, 5, NULL, APP_CPU_NUM);
-    xTaskCreatePinnedToCore(buzzer_task, "buzzer_task", configMINIMAL_STACK_SIZE * 15, NULL, 5, NULL, APP_CPU_NUM);
-    //xTaskCreate(buzzer_task, "buzzer_task", 512, NULL, 10, NULL);
+    BayoQueue = xQueueCreate( 5, (sizeof(QueueData_t)) );
+//    xTaskCreatePinnedToCore(buzzer_task, "buzzer_task", configMINIMAL_STACK_SIZE * 15, NULL, 5, NULL, APP_CPU_NUM);
+    //xTaskCreatePinnedToCore(BayoTask, "Bayo_Main", configMINIMAL_STACK_SIZE *15 , 5, NULL, 5, APP_CPU_NUM);
+    xTaskCreate(BayoTask,   "TareaPrincipalBayo", configMINIMAL_STACK_SIZE+500, NULL, 5, &BayoTaskHandler);
+    xTaskCreate(buzzer_task, "Control de Estado", configMINIMAL_STACK_SIZE+500, NULL, 5, NULL);
+    printf("\n____________Iniciando el sistema_______________\n");
 }

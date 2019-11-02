@@ -8,9 +8,9 @@
 #ifndef MAIN_FILESYSTEM_H_
 #define MAIN_FILESYSTEM_H_
 
-void filesystem_main(void);
-int LoadData(char *Path);
-int SaveData (char *DataToSave, char *PathToSave, char NewFile);
+int fs_Init(void);
+int fs_LoadData(char *Path);
+int fs_SaveData (char *DataToSave, char *PathToSave, char NewFile);
 
 enum ExistingFile{
 	EF_CreateAlways,		//!< Siempre se crea un archivo nuevo

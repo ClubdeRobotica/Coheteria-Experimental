@@ -17,7 +17,7 @@
 
 static const char *FS_TAG = "filesystem.c";
 
-void filesystem_main(void)
+int fs_Init(void)
 {
     ESP_LOGI(FS_TAG, "Initializing SPIFFS");
 
@@ -40,7 +40,7 @@ void filesystem_main(void)
         } else {
             ESP_LOGE(FS_TAG, "Failed to initialize SPIFFS (%s)", esp_err_to_name(ret));
         }
-        return;
+        return ret;
     }
 
     size_t total = 0, used = 0;
@@ -50,6 +50,7 @@ void filesystem_main(void)
     } else {
         ESP_LOGI(FS_TAG, "Partition size: total: %d, used: %d", total, used);
     }
+    return ret;
 }
 
 /*
@@ -59,7 +60,7 @@ void filesystem_main(void)
  * 	PathToSave:		La ubicacion del archivo donde se guardan los datos
  * 	ExistingFile:	Como esta explicado en el enum ExistingFile
  */
-int SaveData (char *DataToSave, char *PathToSave, char NewFile){
+int fs_SaveData (char *DataToSave, char *PathToSave, char NewFile){
  // Verificamos si el archivo existe
 	struct stat st;
 	if (stat(PathToSave, &st) == 0) {
@@ -87,7 +88,7 @@ int SaveData (char *DataToSave, char *PathToSave, char NewFile){
 /*
  * Por ahora solamente abro el archivo para mostrar el contenido
  */
-int LoadData(char *Path){
+int fs_LoadData(char *Path){
     FILE *f = fopen(Path, "r");
     if (f == NULL) {
         ESP_LOGE(FS_TAG, "Failed to open file for reading");
