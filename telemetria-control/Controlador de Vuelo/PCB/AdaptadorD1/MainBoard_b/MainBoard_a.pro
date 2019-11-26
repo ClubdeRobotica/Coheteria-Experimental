@@ -1,4 +1,4 @@
-update=dom 20 oct 2019 17:39:07 -03
+update=mar 26 nov 2019 20:31:02 -03
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../Componentes.pretty;../../../../../../d1_mini_kicad/library
+LibDir=../Componentes.pretty;../../../../../../d1_mini_kicad/library;../SparkFun-Sensors.pretty
 [eeschema/libraries]
 LibName1=power
 LibName2=device
