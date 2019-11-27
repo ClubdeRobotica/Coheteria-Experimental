@@ -5,17 +5,48 @@ Es un proyecto orientado principalmente al estudio de la construccion de cohetes
 
 
 
-## Objetivo:
+## Objetivos
 
-Lo que se espera en este proyecto es generar una vinculacion en las distintas áreas de la ingeniería como asi tambien simplificar el acceso a la información y la construccion de vectores con fines educativos.
+El objetivo principal de este proyecto, es lograr desarrollar un pequeño lanzador, que se pueda replicar facilmente y que sea capaz de llevar un cansat a una altura de unos 500 a 1000 metros.
+Dividimos al proyecto en dos fases principales, con la primera nos planteamos generar todas las herramientas necesarias para el desarrollo de cohetes, y en la segunda se comienza a desarrollar cohetes y motores.
+Dado que este proyecto está apuntado a ser desarrollado por estudiantes sin niguna experiencia previa en coheteria, se planea generar un entorno de desarrollo completo, para que sea posible evaluar los dferentes diseños, tanto de motores como de cohetes.
 
+## Primera Fase
+Para poder resolver todos los problemas que surjan a la hora de armar y lanzar un cohete desde cero, se plantean dos bloques de telemetria:
+- Kit de Desarrollo de Motores, compuesto por:
+ - Un kit de desarrollo para motores de azucar, que permita medir el empuje generado por las distintos propelentes, para poder experimentar con distintos motores sin necesidad de tener que ir al campo a probarlo en un cohete.
+ - Una estacion terrena para el controlador de vuelo, es un software que se conecta al controlador de vuelo y permite descargar todos los datos almacenados durante el vuelo y generar graficos que permitan visualizar mas clararamente los datos.
+- Kit de Desarrollo para Cohetes, compuesto por:
+ - Controlador de vuelo electrónico, capaz de adquirir todos los datos del vuelo y guardarlos en una memoria para su posterior análisis.
+ - Una estacion de control para el banco de pruebas, se trata simplemente de un software capaz de conectarse al banco y desde el cual se puedan visualizar todos los datos generados durante la prueba.
 
-## Areas de desarollo en el proyecto:
+Como un anexo para esta fase, se añade el desarrollo de una plataforma para el lanzamiento de los cohetes.
 
-* **Control de Vuelo**: la primer etapa del proyecto se basa en el desarrollo de un pequeño dispositivo que sirva para recabar toda la información generada por el cohete. Este dispositivo tiene que contar con un sistema de comunicaciones y varios sensores.
-* **Mini-Lanzador**: como segunda etapa, pero en paralelo con el desarrollo del cansat, se intentará desarrollar un pequeño lanzador capaz de transportar un cansat, para este desarrollo se usarán motores estándar, disponibles en el mercado. El objetivo principal de esta etapa es conocer los desafíos que se presentan a la hora de desarrollar un cohete.
-* **Estación de Tierra**: se trata de un Software que permita recoger datos del cohete en tiempo real, un protocolo de comunicaciones y una serie de sensores que permitan recalibrar los del cohete antes del lanzamiento.
-* **Banco de Pruebas**: Incluye una serie de sensores para testear el empuje de los motores y un Software para adquirir los datos del banco.
+### Kit de Desarrollo de Motores
+El kit de desarrollo para motores de azucar, esta compuesto por un sistema mecanico donde se montan los motores y la electrónica necesaria para el analisis del empuje y un sistema informatico para controlar las pruebas.
+
+#### Sistema mecánico
+El sistema mecánico, fabricado con perfiles de aluminio es simplemente una plataforma deslizante y un montaje para una celda de carga. La electronica implicada en este banco es la mas sencilla puesto que se trata simplemente de una placa Wemos D1, con un firmware de arduino que nos permite activar un relay para encender el motor y tomar mediciones de la celda de carga por WiFi.
+
+#### Sistema informático
+Está desarrollado en python y ademas de conectarse al banco de pruebas, nos muestra un grafico sencillo de empuje/tiempo.
+
+### Kit de Desarrollo de Cohetes
+Se trata como se dijo antes de una placa de telemetria que durante el vuelo va tomando a intervalos regulares, mediciones de presión, temperatura y aceleración y almacenandolos en un archivo que al finalizar el vuelo se puede descargar para su analisis. Adicionalmente se agrega un buzzer, que previo al despegue idica los distintos estados del sistema por medio de distintas combinaciones sonoras y al final del mismo, genera una alarma para facilitar su recuperacion en caso de caer en terreno accidentado.
+
+#### Sistema Electrónico
+La placa esta basada en un ESP8266 (en una primera fase en Wemos D1 mini, para simplificar el desarrollo) con un firmware de tiempo real basado en freeRTOS.
+Consta de:
+- Placa principal: Wemos D1 mini, modificada para mayor alcance del WiFi.
+- Sensor de presion y temperatura BMP180
+- Acelerómetro de tres ejes ADXL345
+- Buzzer
+- Bateria de 3.6V
+
+Al iniciar, activa un AP WiFi y un servidor web al que se puede acceder desde una pc, para configurar las condiciones iniciales, o activar el modo de vuelo. Una vez activado el modo de vuelo, el sistema apaga el AP y queda a la espera del despegue, que es detectado por medio de los acelerometros. Una vez iniciado el vuelo, se toman mediciones a intervalos regulares programables de 10, 50, 100 o 500 ms segun se haya configurado y se almacenan los datos en un archivo. Luego de transcurridos un segundo sin detectar variaciones en los sensores, se supone que se ha tocado tierra nuevamente, se detienen las mediciones y se inicia el modo recuperación en el cual se activa nuevamente el AP y se hace sonar el buzzer.
+
+#### Sistema Informatico
+Es un software desarrollado en Python, que permite controlar tanto la plataforma de lanzamiento para iniciar el vuelo como graficar los datos del vuelo para su visualizacion.
 
 ## Estructura del repo:
 A continuacion se explica el contenido de las distintas carpetas.
@@ -28,3 +59,7 @@ A continuacion se explica el contenido de las distintas carpetas.
 * **Telemetria-Control:** Contiene todo lo relacionado con la estacion terrena.
 ## ¿Por donde comenzar?
 Recomendamos comenzar leyendo la informacion de la [wiki](https://github.com/ClubdeRobotica/Coheteria-Experimental/wiki) !
+
+## Como Participar
+Buena parte del desarrollo del proyecto, puede hacerse de manera remota, por lo que no es necesario estar presente en las reuiones de trabajo.
+Para participar se puede enviar un correo electrónico a cualquiera de los administradores del proyecto, o por medio del formulario de contacto de la pagina del [Club de Robótica](https://clubderobotica.github.io/).
