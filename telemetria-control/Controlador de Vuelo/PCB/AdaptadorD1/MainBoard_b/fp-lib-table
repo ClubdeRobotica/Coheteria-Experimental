@@ -1,2 +1,4 @@
 (fp_lib_table
+  (lib (name Componentes)(type KiCad)(uri "/home/german/Documentos/CdR/Coheteria/Coheteria-Experimental/telemetria-control/Controlador de Vuelo/PCB/AdaptadorD1/Componentes.pretty")(options "")(descr ""))
+  (lib (name wemos_d1_mini)(type KiCad)(uri /home/german/Documentos/CdR/Coheteria/d1_mini_kicad/library/wemos_d1_mini.pretty)(options "")(descr ""))
 )
