@@ -1,20 +1,33 @@
-# Adaptador D1
+# Controlador de Vuelo
 
 ## PCB Adaptacion Wemos D1 Mini
  
- ![](https://github.com/ClubdeRobotica/Coheteria-Experimental/blob/master/telemetria-control/Controlador%20de%20Vuelo/PCB/AdaptadorD1/bosquejo.png)
+ ![](MainBoard_doble_capa/Vistas 3D de la placa/Vista9.jpg)
  
- El objetivo de este pcb es poder conectar una placa de desarrollo wemos mini D1 a las placas de sensores que se van a colocar en los cohetes.
- Debe ser un shield con pines hembra en el medio para conectar el D1 Mini y en el exterior pines macho para conectar las placas de sensores como esta en la imagen PCBSensores.png, los conectores 1 y 2 son van se conectan al conector de la izquierda del mini d1 y los conectores 3 y 4 al de la derecha
+ El primer objetivo de este pcb es tener una placa madre que contenga los sensores de presion y temperatura, acelerometros, conector para la bateria y buzzer.
+ En esta primera version, para simplificar el desarrollo del firmware se armara un shield para el Wemos D1 Mini que quepa en el interior de un tubo de 50mm. De este modo, se puede ir probando el firmware con una protoboard y un Wemos D1 que sabemos que funciona bien.
+ Caracteristicas del shield:
+-  	 Conector para Wemos D1 Mini
+-  	 Conector para Baterias
+-  	 Acelerometro lineals de 3 ejes
+-  	 Multiplexor analogico para seleccion del acelerometro
+-  	 Sensor de presion y temperatura
+-  	 Buzzer
  
+## PCB ESP8266
+
+ ![](https://circuits4you.com/wp-content/uploads/2016/12/ESP8266-Programming-Circuit.png)
+
+ Una segunda version de la misma placa, integra en el PCB del mainboard el modulo ESP-07 y un header para conectar un puerto serie, mas el boton de reset y un jumper que permita bootear el esp8266 en modo flash.
+ En esta version, se eliminan conectores y el Wemos D1, disminuyendo el peso total del controlador.
+ Caracteristicas de la placa:
+-  	 Conector para puerto serie
+-  	 Switch Reset
+-  	 Jumper de seleccion de modo de booteo
+-  	 ESP8266 con conector para antena externa
+-  	 Conector para Baterias
+-  	 Acelerometro lineals de 3 ejes
+-  	 Multiplexor analogico para seleccion del acelerometro
+-  	 Sensor de presion y temperatura
+-  	 Buzzer
  
-## PCB Sensor Presion
- ![](https://github.com/ClubdeRobotica/Coheteria-Experimental/blob/master/telemetria-control/Controlador%20de%20Vuelo/PCB/AdaptadorD1/BatBmp.png)
- 
- Un PCB del mismo tamano que el otro algo similar a la imagen, el espacio da justo para poner un sensor BMP180 (1) y el conector para la bateria (2). Lo ideal es que tenga las cuatro tiras de pines a los costados, pero se puede aliminar alguno en caso de que falte espacio.
- Lo unico a tener en cuenta es que ademas de la alimentacion, los pines SDA y SCL tiene que ir conectados con los pines D2 y D1 del Wemos.
- D2 -- SDA
- D1 -- SCL
- 
-## MainBoard_A
- Es una placa con los headers pra conectar el WemosD1-Mini, un modulo BMP180 y un zocalo para una bateria de 3V6 tipo 2032
