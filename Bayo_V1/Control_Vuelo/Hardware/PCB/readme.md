@@ -2,7 +2,7 @@
 
 ## PCB Adaptacion Wemos D1 Mini
  
- ![](MainBoard_doble_capa/Vistas 3D de la placa/Vista9.jpg)
+ ![](PCB Adaptacion Wemos D1 Mini/Vistas 3D de la placa/Vista9.jpg)
  
  El primer objetivo de este pcb es tener una placa madre que contenga los sensores de presion y temperatura, acelerometros, conector para la bateria y buzzer.
  En esta primera version, para simplificar el desarrollo del firmware se armara un shield para el Wemos D1 Mini que quepa en el interior de un tubo de 50mm. De este modo, se puede ir probando el firmware con una protoboard y un Wemos D1 que sabemos que funciona bien.
