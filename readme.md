@@ -49,6 +49,9 @@ Al iniciar, activa un AP WiFi y un servidor web al que se puede acceder desde un
 Es un software desarrollado en Python, que permite controlar tanto la plataforma de lanzamiento para iniciar el vuelo como graficar los datos del vuelo para su visualizacion.
 
 ## Estructura del repo:
+
+ ![Estructura del repo](Documentacion/Avance_lProyecto/arboldearchivos/Coheteria.jpg?raw=true "Arbol")
+ 
 A continuacion se explica el contenido de las distintas carpetas.
 * **Documentacion:** Contiene la documentacion generada en el proyecto.
 * **Firmware:** Contiene el firmware del la electronica de medicion del vector.
