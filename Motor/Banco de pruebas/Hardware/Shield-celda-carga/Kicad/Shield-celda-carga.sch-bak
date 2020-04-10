@@ -25,53 +25,22 @@ F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 5600 2300 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L hx711:HX711 U1
-U 1 1 5E88FDFC
-P 7450 2600
-F 0 "U1" H 7650 3050 50  0000 L CNN
-F 1 "HX711" H 7500 2950 50  0000 L CNN
-F 2 "kicad:HX711 module" H 7500 2950 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ads1110.pdf" H 7150 2950 50  0001 C CNN
-	1    7450 2600
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	7450 3000 7450 3650
-Wire Wire Line
-	7450 2150 7450 1000
-$Comp
 L Connector_Generic:Conn_01x04 J3
 U 1 1 5E896121
 P 8800 2550
 F 0 "J3" H 8880 2496 50  0000 L CNN
 F 1 "Conn_01x04" H 8880 2451 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 8800 2550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 8800 2550 50  0001 C CNN
 F 3 "~" H 8800 2550 50  0001 C CNN
 	1    8800 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8100 2550 8600 2550
-Wire Wire Line
-	8600 2650 8100 2650
-Wire Wire Line
-	7650 2200 7650 2150
-Wire Wire Line
-	8400 2450 8600 2450
-Wire Wire Line
-	7650 3000 7650 3050
-Wire Wire Line
-	7650 3050 8400 3050
-Wire Wire Line
-	8400 3050 8400 2750
-Wire Wire Line
-	8400 2750 8600 2750
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5E898B2F
 P 1200 2800
-F 0 "J1" H 1300 2750 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 1118 2566 50  0001 C CNN
+F 0 "J1" H 1200 2900 50  0000 C CNN
+F 1 "Conexion bateria" H 1200 2600 50  0000 C CNN
 F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 1200 2800 50  0001 C CNN
 F 3 "~" H 1200 2800 50  0001 C CNN
 	1    1200 2800
@@ -81,8 +50,8 @@ $Comp
 L Device:Battery_Cell BT1
 U 1 1 5E899902
 P 850 2800
-F 0 "BT1" H 550 2900 50  0000 L CNN
-F 1 "12V" H 550 2800 50  0000 L CNN
+F 0 "BT1" H 600 2900 50  0000 L CNN
+F 1 "12V" H 600 2800 50  0000 L CNN
 F 2 "" V 850 2860 50  0001 C CNN
 F 3 "~" V 850 2860 50  0001 C CNN
 	1    850  2800
@@ -158,17 +127,9 @@ Wire Wire Line
 Wire Wire Line
 	5400 1000 5400 1300
 Wire Wire Line
-	6350 2650 6350 1800
-Wire Wire Line
 	6350 1800 6100 1800
 Wire Wire Line
-	6350 2650 7050 2650
-Wire Wire Line
 	6100 1700 6450 1700
-Wire Wire Line
-	6450 1700 6450 2550
-Wire Wire Line
-	6450 2550 7050 2550
 Wire Wire Line
 	5700 3400 5700 3650
 Connection ~ 5700 3650
@@ -224,8 +185,6 @@ Wire Wire Line
 Wire Wire Line
 	2450 3100 3100 3100
 Connection ~ 3100 3100
-NoConn ~ 8000 2450
-NoConn ~ 8000 2750
 NoConn ~ 5100 1700
 NoConn ~ 5100 1900
 NoConn ~ 5100 2100
@@ -281,10 +240,6 @@ Wire Wire Line
 	850  3050 850  3350
 Connection ~ 850  3050
 Wire Wire Line
-	8400 2150 8400 2450
-Wire Wire Line
-	7650 2150 8400 2150
-Wire Wire Line
 	3850 1800 3850 2400
 Wire Wire Line
 	3950 3000 4250 3000
@@ -298,7 +253,7 @@ $Comp
 L Connector_Generic:Conn_01x02 J4
 U 1 1 5E8DE260
 P 1850 2700
-F 0 "J4" H 1950 2650 50  0000 L CNN
+F 0 "J4" H 1800 2800 50  0000 L CNN
 F 1 "Alimentacion Arduino" H 1550 2500 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1850 2700 50  0001 C CNN
 F 3 "~" H 1850 2700 50  0001 C CNN
@@ -329,4 +284,28 @@ Wire Wire Line
 	2050 3050 2050 3650
 Wire Wire Line
 	1500 3050 2050 3050
+Text Label 8100 2550 0    50   ~ 0
+SCK
+Text Label 8100 2650 0    50   ~ 0
+DT
+Text Label 8100 2450 0    50   ~ 0
+VCC
+Text Label 8100 2750 0    50   ~ 0
+GND
+Wire Wire Line
+	6450 1700 6450 2550
+Wire Wire Line
+	6450 2550 8600 2550
+Wire Wire Line
+	6350 1800 6350 2650
+Wire Wire Line
+	6350 2650 8600 2650
+Wire Wire Line
+	7450 1000 7450 2450
+Wire Wire Line
+	7450 2450 8600 2450
+Wire Wire Line
+	7450 2750 7450 3650
+Wire Wire Line
+	7450 2750 8600 2750
 $EndSCHEMATC
