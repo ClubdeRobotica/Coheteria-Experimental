@@ -16,6 +16,7 @@
 #define APSSID "BancoPruebasCdR"
 #define APPSK  "cdr_coheteria2019"
 #endif
+#define PIN_RELE  D13
 
 // HX711 circuit wiring
 const int LOADCELL_DOUT_PIN = D2;
@@ -39,6 +40,7 @@ char DataBuffer[10000];
 
 void setup() {
   Serial.begin(115200);
+  pinMode(PIN_RELE, OUTPUT);
   pinMode(LED_BUILTIN, OUTPUT);
   delay(1000);
   Serial.println();
@@ -52,7 +54,7 @@ void setup() {
   Serial.print("Inicializando la escala...");
 
   scale.begin(LOADCELL_DOUT_PIN, LOADCELL_SCK_PIN);
-
+     
   Serial.println("Before setting up the scale:");
   Serial.print("read: \t\t");
   Serial.println(scale.read());      // print a raw reading from the ADC
@@ -69,7 +71,7 @@ void setup() {
 
   scale.set_scale(2280.f);                      // this value is obtained by calibrating the scale with known weights; see the README for details
   scale.tare();               // reset the scale to 0
-
+     
   Serial.println("After setting up the scale:");
 
   Serial.print("read: \t\t");
@@ -90,7 +92,8 @@ void setup() {
 
 void loop() {  
   WiFiClient cliente  = wifiServer.available();    
-  while (cliente.connected()) {
+  while (cliente.connected()) {        
+    digitalWrite(PIN_RELE, LOW);
     digitalWrite(LED_BUILTIN, LOW); 
     tiempo = millis();
     lectura = -scale.get_units(1);
@@ -100,8 +103,9 @@ void loop() {
     cliente.write(DataBuffer);    
     scale.power_up();
   }
-  if(cliente.connected()) 
-    cliente.stop();
+  if(cliente.connected()){
+    cliente.stop(); 
+  }
   else  
     delay(1);
   led++;
