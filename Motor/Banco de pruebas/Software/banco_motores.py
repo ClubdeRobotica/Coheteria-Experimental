@@ -6,8 +6,8 @@ import sys
 import xlsxwriter
 std=0
 stde=1
-port_addres=0
-ip_addres=""
+port_addres=8000
+ip_addres="192.168.4.1"
 def graficar():
     global std
     global stde
