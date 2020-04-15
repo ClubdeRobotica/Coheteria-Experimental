@@ -23,8 +23,8 @@ const int LOADCELL_DOUT_PIN = D2;
 const int LOADCELL_SCK_PIN = D3;
 const char *ssid = APSSID;
 const char *password = APPSK;
-const float CALIBRAR = 11.4;
-const float PATRON = 204.4;
+const float CALIBRAR = 11.4;    //TODO: Falta calibrar bien
+const float PATRON = 204.4;     //TODO: Falta calibrar bien
 
 //ESP8266WebServer server(8000);
 WiFiServer wifiServer(8000);
@@ -68,8 +68,8 @@ void setup() {
   Serial.print("get units: \t\t");
   Serial.println(scale.get_units(5), 1);  // print the average of 5 readings from the ADC minus tare weight (not set) divided
             // by the SCALE parameter (not set yet)
-
-  scale.set_scale(2280.f);                      // this value is obtained by calibrating the scale with known weights; see the README for details
+ 
+  scale.set_scale(2280.f);    // this value is obtained by calibrating the scale with known weights; see the README for details
   scale.tare();               // reset the scale to 0
      
   Serial.println("After setting up the scale:");
@@ -88,6 +88,7 @@ void setup() {
             // by the SCALE parameter set with set_scale
 
   Serial.println("Readings:");  
+  digitalWrite(PIN_RELE, HIGH);
 }
 
 void loop() {  
@@ -98,13 +99,14 @@ void loop() {
     tiempo = millis();
     lectura = -scale.get_units(1);
     gramos = lectura*PATRON/CALIBRAR;
-    sprintf(DataBuffer, "{\"T\":%.3f,\"grs\":%.2f}", tiempo/1000, gramos); 
+    sprintf(DataBuffer, "{\"T\":%.3f,\"grs\":%.2f}", tiempo/1000, gramos);
     scale.power_down();      
     cliente.write(DataBuffer);    
     scale.power_up();
   }
   if(cliente.connected()){
-    cliente.stop(); 
+    cliente.stop();        
+    digitalWrite(PIN_RELE, HIGH);
   }
   else  
     delay(1);
