@@ -16,11 +16,11 @@
 #define APSSID "BancoPruebasCdR"
 #define APPSK  "cdr_coheteria2019"
 #endif
-#define PIN_RELE  D13
+#define PIN_RELE  D8
 
 // HX711 circuit wiring
-const int LOADCELL_DOUT_PIN = D2;
-const int LOADCELL_SCK_PIN = D3;
+const int LOADCELL_DOUT_PIN = D3;
+const int LOADCELL_SCK_PIN = D2;
 const char *ssid = APSSID;
 const char *password = APPSK;
 const float CALIBRAR = 11.4;    //TODO: Falta calibrar bien
@@ -51,7 +51,7 @@ void setup() {
   Serial.println(myIP);
   wifiServer.begin();
   
-  Serial.print("Inicializando la escala...");
+  Serial.print("Inicializando la  escala...");
 
   scale.begin(LOADCELL_DOUT_PIN, LOADCELL_SCK_PIN);
      
