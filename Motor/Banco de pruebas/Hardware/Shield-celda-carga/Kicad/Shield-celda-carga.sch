@@ -127,20 +127,10 @@ Wire Wire Line
 Wire Wire Line
 	5400 1000 5400 1300
 Wire Wire Line
-	6350 1800 6100 1800
-Wire Wire Line
-	6100 1700 6450 1700
-Wire Wire Line
 	5700 3400 5700 3650
 Connection ~ 5700 3650
 Wire Wire Line
 	5700 3650 7450 3650
-Wire Wire Line
-	5100 2300 4700 2300
-Wire Wire Line
-	4700 2300 4700 3350
-Wire Wire Line
-	4700 3350 3850 3350
 Wire Wire Line
 	850  2900 850  3050
 Wire Wire Line
@@ -190,13 +180,10 @@ NoConn ~ 5100 1900
 NoConn ~ 5100 2100
 NoConn ~ 5500 1300
 NoConn ~ 5700 1300
-NoConn ~ 6100 1900
-NoConn ~ 6100 2000
 NoConn ~ 6100 2100
 NoConn ~ 6100 2200
 NoConn ~ 6100 2300
 NoConn ~ 6100 2400
-NoConn ~ 6100 2500
 NoConn ~ 6100 2600
 NoConn ~ 6100 2800
 NoConn ~ 6100 2900
@@ -289,15 +276,11 @@ SCK
 Text Label 8100 2650 0    50   ~ 0
 DT
 Text Label 8100 2450 0    50   ~ 0
-VCC
++5V
 Text Label 8100 2750 0    50   ~ 0
 GND
 Wire Wire Line
-	6450 1700 6450 2550
-Wire Wire Line
 	6450 2550 8600 2550
-Wire Wire Line
-	6350 1800 6350 2650
 Wire Wire Line
 	6350 2650 8600 2650
 Wire Wire Line
@@ -308,4 +291,37 @@ Wire Wire Line
 	7450 2750 7450 3650
 Wire Wire Line
 	7450 2750 8600 2750
+Wire Wire Line
+	6350 1900 6100 1900
+Wire Wire Line
+	6350 1900 6350 2650
+Wire Wire Line
+	6100 2000 6450 2000
+Wire Wire Line
+	6450 2000 6450 2550
+NoConn ~ 6100 1700
+NoConn ~ 6100 1800
+Wire Wire Line
+	4850 3350 4850 3550
+Wire Wire Line
+	4850 3550 6200 3550
+Wire Wire Line
+	6200 3550 6200 2500
+Wire Wire Line
+	6200 2500 6100 2500
+$Comp
+L Device:R R2
+U 1 1 5E9BED75
+P 4350 3350
+F 0 "R2" V 4200 3450 50  0000 L CNN
+F 1 "560" V 4300 3450 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4280 3350 50  0001 C CNN
+F 3 "~" H 4350 3350 50  0001 C CNN
+	1    4350 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 3350 4500 3350
+Wire Wire Line
+	4200 3350 3850 3350
 $EndSCHEMATC

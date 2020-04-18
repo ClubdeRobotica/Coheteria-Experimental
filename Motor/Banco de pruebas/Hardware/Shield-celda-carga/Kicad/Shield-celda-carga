@@ -1,0 +1,21 @@
+Source,E:\SOP\Desktop\escritorio\Coheteria\Shield-celda-carga\Kicad\Shield-celda-carga.sch
+Kicad Rev,Eeschema (5.1.5)-3
+Generated Date,11/04/2020 01:13:58
+
+Title,Not Set
+Company,Not Set
+Revision,Not Set
+Date Issue,Not Set
+
+Reference,Value,Library,Library Ref
+A1,Arduino_UNO_R3,MCU_Module,Arduino_UNO_R3
+J3,Conn_01x04,Connector_Generic,Conn_01x04
+J1,Conexion bateria,Connector,Screw_Terminal_01x02
+BT1,12V,Device,Battery_Cell
+K1,Rele 12V-360mW,Relay,FINDER-32.21-x000
+D2,1N4007,Diode,1N4007
+Q1,BC337,Transistor_BJT,BC337
+J2,Screw_Terminal_01x03,Connector,Screw_Terminal_01x03
+D1,LED,Device,LED
+R1,560,Device,R
+J4,Alimentacion Arduino,Connector_Generic,Conn_01x02

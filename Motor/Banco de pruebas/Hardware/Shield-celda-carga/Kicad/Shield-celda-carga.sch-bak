@@ -30,7 +30,7 @@ U 1 1 5E896121
 P 8800 2550
 F 0 "J3" H 8880 2496 50  0000 L CNN
 F 1 "Conn_01x04" H 8880 2451 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 8800 2550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 8800 2550 50  0001 C CNN
 F 3 "~" H 8800 2550 50  0001 C CNN
 	1    8800 2550
 	1    0    0    -1  
