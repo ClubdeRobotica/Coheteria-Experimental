@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.8)
+    (last_trace_width 0.5)
     (user_trace_width 0.4)
     (user_trace_width 0.8)
     (user_trace_width 1.5)
@@ -1088,12 +1088,12 @@
       (rotate (xyz 0 0 -90))
     )
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x08_P2.54mm_Vertical.wrl
-      (offset (xyz 18 -48 0))
+      (offset (xyz 18 -48.25 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 -90))
     )
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x10_P2.54mm_Vertical.wrl
-      (offset (xyz -9 -48 0))
+      (offset (xyz -9 -48.25 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 -90))
     )
@@ -1101,6 +1101,26 @@
       (offset (xyz 23 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 -90))
+    )
+    (model ${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x10_P2.54mm_Vertical.wrl
+      (offset (xyz -9 -48.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 -90))
+    )
+    (model ${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x08_P2.54mm_Vertical.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 -90))
+    )
+    (model ${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x06_P2.54mm_Vertical.wrl
+      (offset (xyz 23 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 -90))
+    )
+    (model ${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x08_P2.54mm_Vertical.wrl
+      (offset (xyz 18 -48.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 -90))
     )
   )
 
