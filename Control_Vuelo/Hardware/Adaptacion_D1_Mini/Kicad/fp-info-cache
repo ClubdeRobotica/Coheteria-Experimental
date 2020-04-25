@@ -1,4 +1,4 @@
-16904669825133144
+16909428679702703
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -67102,6 +67102,13 @@ Relay DPST Schrack-RT2 RM5mm 16A 250V AC Relay
 6
 6
 Relay_THT
+Relay_HF7FD
+Omron Relay SPDT, http://www.omron.com/ecb/products/pdf/en-g5le.pdf
+Omron Relay SPDT
+0
+5
+5
+Relay_THT
 Relay_SPDT_Finder_32.21-x000
 Finder 32.21-x000 Relay, SPDT, https://gfinder.findernet.com/assets/Series/355/S32EN.pdf
 AXICOM IM-Series Relay SPDT
@@ -75285,7 +75292,21 @@ varistor SIOV
 2
 2
 kicad
-logo
+CDR
+
+
+0
+0
+0
+kicad
+HX711 module
+
+
+0
+10
+10
+kicad
+UTN
 
 
 0
