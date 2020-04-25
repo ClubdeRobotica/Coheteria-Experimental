@@ -35,6 +35,7 @@ float gramos = 0, lectura = 0, tiempo = 0;
 int   BufferIdx = 0;
 char Buffer[10240];
 char DataBuffer[10000];
+int StartTime = 0;
 
 
 void setup() {
@@ -68,12 +69,13 @@ void setup() {
 }
 
 void loop() {  
+  StartTime = millis();;
   WiFiClient cliente  = wifiServer.available();    
   while (cliente.connected()) {        
     digitalWrite(PIN_RELE, HIGH);
     digitalWrite(LED_BUILTIN, LOW); 
     lectura = -scale.get_units(3);
-    tiempo = millis();
+    tiempo = millis() - StartTime;
     sprintf(DataBuffer, "{\"T\":%.3f,\"grs\":%.2f}", tiempo/1000, lectura);    
     Serial.println(lectura,3);
     //scale.power_down();      

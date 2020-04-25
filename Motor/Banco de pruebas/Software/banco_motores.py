@@ -4,11 +4,15 @@ import json
 import socket
 import sys
 import xlsxwriter
+import pandas as pd
+
 std=0
 stde=1
 port_addres=8000
 ip_addres="192.168.4.1"
 Fmax = 0;
+Fuerzas = []
+Tiempos = []
 
 def graficar():
     global std
@@ -23,7 +27,11 @@ def graficar():
             try:
                 inter=json.loads(inter)
                 s.append(inter['T'])
+                Time = inter['T']                
+                print(Time)    
                 val = (inter['grs']*9.81)/1000
+                Fuerzas.append(val)
+                Tiempos.append(Time)
                 secc.append(val)
                 a.cla()
                 a.plot(s,secc)
@@ -73,6 +81,12 @@ def stop():
     std=0
     inis.config(state="normal")
     stopb.config(state="disabled")
+    data = {
+        'fuerza': Fuerzas,
+        'tiempo': Tiempos
+        }
+    df = pd.DataFrame(data, columns = ['tiempo', 'fuerza'])
+    df.to_csv('output.csv')
 def _quit():
     global stde
     stde=0
