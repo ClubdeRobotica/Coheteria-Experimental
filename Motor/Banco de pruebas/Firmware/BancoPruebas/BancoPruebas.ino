@@ -19,12 +19,11 @@
 #define PIN_RELE  D8
 
 // HX711 circuit wiring
-const int LOADCELL_DOUT_PIN = D3;
-const int LOADCELL_SCK_PIN = D2;
+const int LOADCELL_DOUT_PIN = D2;
+const int LOADCELL_SCK_PIN = D3;
 const char *ssid = APSSID;
 const char *password = APPSK;
-const float CALIBRAR = 11.4;    //TODO: Falta calibrar bien
-const float PATRON = 204.4;     //TODO: Falta calibrar bien
+const float PATRON = 138.5;     //TODO: Falta calibrar bien
 
 //ESP8266WebServer server(8000);
 WiFiServer wifiServer(8000);
@@ -39,10 +38,11 @@ char DataBuffer[10000];
 
 
 void setup() {
-  Serial.begin(115200);
   pinMode(PIN_RELE, OUTPUT);
-  pinMode(LED_BUILTIN, OUTPUT);
+  digitalWrite(PIN_RELE, LOW);
+  Serial.begin(115200);
   delay(1000);
+  pinMode(LED_BUILTIN, OUTPUT);
   Serial.println();
   Serial.print("Configurando access point...");
   /* You can remove the password parameter if you want the AP to be open. */
@@ -50,73 +50,57 @@ void setup() {
   IPAddress myIP = WiFi.softAPIP();
   Serial.println(myIP);
   wifiServer.begin();
-  
-  Serial.print("Inicializando la  escala...");
 
-  scale.begin(LOADCELL_DOUT_PIN, LOADCELL_SCK_PIN);
-     
-  Serial.println("Before setting up the scale:");
-  Serial.print("read: \t\t");
-  Serial.println(scale.read());      // print a raw reading from the ADC
-
-  Serial.print("read average: \t\t");
-  Serial.println(scale.read_average(20));   // print the average of 20 readings from the ADC
-
-  Serial.print("get value: \t\t");
-  Serial.println(scale.get_value(5));   // print the average of 5 readings from the ADC minus the tare weight (not set yet)
-
-  Serial.print("get units: \t\t");
-  Serial.println(scale.get_units(5), 1);  // print the average of 5 readings from the ADC minus tare weight (not set) divided
-            // by the SCALE parameter (not set yet)
- 
-  scale.set_scale(2280.f);    // this value is obtained by calibrating the scale with known weights; see the README for details
-  scale.tare();               // reset the scale to 0
-     
-  Serial.println("After setting up the scale:");
-
-  Serial.print("read: \t\t");
-  Serial.println(scale.read());                 // print a raw reading from the ADC
-
-  Serial.print("read average: \t\t");
-  Serial.println(scale.read_average(20));       // print the average of 20 readings from the ADC
-
-  Serial.print("get value: \t\t");
-  Serial.println(scale.get_value(5));   // print the average of 5 readings from the ADC minus the tare weight, set with tare()
-
-  Serial.print("get units: \t\t");
-  Serial.println(scale.get_units(5), 1);        // print the average of 5 readings from the ADC minus tare weight, divided
-            // by the SCALE parameter set with set_scale
-
-  Serial.println("Readings:");  
-  digitalWrite(PIN_RELE, HIGH);
+  scale.begin(LOADCELL_DOUT_PIN, LOADCELL_SCK_PIN);  
+  Serial.print("Valor ADC:  ");
+  Serial.println(scale.read());
+  scale.set_scale(PATRON);        // Este valor, se tomo a mano, depende de la construccion del banco
+  scale.tare(60);                 //El peso actual es considerado Tara, se hacen 60 mediciones, asi que lleva un tiempo, pero con esto se logra un error menor a 1 gramo
+/*/  
+  // Esto es para calibrar, el valor que se muestre en el serial hay que usarlo como 
+  Serial.print("Lectura del valor del ADC:  ");
+  Serial.println(scale.read());
+  Serial.println("No ponga ningun  objeto sobre la balanza");
+  Serial.println("Destarando...");
+  scale.set_scale(); //La escala por defecto es 1
+  scale.tare(20);  //El peso actual es considerado Tara.
+  Serial.println("Coloque un peso conocido:");//*/
 }
 
 void loop() {  
   WiFiClient cliente  = wifiServer.available();    
   while (cliente.connected()) {        
-    digitalWrite(PIN_RELE, LOW);
+    digitalWrite(PIN_RELE, HIGH);
     digitalWrite(LED_BUILTIN, LOW); 
-    tiempo = millis();
     lectura = -scale.get_units(1);
-    gramos = lectura*PATRON/CALIBRAR;
-    sprintf(DataBuffer, "{\"T\":%.3f,\"grs\":%.2f}", tiempo/1000, gramos);
+    tiempo = millis();
+    sprintf(DataBuffer, "{\"T\":%.3f,\"grs\":%.2f}", tiempo/1000, lectura);
     scale.power_down();      
     cliente.write(DataBuffer);    
     scale.power_up();
   }
   if(cliente.connected()){
     cliente.stop();        
-    digitalWrite(PIN_RELE, HIGH);
+    digitalWrite(PIN_RELE, LOW);
   }
   else  
     delay(1);
   led++;
   if(led < 100){
     digitalWrite(LED_BUILTIN, LOW);
+    digitalWrite(PIN_RELE, LOW);
   }
-  else
+  else{
     digitalWrite(LED_BUILTIN, HIGH);
+    digitalWrite(PIN_RELE, LOW);
+  }
   if(led > 1000){
-    led = 0;
+    led = 0;      
+    lectura = -scale.get_units(3);
+    tiempo = millis();
+    Serial.print(" s\nPeso: ");
+    Serial.print(lectura,3);
+    Serial.print(" g  Tiempo: ");
+    Serial.print(tiempo/1000,3);
   }
 }
