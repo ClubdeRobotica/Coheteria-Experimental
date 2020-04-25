@@ -72,12 +72,13 @@ void loop() {
   while (cliente.connected()) {        
     digitalWrite(PIN_RELE, HIGH);
     digitalWrite(LED_BUILTIN, LOW); 
-    lectura = -scale.get_units(1);
+    lectura = -scale.get_units(3);
     tiempo = millis();
-    sprintf(DataBuffer, "{\"T\":%.3f,\"grs\":%.2f}", tiempo/1000, lectura);
-    scale.power_down();      
+    sprintf(DataBuffer, "{\"T\":%.3f,\"grs\":%.2f}", tiempo/1000, lectura);    
+    Serial.println(lectura,3);
+    //scale.power_down();      
     cliente.write(DataBuffer);    
-    scale.power_up();
+    //scale.power_up();
   }
   if(cliente.connected()){
     cliente.stop();        

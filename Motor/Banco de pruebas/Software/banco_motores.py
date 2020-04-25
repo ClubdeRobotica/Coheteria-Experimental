@@ -8,9 +8,12 @@ std=0
 stde=1
 port_addres=8000
 ip_addres="192.168.4.1"
+Fmax = 0;
+
 def graficar():
     global std
     global stde
+    global Fmax
     s=[]
     secc=[]
     while stde==1:
@@ -20,12 +23,16 @@ def graficar():
             try:
                 inter=json.loads(inter)
                 s.append(inter['T'])
-                secc.append((inter['grs']*9.81)/1000)
+                val = (inter['grs']*9.81)/1000
+                secc.append(val)
                 a.cla()
                 a.plot(s,secc)
-                canvas.draw()
+                canvas.draw()            
+                if (val > Fmax):     
+                    Fmax = val                   
+                labelf['text'] = str(str(Fmax).zfill(3) + " [N]")
             except:
-                print(inter)
+                print(inter)    
             banco_hard.respond()
 def cronometro():
     global std
@@ -120,7 +127,7 @@ root.config(menu=menubar)
 f = Figure(figsize=(10, 4), dpi=100)
 a = f.add_subplot(111)
 a.set_xlabel('Tiempo[S] ')
-a.set_ylabel(u'Fuerza[N]')
+a.set_ylabel('Fuerza[N]')
 
 #-----------------------titulos---------------------
 #tittle=Label(root,text="Parametros")
@@ -162,7 +169,7 @@ cron=Label(panel1,text="00:00:00",font=("Courier", 44),bg="#696969",fg="#ffffff"
 cron.grid(column=0,row=1,columnspan=2)
 lab1=Label(panel1,text="Fuerza maxima: ",bg="#696969",fg="#ffffff")
 lab1.grid(column=0,row=2)
-labelf=Label(panel1,text="000 N",width=30,bg="#696969",fg="#ffffff")
+labelf=Label(panel1,text="0.000 [N]",width=30,bg="#696969",fg="#ffffff")
 labelf.grid(column=1,row=2)
 t = threading.Thread(target=cronometro)
 t.start()
