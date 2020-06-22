@@ -36,4 +36,4 @@ En el video se muetra una prueba del banco y los datos de fuerza y tiempo en tie
 
 ##### Firmware:
 * Se deberia agregar una opcion de calibracion.
-
+* Deberia poder determinar el fin de la prueba y dejar de enviar datos.
