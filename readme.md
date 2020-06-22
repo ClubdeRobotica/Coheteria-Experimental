@@ -23,7 +23,7 @@ Para poder resolver todos los problemas que surjan a la hora de armar y lanzar u
 Como un anexo para esta fase, se añade el desarrollo de una plataforma para el lanzamiento de los cohetes.
 
 ### Kit de Desarrollo de Motores
-El kit de desarrollo para motores de azucar, esta compuesto por un sistema mecanico donde se montan los motores y la electrónica necesaria para el analisis del empuje y un sistema informatico para controlar las pruebas.
+El kit de desarrollo para motores de baja potencia, esta compuesto por un sistema mecanico donde se montan los motores y la electrónica necesaria para el analisis del empuje y un sistema informatico para controlar las pruebas. Este kit se encuentra en la etapa final del desarrollo y se puede ver en la [pagina del banco de pruebas](https://github.com/ClubdeRobotica/Coheteria-Experimental/tree/Bayo_V1/Motor/Banco%20de%20pruebas)
 
 #### Sistema mecánico
 El sistema mecánico, fabricado con perfiles de aluminio es simplemente una plataforma deslizante y un montaje para una celda de carga. La electronica implicada en este banco es la mas sencilla puesto que se trata simplemente de una placa Wemos D1, con un firmware de arduino que nos permite activar un relay para encender el motor y tomar mediciones de la celda de carga por WiFi.
