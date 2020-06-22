@@ -23,6 +23,9 @@ Para poder resolver todos los problemas que surjan a la hora de armar y lanzar u
 Como un anexo para esta fase, se añade el desarrollo de una plataforma para el lanzamiento de los cohetes.
 
 ### Kit de Desarrollo de Motores
+
+<img src="https://github.com/ClubdeRobotica/Coheteria-Experimental/blob/Bayo_V1/Documentacion/Avance_lProyecto/Imagenes/Banco3d.png" width="250">  <img src="https://github.com/ClubdeRobotica/Coheteria-Experimental/blob/Bayo_V1/Documentacion/Avance_lProyecto/Imagenes/SoftBanco.png" width="250"> 
+
 El kit de desarrollo para motores de baja potencia, esta compuesto por un sistema mecanico donde se montan los motores y la electrónica necesaria para el analisis del empuje y un sistema informatico para controlar las pruebas. Este kit se encuentra en la etapa final del desarrollo y se puede ver en la [pagina del banco de pruebas](https://github.com/ClubdeRobotica/Coheteria-Experimental/tree/Bayo_V1/Motor/Banco%20de%20pruebas)
 
 #### Sistema mecánico
@@ -32,6 +35,7 @@ El sistema mecánico, fabricado con perfiles de aluminio es simplemente una plat
 Está desarrollado en python y ademas de conectarse al banco de pruebas, nos muestra un grafico sencillo de empuje/tiempo.
 
 ### Kit de Desarrollo de Cohetes
+<img src="https://clubderobotica.github.io/images/pic07b.jpg" width="350">
 Se trata como se dijo antes de una placa de telemetria que durante el vuelo va tomando a intervalos regulares, mediciones de presión, temperatura y aceleración y almacenandolos en un archivo que al finalizar el vuelo se puede descargar para su analisis. Adicionalmente se agrega un buzzer, que previo al despegue idica los distintos estados del sistema por medio de distintas combinaciones sonoras y al final del mismo, genera una alarma para facilitar su recuperacion en caso de caer en terreno accidentado.
 
 #### Sistema Electrónico
@@ -51,17 +55,7 @@ Es un software desarrollado en Python, que permite controlar tanto la plataforma
 ## Estructura del repo:
 
  ![Estructura del repo](Documentacion/Avance_lProyecto/arboldearchivos/Coheteria.jpg?raw=true "Arbol")
- 
-A continuacion se explica el contenido de las distintas carpetas.
-* **Documentacion:** Contiene la documentacion generada en el proyecto.
-* **Firmware:** Contiene el firmware del la electronica de medicion del vector.
-* **Fotos:** Contiene algunas fotos interesantes.
-* **Modelo:** Contiene modelos de vectores hechos con OpenRocket.
-* **Motor:** Contiene todo lo relacionado a la construccion del banco de ensayo para los motores del vector.
-* **Reuniones:** Contiene los temas tratados en la reuniones.
-* **Telemetria-Control:** Contiene todo lo relacionado con la estacion terrena.
-## ¿Por donde comenzar?
-Recomendamos comenzar leyendo la informacion de la [wiki](https://github.com/ClubdeRobotica/Coheteria-Experimental/wiki) !
+
 
 ## Como Participar
 Buena parte del desarrollo del proyecto, puede hacerse de manera remota, por lo que no es necesario estar presente en las reuiones de trabajo.
